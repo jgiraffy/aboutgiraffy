@@ -2,13 +2,6 @@ const IntroSection = () => {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="container max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-          About Giraffy
-        </h2>
-        <p className="text-xl md:text-2xl text-primary font-medium mb-8">
-          See the Full Market. Make Better Financial Decisions.
-        </p>
-        
         <div className="space-y-6 text-muted-foreground leading-relaxed">
           <p>
             Giraffy helps people understand household finance by showing the full market in one place.

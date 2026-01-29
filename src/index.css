@@ -10,53 +10,53 @@ All colors MUST be HSL.
   :root {
     /* Giraffy Brand - Deep Forest Green Theme */
     --background: 0 0% 100%;
-    --foreground: 150 10% 15%;
+    --foreground: 150 33% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 150 10% 15%;
+    --card-foreground: 150 33% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 150 10% 15%;
+    --popover-foreground: 150 33% 18%;
 
-    /* Primary - Deep Forest Green */
-    --primary: 153 47% 15%;
+    /* Primary - Deep Forest Green (exact from brand) */
+    --primary: 150 33% 18%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Light Gray Surface */
-    --secondary: 150 10% 96%;
-    --secondary-foreground: 150 10% 15%;
+    --secondary: 60 6% 93%;
+    --secondary-foreground: 150 33% 18%;
 
     /* Muted - Subtle Gray */
-    --muted: 150 10% 96%;
-    --muted-foreground: 150 8% 45%;
+    --muted: 60 6% 93%;
+    --muted-foreground: 150 10% 45%;
 
-    /* Accent - Lime/Chartreuse */
-    --accent: 72 65% 60%;
-    --accent-foreground: 150 10% 15%;
+    /* Accent - Lime/Chartreuse (exact from brand) */
+    --accent: 66 82% 54%;
+    --accent-foreground: 150 33% 18%;
 
     /* Brand-specific colors */
-    --giraffy-green: 153 47% 15%;
-    --giraffy-lime: 72 65% 60%;
-    --giraffy-light: 150 20% 97%;
-    --giraffy-border: 150 15% 90%;
+    --giraffy-green: 150 33% 18%;
+    --giraffy-lime: 66 82% 54%;
+    --giraffy-light: 60 6% 97%;
+    --giraffy-border: 60 6% 90%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 90%;
-    --input: 150 15% 90%;
-    --ring: 153 47% 15%;
+    --border: 60 6% 90%;
+    --input: 60 6% 90%;
+    --ring: 150 33% 18%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 150 10% 26%;
-    --sidebar-primary: 153 47% 15%;
+    --sidebar-foreground: 150 33% 18%;
+    --sidebar-primary: 150 33% 18%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 150 10% 96%;
-    --sidebar-accent-foreground: 150 10% 15%;
-    --sidebar-border: 150 15% 91%;
-    --sidebar-ring: 153 47% 30%;
+    --sidebar-accent: 60 6% 93%;
+    --sidebar-accent-foreground: 150 33% 18%;
+    --sidebar-border: 60 6% 90%;
+    --sidebar-ring: 150 33% 30%;
   }
 
   .dark {

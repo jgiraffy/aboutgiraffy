@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        giraffy: {
+          green: "hsl(var(--giraffy-green))",
+          lime: "hsl(var(--giraffy-lime))",
+          light: "hsl(var(--giraffy-light))",
+          border: "hsl(var(--giraffy-border))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

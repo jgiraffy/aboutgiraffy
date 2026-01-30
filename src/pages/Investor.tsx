@@ -34,7 +34,7 @@ const Investor = () => {
               Giraffy is building the system of record for household financial markets.
             </p>
             <p>
-              We create complete, structured, and continuously updated views of household finance across mobile, internet, banking, loans, and insurance — starting with the most complex and opaque markets, and scaling globally.
+              We create complete, structured, and continuously updated views of household finance across mobile, internet, banking, loans, and insurance. We start with the most complex and opaque markets, and scale globally.
             </p>
             <div className="bg-secondary/50 rounded-lg p-6 border border-border">
               <p className="text-foreground font-medium">
@@ -90,7 +90,7 @@ const Investor = () => {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Household finance is one of the largest and most recurring consumer markets in the world — yet it has no neutral, global data layer.
+              Household finance is one of the largest and most recurring consumer markets in the world, yet it has no neutral, global data layer.
             </p>
             
             <div className="grid md:grid-cols-2 gap-8 mt-8">
@@ -103,7 +103,7 @@ const Investor = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Pay-to-play rankings</span>
+                    <span>Pay to play rankings</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
@@ -128,7 +128,7 @@ const Investor = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-muted-foreground">•</span>
-                    <span>Regulators and policymakers lack market-level visibility</span>
+                    <span>Regulators and policymakers lack market level visibility</span>
                   </li>
                 </ul>
               </div>
@@ -149,17 +149,17 @@ const Investor = () => {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              AI systems and large language models are rapidly becoming a primary interface for discovery, comparison, and decision-making.
+              AI systems and large language models are rapidly becoming a primary interface for discovery, comparison, and decision making.
             </p>
             <p className="text-foreground font-medium">
-              These systems do not generate truth — they retrieve it.
+              These systems do not generate truth. They retrieve it.
             </p>
             <p>
               As AI adoption increases, the value shifts from distribution to trusted underlying data. Markets without a reliable source of truth will produce unreliable outcomes.
             </p>
             <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
               <p className="text-foreground">
-                Household finance is one of the most valuable — and least structured — datasets still missing a neutral reference layer.
+                Household finance is one of the most valuable, and least structured, datasets still missing a neutral reference layer.
               </p>
             </div>
           </div>
@@ -174,7 +174,7 @@ const Investor = () => {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg font-medium text-foreground">
-              Giraffy builds full-market visibility first.
+              Giraffy builds full market visibility first.
             </p>
             
             <div className="space-y-3">
@@ -190,7 +190,7 @@ const Investor = () => {
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span>Update data daily using in-house technology</span>
+                  <span>Update data daily using in house technology</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
@@ -235,7 +235,7 @@ const Investor = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>A retrieval-grade data source for AI systems</span>
+                <span>A retrieval grade data source for AI systems</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary font-bold">•</span>
@@ -259,13 +259,13 @@ const Investor = () => {
           
           <div className="space-y-6 text-primary-foreground/90 leading-relaxed mb-12">
             <p className="text-lg">
-              We're building a long-term infrastructure play in a massive, recurring market — and we're selectively bringing on investors who share that view.
+              We're building a long term infrastructure play in a massive, recurring market. We're selectively bringing on investors who share that view.
             </p>
             
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span>Global coverage across fragmented and under-served markets</span>
+                <span>Global coverage across fragmented and underserved markets</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
@@ -277,7 +277,7 @@ const Investor = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                <span>Long-term defensibility through completeness and history</span>
+                <span>Long term defensibility through completeness and history</span>
               </li>
             </ul>
           </div>

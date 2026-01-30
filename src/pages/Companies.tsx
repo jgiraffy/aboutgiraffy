@@ -1,6 +1,11 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
+import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
+import customerExperienceVisual from "@/assets/customer-experience-visual.png";
+import visibilityVisual from "@/assets/visibility-visual.png";
+import performanceVisual from "@/assets/performance-visual.png";
+import regulatedMarketsVisual from "@/assets/regulated-markets-visual.png";
 
 const Companies = () => {
   const struggles = [
@@ -157,167 +162,225 @@ const Companies = () => {
 
       {/* Market Intelligence Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <BarChart3 className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Market Intelligence
-            </h2>
-          </div>
-          <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
-          
-          <p className="text-muted-foreground mb-6 leading-relaxed">
-            Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
-          </p>
-          
-          <div className="grid gap-3 mb-8">
-            {marketIntelFeatures.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-foreground">{item}</span>
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+                  <BarChart3 className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Market Intelligence
+                </h2>
               </div>
-            ))}
-          </div>
-          
-          <div className="bg-background rounded-lg p-6 border border-border">
-            <p className="text-muted-foreground italic">
-              This is not a snapshot. It's a living view of the market.
-            </p>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
+              
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
+              </p>
+              
+              <div className="grid gap-3 mb-6">
+                {marketIntelFeatures.map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <p className="text-muted-foreground italic">
+                This is not a snapshot. It's a living view of the market.
+              </p>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={marketIntelligenceVisual} 
+                alt="Market Intelligence visualization showing data charts and analytics" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Customer Experience Section */}
       <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <Users className="w-6 h-6 text-primary" />
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={customerExperienceVisual} 
+                alt="Customer experience visualization showing comparison behavior" 
+                className="w-full h-auto"
+              />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Customer Experience & Brand Insight
-            </h2>
-          </div>
-          
-          <p className="text-muted-foreground mb-6 leading-relaxed">
-            Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:
-          </p>
-          
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            {customerInsights.map((item, index) => (
-              <div key={index} className="bg-secondary rounded-lg p-4 border border-border">
-                <span className="text-foreground">{item}</span>
+            
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+                  <Users className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Customer Experience & Brand Insight
+                </h2>
               </div>
-            ))}
+              
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:
+              </p>
+              
+              <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                {customerInsights.map((item, index) => (
+                  <div key={index} className="bg-secondary rounded-lg p-4 border border-border">
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <p className="text-foreground font-medium mb-4">
+                This reveals why customers choose one provider over another, before conversion.
+              </p>
+              <p className="text-accent font-semibold">
+                Unlike surveys, this insight is based on what people actually do.
+              </p>
+            </div>
           </div>
-          
-          <p className="text-foreground font-medium mb-4">
-            This reveals why customers choose one provider over another, before conversion.
-          </p>
-          <p className="text-accent font-semibold">
-            Unlike surveys, this insight is based on what people actually do.
-          </p>
         </div>
       </section>
 
       {/* Visibility Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <Eye className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Visibility & Lead Generation
-            </h2>
-          </div>
-          
-          <p className="text-muted-foreground mb-6 leading-relaxed">
-            Giraffy connects companies with customers when they are actively comparing options. Through clear listings, category presence, and optional sponsored placements, companies can:
-          </p>
-          
-          <div className="grid gap-3 mb-8">
-            {visibilityFeatures.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <ArrowRight className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-foreground">{item}</span>
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+                  <Eye className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Visibility & Lead Generation
+                </h2>
               </div>
-            ))}
+              
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Giraffy connects companies with customers when they are actively comparing options. Through clear listings, category presence, and optional sponsored placements, companies can:
+              </p>
+              
+              <div className="grid gap-3 mb-6">
+                {visibilityFeatures.map((item, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <ArrowRight className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <p className="text-muted-foreground">
+                Performance is transparent and measurable, with options to pay based on outcomes, not impressions.
+              </p>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={visibilityVisual} 
+                alt="Visibility visualization showing spotlight and discovery" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
-          
-          <p className="text-muted-foreground">
-            Performance is transparent and measurable, with options to pay based on outcomes, not impressions.
-          </p>
         </div>
       </section>
 
       {/* Performance Tools Section */}
       <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-primary" />
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={performanceVisual} 
+                alt="Performance visualization showing growth charts" 
+                className="w-full h-auto"
+              />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Performance & Growth Tools
-            </h2>
-          </div>
-          
-          <p className="text-muted-foreground mb-6">
-            Giraffy for Business supports teams across the organisation:
-          </p>
-          
-          <div className="grid gap-4 mb-8">
-            {teamBenefits.map(({ team, benefit }, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-foreground">
-                  <strong>{team}</strong> {benefit}
-                </span>
+            
+            <div className="order-1 lg:order-2">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+                  <TrendingUp className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Performance & Growth Tools
+                </h2>
               </div>
-            ))}
+              
+              <p className="text-muted-foreground mb-6">
+                Giraffy for Business supports teams across the organisation:
+              </p>
+              
+              <div className="grid gap-4 mb-6">
+                {teamBenefits.map(({ team, benefit }, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground">
+                      <strong>{team}</strong> {benefit}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              
+              <p className="text-primary font-semibold">
+                Instead of siloed tools, Giraffy provides a shared source of truth.
+              </p>
+            </div>
           </div>
-          
-          <p className="text-primary font-semibold">
-            Instead of siloed tools, Giraffy provides a shared source of truth.
-          </p>
         </div>
       </section>
 
       {/* Complex Markets Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <Shield className="w-6 h-6 text-primary" />
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Built for Complex, Regulated Markets
+                </h2>
+              </div>
+              
+              <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
+              
+              <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                <div className="bg-background rounded-lg p-4 border border-border text-center">
+                  <span className="text-foreground">Rules differ by provider</span>
+                </div>
+                <div className="bg-background rounded-lg p-4 border border-border text-center">
+                  <span className="text-foreground">Eligibility matters</span>
+                </div>
+                <div className="bg-background rounded-lg p-4 border border-border text-center">
+                  <span className="text-foreground">Transparency is limited</span>
+                </div>
+                <div className="bg-background rounded-lg p-4 border border-border text-center">
+                  <span className="text-foreground">Data is fragmented</span>
+                </div>
+              </div>
+              
+              <p className="text-muted-foreground">
+                We operate across multiple countries and categories, building a consistent intelligence layer that becomes more valuable over time.
+              </p>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Built for Complex, Regulated Markets
-            </h2>
+            
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={regulatedMarketsVisual} 
+                alt="Global regulated markets visualization with shield and globe" 
+                className="w-full h-auto"
+              />
+            </div>
           </div>
-          
-          <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
-          
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Rules differ by provider</span>
-            </div>
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Eligibility matters</span>
-            </div>
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Transparency is limited</span>
-            </div>
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Data is fragmented</span>
-            </div>
-          </div>
-          
-          <p className="text-muted-foreground">
-            We operate across multiple countries and categories, building a consistent intelligence layer that becomes more valuable over time.
-          </p>
         </div>
       </section>
 

@@ -208,13 +208,18 @@ const Investor = () => {
       </section>
 
 
-      {/* What We're Building Towards */}
-      <section className="py-16 lg:py-20 bg-background">
+      {/* What We're Building & Join the Journey */}
+      <section className="py-16 lg:py-24 bg-primary">
         <div className="container max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            What We're Building Towards
+          <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8">
+            What We're Building
           </h2>
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          
+          <div className="space-y-6 text-primary-foreground/90 leading-relaxed mb-12">
+            <p className="text-lg">
+              We're building a long-term infrastructure play in a massive, recurring market — and we're selectively bringing on investors who share that view.
+            </p>
+            
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
@@ -233,37 +238,20 @@ const Investor = () => {
                 <span>Long-term defensibility through completeness and history</span>
               </li>
             </ul>
-            <p className="text-foreground font-semibold text-lg mt-6">
-              This is a long-term infrastructure play in a massive, recurring market.
-            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Join the Journey */}
-      <section className="py-16 lg:py-24 bg-primary">
-        <div className="container max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-6">
-            Join the Journey
-          </h2>
-          <p className="text-primary-foreground/90 mb-8">
-            We're building Giraffy for the long term and are selectively bringing on investors who share that view.
-          </p>
-          <div className="text-primary-foreground/80 space-y-2 mb-10">
-            <p>If you'd like to:</p>
-            <ul className="space-y-1">
-              <li>• Follow our progress</li>
-              <li>• Be notified when we open our next round</li>
-              <li>• Learn more about the opportunity</li>
-            </ul>
-          </div>
-          <p className="text-primary-foreground font-medium mb-6">
-            👉 Register your interest below.
-          </p>
-          <div className="bg-primary-foreground/10 rounded-lg p-8 border border-primary-foreground/20">
-            <p className="text-primary-foreground/60 text-sm">
-              [Typeform: "Join the Giraffy Investor Journey"]
+          <div className="text-center">
+            <p className="text-primary-foreground/80 mb-6">
+              Follow our progress, be notified when we open our next round, or learn more about the opportunity.
             </p>
+            <a
+              href="https://typeform.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"
+            >
+              Register Interest
+            </a>
           </div>
         </div>
       </section>

@@ -8,94 +8,104 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Giraffy Brand - Deep Forest Green Theme */
+    /* Giraffy Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 150 33% 18%;
+    --foreground: 247 29% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 150 33% 18%;
+    --card-foreground: 247 29% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 150 33% 18%;
+    --popover-foreground: 247 29% 5%;
 
-    /* Primary - Deep Forest Green (exact from brand) */
-    --primary: 150 33% 18%;
+    /* Primary - Brand Dark Green */
+    --primary: 159 100% 14%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Light Gray Surface */
-    --secondary: 60 6% 93%;
-    --secondary-foreground: 150 33% 18%;
+    /* Secondary - Surface 1 (light green tint) */
+    --secondary: 157 18% 91%;
+    --secondary-foreground: 247 29% 5%;
 
-    /* Muted - Subtle Gray */
-    --muted: 60 6% 93%;
-    --muted-foreground: 150 10% 45%;
+    /* Muted - Surface 3 */
+    --muted: 90 11% 93%;
+    --muted-foreground: 133 7% 40%;
 
-    /* Accent - Lime/Chartreuse (exact from brand) */
-    --accent: 66 82% 54%;
-    --accent-foreground: 150 33% 18%;
+    /* Accent - Brand Electric Green */
+    --accent: 75 92% 76%;
+    --accent-foreground: 159 100% 14%;
 
     /* Brand-specific colors */
-    --giraffy-green: 150 33% 18%;
-    --giraffy-lime: 66 82% 54%;
-    --giraffy-light: 60 6% 97%;
-    --giraffy-border: 60 6% 90%;
+    --giraffy-dark-green: 159 100% 14%;
+    --giraffy-mid-green: 146 54% 32%;
+    --giraffy-electric-green: 75 92% 76%;
+    --giraffy-titles-dark: 247 29% 5%;
+    --giraffy-titles-medium: 180 6% 7%;
+    --giraffy-body-dark: 163 8% 21%;
+    --giraffy-tertiary: 133 7% 40%;
+    --giraffy-surface-1: 157 18% 91%;
+    --giraffy-surface-2: 160 69% 97%;
+    --giraffy-surface-3: 90 11% 93%;
+    --giraffy-surface-4: 180 9% 98%;
+    --giraffy-surface-5: 130 11% 89%;
+    --giraffy-surface-6: 0 0% 95%;
+    --giraffy-surface-7: 0 0% 97%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 6% 90%;
-    --input: 60 6% 90%;
-    --ring: 150 33% 18%;
+    --border: 157 18% 91%;
+    --input: 157 18% 91%;
+    --ring: 159 100% 14%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 150 33% 18%;
-    --sidebar-primary: 150 33% 18%;
+    --sidebar-foreground: 247 29% 5%;
+    --sidebar-primary: 159 100% 14%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 60 6% 93%;
-    --sidebar-accent-foreground: 150 33% 18%;
-    --sidebar-border: 60 6% 90%;
-    --sidebar-ring: 150 33% 30%;
+    --sidebar-accent: 157 18% 91%;
+    --sidebar-accent-foreground: 247 29% 5%;
+    --sidebar-border: 157 18% 91%;
+    --sidebar-ring: 146 54% 32%;
   }
 
   .dark {
-    --background: 150 15% 8%;
-    --foreground: 150 10% 95%;
+    --background: 247 29% 5%;
+    --foreground: 0 0% 97%;
 
-    --card: 150 15% 10%;
-    --card-foreground: 150 10% 95%;
+    --card: 180 6% 7%;
+    --card-foreground: 0 0% 97%;
 
-    --popover: 150 15% 10%;
-    --popover-foreground: 150 10% 95%;
+    --popover: 180 6% 7%;
+    --popover-foreground: 0 0% 97%;
 
-    --primary: 72 65% 60%;
-    --primary-foreground: 150 15% 8%;
+    --primary: 75 92% 76%;
+    --primary-foreground: 247 29% 5%;
 
-    --secondary: 150 15% 15%;
-    --secondary-foreground: 150 10% 95%;
+    --secondary: 163 8% 21%;
+    --secondary-foreground: 0 0% 97%;
 
-    --muted: 150 15% 15%;
-    --muted-foreground: 150 10% 65%;
+    --muted: 163 8% 21%;
+    --muted-foreground: 133 7% 40%;
 
-    --accent: 72 65% 60%;
-    --accent-foreground: 150 15% 8%;
+    --accent: 75 92% 76%;
+    --accent-foreground: 247 29% 5%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 20%;
-    --input: 150 15% 20%;
-    --ring: 72 65% 60%;
+    --border: 163 8% 21%;
+    --input: 163 8% 21%;
+    --ring: 75 92% 76%;
 
-    --sidebar-background: 150 15% 10%;
-    --sidebar-foreground: 150 10% 95%;
-    --sidebar-primary: 72 65% 60%;
-    --sidebar-primary-foreground: 150 15% 8%;
-    --sidebar-accent: 150 15% 15%;
-    --sidebar-accent-foreground: 150 10% 95%;
-    --sidebar-border: 150 15% 20%;
-    --sidebar-ring: 72 65% 60%;
+    --sidebar-background: 180 6% 7%;
+    --sidebar-foreground: 0 0% 97%;
+    --sidebar-primary: 75 92% 76%;
+    --sidebar-primary-foreground: 247 29% 5%;
+    --sidebar-accent: 163 8% 21%;
+    --sidebar-accent-foreground: 0 0% 97%;
+    --sidebar-border: 163 8% 21%;
+    --sidebar-ring: 75 92% 76%;
   }
 }
 

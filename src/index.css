@@ -22,8 +22,8 @@ All colors MUST be HSL.
     --primary: 159 100% 14%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Surface 1 (light green tint) */
-    --secondary: 157 18% 91%;
+    /* Secondary - Surface 6 (neutral grey) */
+    --secondary: 0 0% 95%;
     --secondary-foreground: 247 29% 5%;
 
     /* Muted - Surface 3 */

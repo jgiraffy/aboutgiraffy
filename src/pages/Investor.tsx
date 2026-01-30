@@ -12,8 +12,8 @@ const Investor = () => {
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
             Building the Infrastructure Layer for Household Finance
           </h1>
-          <p className="text-primary-foreground/80 mb-8">
-            Join the Giraffy Journey
+          <p className="text-primary-foreground/80 mb-3">
+            Join the Giraffy Journey:
           </p>
           <a
             href="https://typeform.com"

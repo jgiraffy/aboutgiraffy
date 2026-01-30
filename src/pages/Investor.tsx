@@ -70,6 +70,21 @@ const Investor = () => {
                 Rolling out new countries often
               </p>
             </div>
+
+            {/* Join CTA */}
+            <div className="text-center mt-10">
+              <p className="text-lg font-medium text-foreground mb-4">
+                Join the Giraffy Journey
+              </p>
+              <a
+                href="https://typeform.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"
+              >
+                Register Your Interest
+              </a>
+            </div>
           </div>
         </div>
       </section>

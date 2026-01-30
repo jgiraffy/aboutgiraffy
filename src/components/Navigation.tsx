@@ -18,6 +18,13 @@ const Navigation = () => {
               About
             </NavLink>
             <NavLink
+              to="/companies"
+              className="px-4 py-2 text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors rounded-md hover:bg-primary-foreground/10"
+              activeClassName="text-primary-foreground bg-primary-foreground/10"
+            >
+              Companies
+            </NavLink>
+            <NavLink
               to="/investor"
               className="px-4 py-2 text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors rounded-md hover:bg-primary-foreground/10"
               activeClassName="text-primary-foreground bg-primary-foreground/10"

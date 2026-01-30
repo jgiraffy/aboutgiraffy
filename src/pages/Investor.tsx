@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Investor = () => {
   return (
@@ -231,7 +232,7 @@ const Investor = () => {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary font-bold">•</span>
-                <span>A market intelligence platform for providers</span>
+                <Link to="/companies" className="text-primary hover:underline">A market intelligence platform for providers</Link>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary font-bold">•</span>

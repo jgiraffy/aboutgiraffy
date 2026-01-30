@@ -9,9 +9,6 @@ const Investor = () => {
       {/* Hero Section */}
       <section className="bg-primary py-16 lg:py-24">
         <div className="container max-w-4xl mx-auto px-6 text-center">
-          <p className="text-primary-foreground/80 text-sm font-medium tracking-wide uppercase mb-4">
-            Giraffy for Investors
-          </p>
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
             Building the Infrastructure Layer for Household Finance
           </h1>

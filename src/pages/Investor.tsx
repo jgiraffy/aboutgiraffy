@@ -207,34 +207,6 @@ const Investor = () => {
         </div>
       </section>
 
-      {/* Team & DNA */}
-      <section className="py-16 lg:py-20 bg-secondary/30">
-        <div className="container max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            Team & DNA
-          </h2>
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p>Giraffy is built by a team with deep experience in:</p>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Consumer comparison platforms</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Marketplaces and data systems</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary font-bold">•</span>
-                <span>Building products used at scale</span>
-              </li>
-            </ul>
-            <p>
-              We understand how markets are ranked, how decisions are made, and how infrastructure layers emerge.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* What We're Building Towards */}
       <section className="py-16 lg:py-20 bg-background">

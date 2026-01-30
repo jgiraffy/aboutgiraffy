@@ -1,14 +1,13 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const Companies = () => {
   const struggles = [
     "How customers really compare options",
     "Where they win or lose at decision time",
     "How pricing, eligibility, and messaging affect outcomes",
-    "How competitors move — and when",
+    "How competitors move, and when",
   ];
 
   const marketIntelFeatures = [
@@ -82,7 +81,7 @@ const Companies = () => {
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-            We help telecoms, banks, insurers, and finance providers understand the market as it actually exists — how customers compare options, how competitors are positioned, and how decisions are made — all in one place.
+            We help telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.
           </p>
           
           <div className="bg-secondary rounded-xl p-8 text-center">
@@ -111,7 +110,7 @@ const Companies = () => {
           </ul>
           
           <p className="text-foreground font-semibold mb-6">
-            What's missing is a clear, external view of the market — before the transaction happens.
+            What's missing is a clear, external view of the market before the transaction happens.
           </p>
           
           <div className="bg-background rounded-xl p-6 border border-border">
@@ -122,7 +121,7 @@ const Companies = () => {
                   <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-destructive text-xs">?</span>
                   </div>
-                  <span className="text-foreground">{item.replace(/—/g, "and")}</span>
+                  <span className="text-foreground">{item}</span>
                 </div>
               ))}
             </div>
@@ -141,7 +140,7 @@ const Companies = () => {
             One Platform. Multiple Capabilities.
           </h2>
           <p className="text-muted-foreground mb-8 leading-relaxed">
-            Giraffy for Business brings together market analytics, customer experience insight, visibility, and performance tools in a single platform — all powered by the same underlying data.
+            Giraffy for Business brings together market analytics, customer experience insight, visibility, and performance tools in a single platform, all powered by the same underlying data.
           </p>
           
           <div className="bg-primary rounded-xl p-6 md:p-8 flex items-center gap-4">
@@ -170,7 +169,7 @@ const Companies = () => {
           <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
           
           <p className="text-muted-foreground mb-6 leading-relaxed">
-            Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance — updating daily. This powers a structured view of the market, allowing companies to:
+            Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
           </p>
           
           <div className="grid gap-3 mb-8">
@@ -215,7 +214,7 @@ const Companies = () => {
           </div>
           
           <p className="text-foreground font-medium mb-4">
-            This reveals why customers choose one provider over another — before conversion.
+            This reveals why customers choose one provider over another, before conversion.
           </p>
           <p className="text-accent font-semibold">
             Unlike surveys, this insight is based on what people actually do.
@@ -249,7 +248,7 @@ const Companies = () => {
           </div>
           
           <p className="text-muted-foreground">
-            Performance is transparent and measurable, with options to pay based on outcomes — not impressions.
+            Performance is transparent and measurable, with options to pay based on outcomes, not impressions.
           </p>
         </div>
       </section>
@@ -367,7 +366,7 @@ const Companies = () => {
           </div>
           
           <p className="text-muted-foreground">
-            Any company that needs to understand — and compete in — household finance markets.
+            Any company that needs to understand, and compete in, household finance markets.
           </p>
         </div>
       </section>

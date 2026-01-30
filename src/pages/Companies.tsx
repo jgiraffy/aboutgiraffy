@@ -4,8 +4,6 @@ import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2,
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
-import performanceVisual from "@/assets/performance-visual.png";
-import regulatedMarketsVisual from "@/assets/regulated-markets-visual.png";
 
 const Companies = () => {
   const struggles = [
@@ -294,93 +292,69 @@ const Companies = () => {
 
       {/* Performance Tools Section */}
       <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-5xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src={performanceVisual} 
-                alt="Performance visualization showing growth charts" 
-                className="w-full h-auto"
-              />
+        <div className="container max-w-4xl mx-auto px-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+              <TrendingUp className="w-6 h-6 text-primary" />
             </div>
-            
-            <div className="order-1 lg:order-2">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Performance & Growth Tools
-                </h2>
-              </div>
-              
-              <p className="text-muted-foreground mb-6">
-                Giraffy for Business supports teams across the organisation:
-              </p>
-              
-              <div className="grid gap-4 mb-6">
-                {teamBenefits.map(({ team, benefit }, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">
-                      <strong>{team}</strong> {benefit}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              
-              <p className="text-primary font-semibold">
-                Instead of siloed tools, Giraffy provides a shared source of truth.
-              </p>
-            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              Performance & Growth Tools
+            </h2>
           </div>
+          
+          <p className="text-muted-foreground mb-6">
+            Giraffy for Business supports teams across the organisation:
+          </p>
+          
+          <div className="grid gap-4 mb-6">
+            {teamBenefits.map(({ team, benefit }, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-foreground">
+                  <strong>{team}</strong> {benefit}
+                </span>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-primary font-semibold">
+            Instead of siloed tools, Giraffy provides a shared source of truth.
+          </p>
         </div>
       </section>
 
       {/* Complex Markets Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-5xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-primary" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Built for Complex, Regulated Markets
-                </h2>
-              </div>
-              
-              <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
-              
-              <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                <div className="bg-background rounded-lg p-4 border border-border text-center">
-                  <span className="text-foreground">Rules differ by provider</span>
-                </div>
-                <div className="bg-background rounded-lg p-4 border border-border text-center">
-                  <span className="text-foreground">Eligibility matters</span>
-                </div>
-                <div className="bg-background rounded-lg p-4 border border-border text-center">
-                  <span className="text-foreground">Transparency is limited</span>
-                </div>
-                <div className="bg-background rounded-lg p-4 border border-border text-center">
-                  <span className="text-foreground">Data is fragmented</span>
-                </div>
-              </div>
-              
-              <p className="text-muted-foreground">
-                We operate across multiple countries and categories, building a consistent intelligence layer that becomes more valuable over time.
-              </p>
+        <div className="container max-w-4xl mx-auto px-6">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
+              <Shield className="w-6 h-6 text-primary" />
             </div>
-            
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src={regulatedMarketsVisual} 
-                alt="Global regulated markets visualization with shield and globe" 
-                className="w-full h-auto"
-              />
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              Built for Complex, Regulated Markets
+            </h2>
+          </div>
+          
+          <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
+          
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
+            <div className="bg-background rounded-lg p-4 border border-border text-center">
+              <span className="text-foreground">Rules differ by provider</span>
+            </div>
+            <div className="bg-background rounded-lg p-4 border border-border text-center">
+              <span className="text-foreground">Eligibility matters</span>
+            </div>
+            <div className="bg-background rounded-lg p-4 border border-border text-center">
+              <span className="text-foreground">Transparency is limited</span>
+            </div>
+            <div className="bg-background rounded-lg p-4 border border-border text-center">
+              <span className="text-foreground">Data is fragmented</span>
             </div>
           </div>
+          
+          <p className="text-muted-foreground">
+            We operate across multiple countries and categories, building a consistent intelligence layer that becomes more valuable over time.
+          </p>
         </div>
       </section>
 

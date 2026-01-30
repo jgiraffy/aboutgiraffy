@@ -36,6 +36,40 @@ const Investor = () => {
                 It is coverage, accuracy, and intelligence.
               </p>
             </div>
+
+            {/* Live Markets */}
+            <div className="mt-8 pt-8 border-t border-border">
+              <p className="text-lg font-semibold text-foreground mb-6 text-center">
+                We are live in 10 markets
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  { country: "Saudi Arabia", code: "sa" },
+                  { country: "Kuwait", code: "kw" },
+                  { country: "Bahrain", code: "bh" },
+                  { country: "UAE", code: "ae" },
+                  { country: "Qatar", code: "qa" },
+                  { country: "Oman", code: "om" },
+                  { country: "United Kingdom", code: "gb" },
+                  { country: "Italy", code: "it" },
+                  { country: "Netherlands", code: "nl" },
+                ].map((market) => (
+                  <div key={market.code} className="flex flex-col items-center gap-2">
+                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-border shadow-sm">
+                      <img
+                        src={`https://flagcdn.com/w80/${market.code}.png`}
+                        alt={`${market.country} flag`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <span className="text-xs text-muted-foreground">{market.country}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-center text-sm text-muted-foreground mt-6">
+                Rolling out new countries often
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -170,40 +204,6 @@ const Investor = () => {
             <p className="text-foreground font-medium">
               Giraffy scales by adding truth, not by adding users alone.
             </p>
-
-            {/* Live Markets */}
-            <div className="mt-12 pt-8 border-t border-border">
-              <p className="text-lg font-semibold text-foreground mb-6 text-center">
-                We are live in 10 markets
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                {[
-                  { country: "Saudi Arabia", code: "sa" },
-                  { country: "Kuwait", code: "kw" },
-                  { country: "Bahrain", code: "bh" },
-                  { country: "UAE", code: "ae" },
-                  { country: "Qatar", code: "qa" },
-                  { country: "Oman", code: "om" },
-                  { country: "United Kingdom", code: "gb" },
-                  { country: "Italy", code: "it" },
-                  { country: "Netherlands", code: "nl" },
-                ].map((market) => (
-                  <div key={market.code} className="flex flex-col items-center gap-2">
-                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-border shadow-sm">
-                      <img
-                        src={`https://flagcdn.com/w80/${market.code}.png`}
-                        alt={`${market.country} flag`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <span className="text-xs text-muted-foreground">{market.country}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-center text-sm text-muted-foreground mt-6">
-                Rolling out new countries often
-              </p>
-            </div>
           </div>
         </div>
       </section>

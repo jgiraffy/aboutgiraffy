@@ -18,16 +18,6 @@ const IntroSection = () => {
           <p>
             We bring 100% of live household finance deals together, so people can see what actually exists, compare options fairly, understand what matters before applying or switching, and avoid unpleasant surprises.
           </p>
-          
-          <div className="bg-secondary/50 rounded-xl p-6 md:p-8 mt-8">
-            <p className="text-foreground">
-              <span className="font-semibold">Our goal is simple:</span>
-              <br />
-              <span className="mt-2 block">
-                when people are choosing household bills and everyday finance, Giraffy should be the obvious place to start.
-              </span>
-            </p>
-          </div>
         </div>
       </div>
     </section>

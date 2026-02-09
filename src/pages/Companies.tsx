@@ -69,7 +69,7 @@ const Companies = () => {
             See the Market Clearly.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8">
-            Stop guessing why you win or lose. Access the system of record for real time market movements, competitor pricing, and pre transaction consumer behaviour.
+            Stop guessing why you win or lose. Access a clear view of market movements, competitor pricing, and how customers compare options before they choose.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

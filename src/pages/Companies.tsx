@@ -110,19 +110,19 @@ const Companies = () => {
             The Decision Gap
           </h2>
           
-          <p className="text-muted-foreground mb-6 leading-relaxed">
+          <p className="text-base text-foreground mb-6 leading-relaxed">
             Most providers rely on internal performance data and paid acquisition metrics, but these only show what happens after a customer chooses you. What is missing is visibility into the "Comparison Moment."
           </p>
           
-          <p className="text-foreground font-semibold mb-6 text-lg">
+          <p className="text-base text-foreground mb-6 leading-relaxed">
             In Saudi Arabia, 40% of consumers compare financial products before committing to a purchase.
           </p>
           
-          <p className="text-muted-foreground mb-6 leading-relaxed">
+          <p className="text-base text-foreground mb-6 leading-relaxed">
             Decisions are increasingly made before customers ever enter your funnel.
           </p>
           
-          <p className="text-primary font-semibold text-lg">
+          <p className="text-base text-foreground leading-relaxed">
             Giraffy provides the missing layer of external intelligence needed to see the full market reality.
           </p>
         </div>

@@ -3,7 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const HeroSection = () => {
   const { t } = useLanguage();
   return (
-    <section className="bg-primary text-primary-foreground py-28 lg:py-44">
+    <section className="bg-primary text-primary-foreground py-16 lg:py-24">
       <div className="container max-w-5xl mx-auto px-6 text-center">
         <p className="text-xl md:text-2xl opacity-80 mb-6">
           {t.about.hero.subtitle}

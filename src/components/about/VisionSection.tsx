@@ -2,7 +2,7 @@ const VisionSection = () => {
   return (
     <section className="py-20 lg:py-28 bg-primary text-primary-foreground">
       <div className="container max-w-3xl mx-auto px-6 text-center">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 opacity-80">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 opacity-80">
           Our Vision
         </h2>
         <p className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug">

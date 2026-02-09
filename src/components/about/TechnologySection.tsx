@@ -10,7 +10,7 @@ const TechnologySection = () => {
   return (
     <section className="py-16 lg:py-24 bg-secondary">
       <div className="container max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
           Powered by Technology, Built for Accuracy
         </h2>
         

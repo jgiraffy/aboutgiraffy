@@ -144,18 +144,15 @@ const Companies = () => {
               
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
               </p>
               
-              <div className="grid gap-3 mb-6">
+              <ul className="list-disc list-inside space-y-2 mb-6 text-base text-foreground">
                 {marketIntelFeatures.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
-                    <span className="text-foreground">{item}</span>
-                  </div>
+                  <li key={index}>{item}</li>
                 ))}
-              </div>
+              </ul>
             </div>
             
             <div className="rounded-xl overflow-hidden shadow-lg">

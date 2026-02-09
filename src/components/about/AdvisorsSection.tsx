@@ -35,8 +35,8 @@ const AdvisorsSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
           Our Advisors
         </h2>
-        <p className="text-muted-foreground mb-12 max-w-2xl leading-relaxed">
-          Giraffy is supported by advisors with experience across technology, data, and consumer marketplaces. They help guide our thinking as we grow, ensuring Giraffy stays focused on accuracy, independence, and long-term trust.
+        <p className="text-muted-foreground mb-12 leading-relaxed">
+          Giraffy is supported by advisors with experience across technology, data, and consumer marketplaces.
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

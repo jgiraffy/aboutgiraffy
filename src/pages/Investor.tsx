@@ -51,7 +51,7 @@ const Investor = () => {
               <p className="text-lg font-semibold text-foreground mb-6 text-center">
                 Available across these countries
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-6 justify-items-center">
                 {[
                   { country: "Saudi Arabia", code: "sa" },
                   { country: "Kuwait", code: "kw" },

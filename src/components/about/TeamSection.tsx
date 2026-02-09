@@ -102,7 +102,7 @@ const TeamSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
           Our Team
         </h2>
-        <p className="text-muted-foreground mb-12 max-w-2xl leading-relaxed">
+        <p className="text-muted-foreground mb-12 leading-relaxed">
           Giraffy is built by a team with deep experience in consumer platforms, marketplaces, and financial services.
         </p>
 

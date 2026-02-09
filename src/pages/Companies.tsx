@@ -187,9 +187,10 @@ const Companies = () => {
                 Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:
               </p>
               
-              <div className="grid sm:grid-cols-2 gap-4 mb-6">
+              <div className="grid gap-3 mb-6">
                 {customerInsights.map((item, index) => (
-                  <div key={index} className="bg-background rounded-lg p-4 border border-border">
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -198,7 +199,7 @@ const Companies = () => {
               <p className="text-foreground font-medium mb-4">
                 This reveals why customers choose one provider over another, before conversion.
               </p>
-              <p className="text-accent font-semibold">
+              <p className="text-foreground font-semibold">
                 Unlike surveys, this insight is based on what people actually do.
               </p>
             </div>

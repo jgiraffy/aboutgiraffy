@@ -90,7 +90,7 @@ const Companies = () => {
       {/* Intro Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <p className="text-base text-foreground leading-relaxed">
             <strong>Giraffy For Business</strong> helps telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.
           </p>
         </div>
@@ -128,7 +128,7 @@ const Companies = () => {
                 Market Intelligence
               </h2>
               
-              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-base text-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
               </p>
               
@@ -162,7 +162,7 @@ const Companies = () => {
                 Customer Experience &amp; Brand Insight
               </h2>
               
-              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-base text-foreground mb-6 leading-relaxed">
                 Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:
               </p>
               

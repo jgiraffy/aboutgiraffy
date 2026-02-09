@@ -415,7 +415,36 @@ const Companies = () => {
         </div>
       </section>
 
-      <FAQSection />
+      <FAQSection faqs={[
+        {
+          question: "What is Giraffy for Business?",
+          answer: "Giraffy for Business is a market intelligence and visibility platform designed for companies in the household finance sector. We provide banks, insurers, and telecom providers with a real time, external view of the market, helping teams understand how they are positioned against competitors at the exact moment a customer makes a decision.",
+        },
+        {
+          question: "How is your market data collected?",
+          answer: "We use our proprietary technology, Giraffy Radar, to scan and structure market data daily. Unlike platforms that rely on manual updates or partner provided spreadsheets, our technology monitors the market 24/7 to ensure that the pricing, terms, and availability we show are accurate and current across all regions we serve.",
+        },
+        {
+          question: "Does Giraffy only show providers who are clients?",
+          answer: "No. Our core value is market completeness. We show 100% of the relevant market deals regardless of whether a company uses our B2B tools or advertises with us. This neutral approach ensures that our data remains a reliable \"source of truth\" for both consumers and our business partners.",
+        },
+        {
+          question: "What kind of insights can my team expect?",
+          answer: "Beyond simple price tracking, Giraffy provides visibility into the \"Comparison Moment.\" We reveal how your brand and products are experienced relative to the full market, including brand sentiment indicators and drop off patterns. This helps product and pricing teams understand exactly why they are winning or losing market share before the transaction happens.",
+        },
+        {
+          question: "How can we increase our visibility on the platform?",
+          answer: "While we maintain a neutral market view, we offer optional sponsored placements and category specific listings. These allow providers to reach high intent, \"finance ready\" users who are actively comparing options. Performance is transparent and measurable, with options to pay based on outcomes rather than just impressions.",
+        },
+        {
+          question: "Can we integrate Giraffy data into our own systems?",
+          answer: "Yes. Giraffy is designed to be a shared source of truth across your organization. We offer various ways to access our intelligence layer, including our analytics dashboard and API options, so your product, pricing, and marketing teams can work from the same live market data.",
+        },
+        {
+          question: "How do we get started?",
+          answer: "Getting started is simple. You can request access or book a demo through our business portal. Our team will walk you through the platform capabilities and show you how Giraffy Radar can be tailored to your specific category and country requirements.",
+        },
+      ]} />
 
       {/* Footer */}
       <section className="py-8 bg-secondary border-t border-border">

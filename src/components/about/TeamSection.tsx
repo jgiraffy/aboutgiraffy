@@ -97,7 +97,7 @@ const MemberCard = ({ member }: { member: TeamMember }) => (
 
 const TeamSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container max-w-5xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
           Our Team
@@ -105,12 +105,12 @@ const TeamSection = () => {
         <p className="text-muted-foreground mb-4 max-w-2xl leading-relaxed">
           Giraffy is built by a team with deep experience in consumer platforms, marketplaces, and financial services.
         </p>
-        <p className="text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+        <p className="text-muted-foreground mb-12 max-w-2xl leading-relaxed">
           We've spent years working on products that help people compare, choose, and make better decisions and we're applying that experience to household finance.
         </p>
 
         <h3 className="text-xl font-bold text-foreground mb-6">Founders</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-14">
           {founders.map((member) => (
             <MemberCard key={member.name} member={member} />
           ))}
@@ -123,7 +123,7 @@ const TeamSection = () => {
           ))}
         </div>
         
-        <p className="text-center text-muted-foreground mt-10 italic">
+        <p className="text-center text-muted-foreground mt-14 italic">
           We're building Giraffy for people like us: people who want clarity, not confusion.
         </p>
       </div>

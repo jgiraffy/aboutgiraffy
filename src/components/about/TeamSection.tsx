@@ -119,10 +119,6 @@ const TeamSection = () => {
             <MemberCard key={member.name} member={member} />
           ))}
         </div>
-        
-        <p className="text-center text-muted-foreground mt-14 italic">
-          We're building Giraffy for people like us: people who want clarity, not confusion.
-        </p>
       </div>
     </section>
   );

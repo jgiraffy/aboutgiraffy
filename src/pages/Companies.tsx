@@ -71,7 +71,7 @@ const Companies = () => {
       {/* Hero Section */}
       <section className="bg-primary py-20 lg:py-28">
         <div className="container max-w-4xl mx-auto px-6 text-center">
-          <p className="text-accent font-semibold mb-4 tracking-wide uppercase text-sm">Giraffy for Business</p>
+          
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             See the Market Clearly.
           </h1>

@@ -66,7 +66,7 @@ const Companies = () => {
               Contact via WhatsApp
             </a>
             <a
-              href="mailto:business@giraffy.com"
+              href="mailto:hello@giraffy.com"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-colors text-base"
             >
               <Mail className="w-5 h-5" />
@@ -302,15 +302,24 @@ const Companies = () => {
             Giraffy gives you the clarity to act.
           </p>
           
-          <a
-            href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"
-          >
-            <MessageCircle className="w-5 h-5" />
-            Get in Touch via WhatsApp
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Get in Touch via WhatsApp
+            </a>
+            <a
+              href="mailto:hello@giraffy.com"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-colors text-lg"
+            >
+              <Mail className="w-5 h-5" />
+              Contact via Email
+            </a>
+          </div>
         </div>
       </section>
 

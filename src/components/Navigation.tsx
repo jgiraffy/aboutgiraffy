@@ -4,7 +4,7 @@ import giraffyLogo from "@/assets/giraffy-white.svg";
 const Navigation = () => {
   return (
     <header className="sticky top-0 z-50 bg-primary border-b border-primary/20">
-      <div className="container mx-auto px-6">
+      <div className="mx-auto px-6">
         <nav className="flex items-center justify-center h-16">
           <NavLink to="/" className="flex items-center mr-6">
             <img src={giraffyLogo} alt="Giraffy" className="h-6" />

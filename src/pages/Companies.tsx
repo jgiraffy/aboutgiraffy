@@ -90,7 +90,7 @@ const Companies = () => {
       {/* Intro Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground leading-relaxed">
             <strong>Giraffy For Business</strong> helps telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.
           </p>
         </div>
@@ -99,7 +99,7 @@ const Companies = () => {
       {/* Why Companies Use Giraffy */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             The Decision Gap
           </h2>
           
@@ -128,7 +128,7 @@ const Companies = () => {
                 Market Intelligence
               </h2>
               
-              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-base text-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
               </p>
               
@@ -147,7 +147,7 @@ const Companies = () => {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide mt-3">Powered by Giraffy Radar</p>
+              
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ const Companies = () => {
                 Customer Experience &amp; Brand Insight
               </h2>
               
-              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-base text-foreground mb-6 leading-relaxed">
                 Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:
               </p>
               
@@ -287,7 +287,7 @@ const Companies = () => {
             Get Started with Giraffy for Business
           </h2>
           
-          <p className="text-primary-foreground/80 mb-4">Whether you want to:</p>
+          <p className="text-primary-foreground/80 mb-4 max-w-lg mx-auto text-left">Whether you want to:</p>
           
           <div className="grid gap-3 mb-8 max-w-lg mx-auto text-left">
             {useCases.map((item, index) => (

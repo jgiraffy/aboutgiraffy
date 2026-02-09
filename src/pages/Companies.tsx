@@ -185,15 +185,7 @@ const Companies = () => {
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <div className="order-2 lg:order-1 rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src={customerExperienceVisual} 
-                alt="Customer experience visualization showing comparison behavior" 
-                className="w-full h-auto"
-              />
-            </div>
-            
-            <div className="order-1 lg:order-2">
+            <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
                   <Users className="w-6 h-6 text-primary" />
@@ -221,6 +213,14 @@ const Companies = () => {
               <p className="text-accent font-semibold">
                 Unlike surveys, this insight is based on what people actually do.
               </p>
+            </div>
+            
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img 
+                src={customerExperienceVisual} 
+                alt="Customer experience visualization showing comparison behavior" 
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>

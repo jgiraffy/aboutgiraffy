@@ -104,19 +104,14 @@ const Investor = () => {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              AI systems and large language models are rapidly becoming a primary interface for discovery, comparison, and decision making.
+              As AI systems and Large Language Models (LLMs) become the primary interface for decision making, the value shifts from distribution to the underlying data.
             </p>
             <p className="text-foreground font-medium">
-              These systems do not generate truth. They retrieve it.
+              AI systems do not generate truth; they retrieve it. In this new era, markets without a reliable source of truth will produce unreliable outcomes.
             </p>
             <p>
-              As AI adoption increases, the value shifts from distribution to trusted underlying data. Markets without a reliable source of truth will produce unreliable outcomes.
+              Giraffy provides the structured, retrieval grade data required for AI to navigate the world's most valuable and least structured financial datasets.
             </p>
-            <div className="bg-primary/5 rounded-lg p-6 border border-primary/20">
-              <p className="text-foreground">
-                Household finance is one of the most valuable, and least structured, datasets still missing a neutral reference layer.
-              </p>
-            </div>
           </div>
         </div>
       </section>

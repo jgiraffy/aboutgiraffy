@@ -23,14 +23,14 @@ const Navigation = () => {
               className="px-4 py-2 text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors rounded-md hover:bg-primary-foreground/10"
               activeClassName="text-primary-foreground bg-primary-foreground/10"
             >
-              Companies
+              For Business
             </NavLink>
             <NavLink
               to="/investor"
               className="px-4 py-2 text-sm font-medium text-primary-foreground/80 hover:text-primary-foreground transition-colors rounded-md hover:bg-primary-foreground/10"
               activeClassName="text-primary-foreground bg-primary-foreground/10"
             >
-              Investor
+              For Investors
             </NavLink>
             <NavLink
               to="/pr-media"

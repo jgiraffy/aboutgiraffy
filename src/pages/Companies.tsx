@@ -170,7 +170,7 @@ const Companies = () => {
       {/* Customer Experience Section */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">

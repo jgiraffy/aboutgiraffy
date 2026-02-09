@@ -151,7 +151,7 @@ const Companies = () => {
               <div className="grid gap-3 mb-6">
                 {marketIntelFeatures.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -178,8 +178,8 @@ const Companies = () => {
                 <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
                   <Users className="w-6 h-6 text-primary" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Customer Experience & Brand Insight
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap">
+                  Customer Experience &amp; Brand Insight
                 </h2>
               </div>
               
@@ -190,7 +190,7 @@ const Companies = () => {
               <div className="grid gap-3 mb-6">
                 {customerInsights.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                    <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -277,7 +277,7 @@ const Companies = () => {
           <div className="grid gap-4 mb-6">
             {teamBenefits.map(({ team, benefit }, index) => (
               <div key={index} className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
                 <span className="text-foreground">
                   <strong>{team}</strong> {benefit}
                 </span>
@@ -336,7 +336,7 @@ const Companies = () => {
           <div className="grid gap-4 mb-8">
             {differentiators.map((item, index) => (
               <div key={index} className="flex items-start gap-3 bg-secondary rounded-lg p-4 border border-border">
-                <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
                 <span className="text-foreground">{item}</span>
               </div>
             ))}

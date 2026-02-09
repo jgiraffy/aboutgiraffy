@@ -21,8 +21,8 @@ const Index = () => {
       <VisionSection />
       <TeamSection />
       <AdvisorsSection />
-      <ValuesSection />
       <FAQSection />
+      <ValuesSection />
     </main>
   );
 };

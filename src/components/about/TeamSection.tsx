@@ -58,31 +58,38 @@ const renderWithLinks = (text: string) => {
 
 const MemberCard = ({ member }: { member: TeamMember }) => (
   <div className={`bg-card border border-border rounded-xl p-6 ${member.bio ? "text-left" : "text-center"}`}>
-    <div className={`relative ${member.bio ? "flex items-center gap-4 mb-4" : "inline-block mb-4"}`}>
-      <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-        <span className="text-2xl font-bold text-accent-foreground">
-          {member.initials}
-        </span>
-      </div>
-      <div>
-        <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
-        <p className="text-sm text-primary font-medium">{member.role}</p>
-      </div>
-    </div>
-    {!member.bio && (
+    {member.bio ? (
       <>
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+            <span className="text-2xl font-bold text-accent-foreground">{member.initials}</span>
+          </div>
+          <div>
+            <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
+            <p className="text-sm text-primary font-medium">{member.role}</p>
+          </div>
+        </div>
+        <div className="space-y-3 mt-2">
+          {member.bio.map((paragraph, i) => (
+            <p key={i} className="text-muted-foreground text-sm leading-relaxed">
+              {renderWithLinks(paragraph)}
+            </p>
+          ))}
+        </div>
+      </>
+    ) : (
+      <>
+        <div className="relative inline-block mb-4">
+          <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center mx-auto">
+            <span className="text-2xl font-bold text-accent-foreground">{member.initials}</span>
+          </div>
+          <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+            <Linkedin className="w-4 h-4 text-primary-foreground" />
+          </div>
+        </div>
         <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
         <p className="text-sm text-primary font-medium">{member.role}</p>
       </>
-    )}
-    {member.bio && (
-      <div className="space-y-3 mt-2">
-        {member.bio.map((paragraph, i) => (
-          <p key={i} className="text-muted-foreground text-sm leading-relaxed">
-            {paragraph}
-          </p>
-        ))}
-      </div>
     )}
   </div>
 );

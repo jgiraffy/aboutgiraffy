@@ -62,18 +62,7 @@ const Companies = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-primary py-20 lg:py-28 relative">
-        <div className="absolute top-24 right-6 flex items-center gap-2 z-10">
-          <span className="text-primary-foreground/60 text-sm">Already a customer?</span>
-          <a
-            href="https://business.giraffy.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 text-sm border border-primary-foreground/30 text-primary-foreground font-medium rounded-lg hover:bg-primary-foreground/10 transition-colors"
-          >
-            Log in
-          </a>
-        </div>
+      <section className="bg-primary py-20 lg:py-28">
         <div className="container max-w-4xl mx-auto px-6 text-center">
           
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
@@ -91,6 +80,17 @@ const Companies = () => {
             <MessageCircle className="w-5 h-5" />
             Contact via WhatsApp
           </a>
+          <div className="flex items-center justify-center gap-2 mt-6">
+            <span className="text-primary-foreground/60 text-sm">Already a customer?</span>
+            <a
+              href="https://business.giraffy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary-foreground font-medium underline hover:text-primary-foreground/80 transition-colors"
+            >
+              Log in
+            </a>
+          </div>
         </div>
       </section>
 

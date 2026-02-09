@@ -218,21 +218,20 @@ const Companies = () => {
                 Decision-Time Visibility
               </h2>
               
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Giraffy connects companies with customers when they are actively comparing options. Through clear listings, category presence, and optional sponsored placements, companies can:
+              <p className="text-base text-foreground mb-6 leading-relaxed">
+                Giraffy shows your brand to customers when they are actively comparing options.
               </p>
               
-              <div className="grid gap-3 mb-6">
-                {visibilityFeatures.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
+              <p className="text-base text-foreground mb-6 leading-relaxed">
+                Each product category includes one sponsored position. This keeps comparisons clear and fair, with no auctions and no clutter.
+              </p>
               
-              <p className="text-muted-foreground">
-                Benefit from the Organic Halo Effect: Drive a significant uplift across your entire brand, as high intent visibility in sponsored slots has been observed to increase clicks on a provider's organic listings by an additional 15–20%
+              <p className="text-base text-foreground mb-6 leading-relaxed">
+                Sponsored placements typically drive around 20% more engagement on the placement itself. Providers also see an additional uplift of around 20% across their organic listings, as increased visibility improves overall brand consideration.
+              </p>
+              
+              <p className="text-base text-foreground leading-relaxed">
+                This means more demand at the point of decision, not just more traffic.
               </p>
             </div>
             

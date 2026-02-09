@@ -232,7 +232,7 @@ const Companies = () => {
               </div>
               
               <p className="text-muted-foreground">
-                Performance is transparent and measurable, with options to pay based on outcomes, not impressions.
+                Benefit from the Organic Halo Effect: Drive a significant uplift across your entire brand, as high intent visibility in sponsored slots has been observed to increase clicks on a provider's organic listings by an additional 15–20%
               </p>
             </div>
             

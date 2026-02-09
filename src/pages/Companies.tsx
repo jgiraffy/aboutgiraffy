@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import FAQSection from "@/components/FAQSection";
 import { Button } from "@/components/ui/button";
-import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
+import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight, MessageCircle } from "lucide-react";
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
@@ -78,14 +78,25 @@ const Companies = () => {
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8">
             Giraffy for Business is a market intelligence and visibility platform for companies operating in telecoms, banking, finance and insurance markets.
           </p>
-          <a
-            href="https://business.giraffy.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-base"
-          >
-            Login
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://business.giraffy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-base"
+            >
+              Login
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-colors text-base"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Contact via WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
@@ -409,9 +420,15 @@ const Companies = () => {
             Giraffy gives you the clarity to act.
           </p>
           
-          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8">
-            Request Access or Book a Demo
-          </Button>
+          <a
+            href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"
+          >
+            <MessageCircle className="w-5 h-5" />
+            Get in Touch via WhatsApp
+          </a>
         </div>
       </section>
 

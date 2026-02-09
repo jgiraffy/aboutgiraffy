@@ -72,10 +72,10 @@ const Companies = () => {
         <div className="container max-w-4xl mx-auto px-6 text-center">
           <p className="text-accent font-semibold mb-4 tracking-wide uppercase text-sm">Giraffy for Business</p>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            See the Market Clearly.<br />Compete with Confidence.
+            See the Market Clearly.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8">
-            Giraffy for Business is a market intelligence and visibility platform for companies operating in household finance.
+            Giraffy for Business is a market intelligence and visibility platform for companies operating in telecoms, banking, finance and insurance markets.
           </p>
           <a
             href="https://business.giraffy.com"

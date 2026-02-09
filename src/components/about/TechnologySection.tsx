@@ -8,24 +8,24 @@ const TechnologySection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary">
       <div className="container max-w-4xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
           Market Intelligence that never sleeps
         </h2>
         
-        <p className="text-muted-foreground mb-8 leading-relaxed">
+        <p className="text-muted-foreground mb-10 leading-relaxed">
           Behind Giraffy is a technology platform designed to keep your options accurate, current, and complete.
         </p>
         
-        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
+        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
           The Giraffy Radar
         </h3>
-        <p className="text-muted-foreground leading-relaxed mb-8">
+        <p className="text-muted-foreground leading-relaxed mb-10">
           While other sites wait for providers to send them updates, our in house technology, Giraffy Radar, actively tracks for changes. We monitor the market 24/7 to reflect real time pricing and availability.
         </p>
         
-        <div className="space-y-4 mb-10">
+        <div className="space-y-5 mb-12">
           {capabilities.map(({ icon: Icon, title, text }) => (
             <div key={title} className="flex items-center gap-4">
               <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">

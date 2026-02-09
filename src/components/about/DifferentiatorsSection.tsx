@@ -25,12 +25,12 @@ const DifferentiatorsSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container max-w-5xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
           What Makes Us Different
         </h2>
-        <p className="text-muted-foreground mb-12 max-w-2xl">
+        <p className="text-muted-foreground mb-14 max-w-2xl">
           We operate by four simple promises to you:
         </p>
         

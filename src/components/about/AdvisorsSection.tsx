@@ -30,12 +30,12 @@ const advisors: Advisor[] = [
 
 const AdvisorsSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-secondary">
+    <section className="py-20 lg:py-32 bg-secondary">
       <div className="container max-w-5xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
           Our Advisors
         </h2>
-        <p className="text-muted-foreground mb-10 max-w-2xl leading-relaxed">
+        <p className="text-muted-foreground mb-12 max-w-2xl leading-relaxed">
           Giraffy is supported by advisors with experience across technology, data, and consumer marketplaces. They help guide our thinking as we grow, ensuring Giraffy stays focused on accuracy, independence, and long-term trust.
         </p>
         

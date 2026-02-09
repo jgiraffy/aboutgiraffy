@@ -1,8 +1,8 @@
 const IntroSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-20 lg:py-32 bg-background">
       <div className="container max-w-4xl mx-auto px-6">
-        <p className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed italic text-center mb-16">
+        <p className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed italic text-center mb-20">
           When we started Giraffy in 2025, we set out to do things differently. We wanted to show people the full market for everyday finance in one place, creating a clear alternative to confusing sites that only show part of the picture.
         </p>
 
@@ -20,8 +20,8 @@ const IntroSection = () => {
             <span className="font-bold text-foreground">Giraffy was built to change that.</span> We believe that seeing the full market is the only way to build real trust. We bring 100% of live household finance deals together, so you can compare fairly, avoid surprises, and switch with confidence.
           </p>
 
-          <div className="mt-8 pt-8 border-t border-border">
-            <p className="text-lg font-semibold text-foreground mb-6 text-center">
+          <div className="mt-12 pt-10 border-t border-border">
+            <p className="text-lg font-semibold text-foreground mb-8 text-center">
               Available across these countries
             </p>
             <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-6 justify-items-center">

@@ -12,7 +12,7 @@ const founders: TeamMember[] = [
 ];
 
 const team: TeamMember[] = [
-  { name: "Saja Alqurnas", role: "Saudi Arabia Lead", initials: "SA" },
+  
   { name: "Joel Clark", role: "Project and Insights Lead", initials: "JC" },
   { name: "Mohammed Elhafiz", role: "Head of Partnerships", initials: "ME" },
   { name: "Ismail Amara", role: "Marketing and Content Lead", initials: "IA" },

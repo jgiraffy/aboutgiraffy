@@ -144,28 +144,6 @@ const Companies = () => {
         </div>
       </section>
 
-      {/* One Platform Section */}
-      <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            One Platform. Multiple Capabilities.
-          </h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Giraffy for Business brings together market analytics, customer experience insight, visibility, and performance tools in a single platform, all powered by the same underlying data.
-          </p>
-          
-          <div className="bg-primary rounded-xl p-6 md:p-8 flex items-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-accent/30 flex items-center justify-center flex-shrink-0">
-              <Radar className="w-7 h-7 text-accent" />
-            </div>
-            <div>
-              <p className="text-primary-foreground font-bold text-lg">Powered by Giraffy Radar</p>
-              <p className="text-primary-foreground/80 text-sm">Our in house technology that continuously tracks live market activity</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Market Intelligence Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
@@ -179,7 +157,16 @@ const Companies = () => {
                   Market Intelligence
                 </h2>
               </div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
+              
+              <div className="bg-primary rounded-xl p-5 flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center flex-shrink-0">
+                  <Radar className="w-6 h-6 text-accent" />
+                </div>
+                <div>
+                  <p className="text-primary-foreground font-bold text-base">Powered by Giraffy Radar</p>
+                  <p className="text-primary-foreground/80 text-sm">Our in house technology that continuously tracks live market activity</p>
+                </div>
+              </div>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:

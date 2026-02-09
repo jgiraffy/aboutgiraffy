@@ -199,7 +199,7 @@ const Companies = () => {
               </p>
             </div>
             
-            <div className="rounded-xl overflow-hidden shadow-lg">
+            <div className="rounded-xl overflow-hidden shadow-lg lg:mt-16">
               <img 
                 src={customerExperienceVisual} 
                 alt="Customer experience visualization showing comparison behavior" 

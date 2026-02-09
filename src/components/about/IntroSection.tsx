@@ -20,7 +20,7 @@ const IntroSection = () => {
             <span className="font-bold text-foreground">Giraffy was built to change that.</span> We believe that seeing the full market is the only way to build real trust. We bring 100% of live household finance deals together, so you can compare fairly, avoid surprises, and switch with confidence.
           </p>
 
-          <div className="mt-12 pt-10 border-t border-border">
+          <div className="mt-12 pt-10">
             <p className="text-lg font-semibold text-foreground mb-8 text-center">
               Available across these countries
             </p>

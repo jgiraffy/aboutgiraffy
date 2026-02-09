@@ -38,10 +38,6 @@ const TechnologySection = () => {
             </div>
           ))}
         </div>
-        
-        <p className="text-muted-foreground italic border-t border-border pt-6">
-          At Giraffy, technology isn't just a feature, it's how we ensure you never miss a better deal.
-        </p>
       </div>
     </section>
   );

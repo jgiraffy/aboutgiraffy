@@ -296,9 +296,6 @@ const Companies = () => {
             ))}
           </div>
           
-          <p className="text-primary-foreground font-semibold text-lg mb-8">
-            Giraffy gives you the clarity to act.
-          </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

@@ -215,7 +215,20 @@ const Investor = () => {
         </div>
       </section>
 
-      <FAQSection />
+      <FAQSection faqs={[
+        {
+          question: "How is Giraffy's data defensible compared to search engines or AI?",
+          answer: "Search engines index the web, but they do not structure complex financial eligibility or track daily pricing shifts at scale. Giraffy creates a proprietary \"Ground Truth\" dataset that combines live market pricing with unique consumer signals. By capturing how users interact with and compare deals in real time, we build a behavioral data moat and a historical record that cannot be scraped or bought, creating a deep competitive advantage as the market evolves.",
+        },
+        {
+          question: "How is this a dual revenue stream if the platform is free for consumers?",
+          answer: "We do not charge consumers because their participation is what generates our most valuable data. Our revenue is entirely B2B driven, split between two high value streams. First, we sell our market intelligence and analytics software to providers who need an external view of the market. Second, we offer targeted, high intent visibility through sponsored placements for providers looking to reach \"finance ready\" users. We monetize the data and the access, rather than the consumer.",
+        },
+        {
+          question: "What is the expansion strategy for new territories?",
+          answer: "Giraffy began in Saudi Arabia to solve a personal challenge with opaque financial data, but we quickly identified a massive opportunity across 40+ global markets. Our strategy is two fold. In fragmented or underserved markets, we establish ourselves as the primary destination for clarity. In mature markets with established comparison sites, we do not compete for traffic; instead, we become the essential data and infrastructure layer that those systems and AI platforms rely on to function accurately.",
+        },
+      ]} />
     </main>
   );
 };

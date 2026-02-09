@@ -38,7 +38,7 @@ const team: TeamMember[] = [
 ];
 
 const linkMap: Record<string, string> = {
-  "Omniowl.com": "https://omniowl.com",
+  
   "Studee.com": "https://studee.com",
   "j-b.com.sa": "https://j-b.com.sa",
 };

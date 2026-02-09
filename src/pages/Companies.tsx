@@ -191,11 +191,8 @@ const Companies = () => {
                 ))}
               </ul>
               
-              <p className="text-base text-foreground font-medium mb-4">
-                This reveals why customers choose one provider over another, before conversion.
-              </p>
-              <p className="text-base text-foreground font-semibold">
-                Unlike surveys, this insight is based on what people actually do.
+              <p className="text-base text-foreground font-medium">
+                This reveals why customers choose one provider over another. Unlike surveys, this insight is based on what people actually do.
               </p>
             </div>
             

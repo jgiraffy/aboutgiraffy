@@ -136,14 +136,9 @@ const Companies = () => {
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-                  <BarChart3 className="w-6 h-6 text-primary" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Market Intelligence
-                </h2>
-              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Market Intelligence
+              </h2>
               
               <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
@@ -175,14 +170,9 @@ const Companies = () => {
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-                  <Users className="w-6 h-6 text-primary" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap">
-                  Customer Experience &amp; Brand Insight
-                </h2>
-              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap mb-6">
+                Customer Experience &amp; Brand Insight
+              </h2>
               
               <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                 Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:
@@ -215,14 +205,9 @@ const Companies = () => {
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-                  <Eye className="w-6 h-6 text-primary" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Visibility & Lead Generation
-                </h2>
-              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Visibility & Lead Generation
+              </h2>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Giraffy connects companies with customers when they are actively comparing options. Through clear listings, category presence, and optional sponsored placements, companies can:
@@ -256,14 +241,9 @@ const Companies = () => {
       {/* Performance Tools Section */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Performance & Growth Tools
-            </h2>
-          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Performance & Growth Tools
+          </h2>
           
           <p className="text-muted-foreground mb-6">
             Giraffy for Business supports teams across the organisation:
@@ -289,14 +269,9 @@ const Companies = () => {
       {/* Complex Markets Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <Shield className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Built for Complex, Regulated Markets
-            </h2>
-          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Built for Complex, Regulated Markets
+          </h2>
           
           <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
           
@@ -346,14 +321,9 @@ const Companies = () => {
       {/* Who It's For Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <Globe2 className="w-6 h-6 text-primary" />
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              Who Giraffy Is For
-            </h2>
-          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            Who Giraffy Is For
+          </h2>
           
           <p className="text-muted-foreground mb-6">Giraffy for Business is used by:</p>
           

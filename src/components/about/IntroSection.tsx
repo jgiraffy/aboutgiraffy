@@ -17,7 +17,7 @@ const IntroSection = () => {
           </p>
           
           <p>
-            <span className="font-bold text-foreground">Giraffy was built to change that.</span> We believe that seeing the full market is the only way to build real trust. We bring 100% of live household finance deals together so you can compare fairly, avoid surprises, and switch with total confidence.
+            <span className="font-bold text-foreground">Giraffy was built to change that.</span> We believe that seeing the full market is the only way to build real trust. We bring 100% of live household finance deals together, so you can compare fairly, avoid surprises, and switch with confidence.
           </p>
 
           <div className="mt-8 pt-8 border-t border-border">

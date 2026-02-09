@@ -26,6 +26,12 @@ const advisors: Advisor[] = [
     initials: "MV",
     description: "Global Head of Brand & Strategy. Strategic B2B Marketing Leader.",
   },
+  {
+    name: "Saja Alqurnas",
+    role: "Saudi Arabia Lead",
+    initials: "SA",
+    description: "",
+  },
 ];
 
 const AdvisorsSection = () => {

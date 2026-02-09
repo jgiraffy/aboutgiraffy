@@ -4,11 +4,29 @@ interface TeamMember {
   name: string;
   role: string;
   initials: string;
+  bio?: string[];
 }
 
 const founders: TeamMember[] = [
-  { name: "Jason Lea", role: "Co-Founder & CEO", initials: "JL" },
-  { name: "Ralph Forgeon", role: "Co-Founder & CTO", initials: "RF" },
+  {
+    name: "Jason Lea",
+    role: "Co-Founder & CEO",
+    initials: "JL",
+    bio: [
+      "Jason is a consumer technology founder with deep experience in comparison platforms and fintech.",
+      "He helped build the uSwitch mobile app and was a senior team member through uSwitch's acquisition by Zoopla, and its later acquisition by Silver Lake / Red Ventures. Jason went on to found Omniowl.com, a university comparison website that was acqui-hired by Studee.com.",
+      "He later worked at 11:FS on Banque Saudi Fransi's digital bank launch (j-b.com.sa), before moving to Saudi Arabia to work at Ajlan & Bros. Giraffy was born out of Jason's experience living in Saudi Arabia and struggling to navigate everyday banking and telecoms without clear, trustworthy information.",
+    ],
+  },
+  {
+    name: "Ralph Forgeon",
+    role: "Co-Founder & CTO",
+    initials: "RF",
+    bio: [
+      "Ralph is a technologist specialising in AI, automation, and data driven systems.",
+      "He has worked across organisations including Deloitte, Airbnb, and Exobrain AI, as well as on fintech platforms and marketplaces. At Giraffy, Ralph leads engineering and technology, building the systems that keep market data accurate, current, and reliable across countries.",
+    ],
+  },
 ];
 
 const team: TeamMember[] = [
@@ -19,19 +37,33 @@ const team: TeamMember[] = [
 ];
 
 const MemberCard = ({ member }: { member: TeamMember }) => (
-  <div className="bg-card border border-border rounded-xl p-6 text-center">
-    <div className="relative inline-block mb-4">
-      <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center mx-auto">
+  <div className={`bg-card border border-border rounded-xl p-6 ${member.bio ? "text-left" : "text-center"}`}>
+    <div className={`relative ${member.bio ? "flex items-center gap-4 mb-4" : "inline-block mb-4"}`}>
+      <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
         <span className="text-2xl font-bold text-accent-foreground">
           {member.initials}
         </span>
       </div>
-      <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-        <Linkedin className="w-4 h-4 text-primary-foreground" />
+      <div>
+        <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
+        <p className="text-sm text-primary font-medium">{member.role}</p>
       </div>
     </div>
-    <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
-    <p className="text-sm text-primary font-medium">{member.role}</p>
+    {!member.bio && (
+      <>
+        <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
+        <p className="text-sm text-primary font-medium">{member.role}</p>
+      </>
+    )}
+    {member.bio && (
+      <div className="space-y-3 mt-2">
+        {member.bio.map((paragraph, i) => (
+          <p key={i} className="text-muted-foreground text-sm leading-relaxed">
+            {paragraph}
+          </p>
+        ))}
+      </div>
+    )}
   </div>
 );
 

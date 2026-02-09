@@ -9,7 +9,7 @@ const VisionSection = () => {
           To become the most trusted place in the world to understand household bills and everyday finance.
         </p>
         <p className="mt-10 text-lg opacity-80">
-          A place people return to for clarity, whether they're comparing options, checking details, or learning how a market works.
+          A place people return to for clarity. Whether they're comparing options, checking details, or learning how a market works.
         </p>
       </div>
     </section>

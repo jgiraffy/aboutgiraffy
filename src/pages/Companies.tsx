@@ -142,8 +142,6 @@ const Companies = () => {
                 </h2>
               </div>
               
-              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
-              
               <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
               </p>
@@ -155,12 +153,15 @@ const Companies = () => {
               </ul>
             </div>
             
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img 
-                src={marketIntelligenceVisual} 
-                alt="Market Intelligence visualization showing data charts and analytics" 
-                className="w-full h-auto"
-              />
+            <div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src={marketIntelligenceVisual} 
+                  alt="Market Intelligence visualization showing data charts and analytics" 
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide mt-3">Powered by Giraffy Radar</p>
             </div>
           </div>
         </div>

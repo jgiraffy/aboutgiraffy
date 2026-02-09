@@ -156,10 +156,6 @@ const Companies = () => {
                   </div>
                 ))}
               </div>
-              
-              <p className="text-muted-foreground italic">
-                This is not a snapshot. It's a living view of the market.
-              </p>
             </div>
             
             <div className="rounded-xl overflow-hidden shadow-lg">

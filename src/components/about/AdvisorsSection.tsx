@@ -25,16 +25,11 @@ const AdvisorsSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.about.advisors.list.map((advisor) => (
             <div key={advisor.name} className="bg-card border border-border rounded-xl p-6 text-center">
-              <div className="relative inline-block mb-4">
-                <img
-                  src={advisorPhotos[advisor.name]}
-                  alt={advisor.name}
-                  className="w-20 h-20 rounded-full object-cover mx-auto"
-                />
-                <div className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-primary flex items-center justify-center">
-                  <Linkedin className="w-3.5 h-3.5 text-primary-foreground" />
-                </div>
-              </div>
+              <img
+                src={advisorPhotos[advisor.name]}
+                alt={advisor.name}
+                className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
+              />
               <h3 className="font-bold text-foreground">{advisor.name}</h3>
               <p className="text-sm text-primary font-medium mb-3">{advisor.role}</p>
               <p className="text-sm text-muted-foreground leading-relaxed">{advisor.description}</p>

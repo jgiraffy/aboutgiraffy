@@ -11,7 +11,7 @@ const Companies = () => {
     "See their products alongside every relevant competitor",
     "Track pricing, eligibility, and positioning changes",
     "Understand category level and provider level trends",
-    "Analyse how markets evolve over time",
+    "See how markets change over time",
   ];
 
   const customerInsights = [
@@ -40,14 +40,6 @@ const Companies = () => {
     "Pre decision insight, not just post conversion metrics",
     "Neutral, external perspective",
     "Longitudinal market history",
-  ];
-
-  const audiences = [
-    "Telecom operators",
-    "Retail and digital banks",
-    "Insurers",
-    "Consumer finance providers",
-    "Fintech platforms",
   ];
 
   const useCases = [
@@ -246,15 +238,19 @@ const Companies = () => {
         </div>
       </section>
 
-      {/* Performance Tools Section */}
+      {/* Who Giraffy Is For Section */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Performance & Growth Tools
+            Who Giraffy Is For
           </h2>
           
-          <p className="text-muted-foreground mb-6">
-            Giraffy for Business supports teams across the organisation:
+          <p className="text-base text-foreground mb-6 leading-relaxed">
+            Giraffy for Business is used by telecom operators, banks, insurers, fintechs, and consumer finance providers that operate in complex, competitive markets.
+          </p>
+          
+          <p className="text-base text-foreground mb-6 leading-relaxed">
+            Inside these organisations, Giraffy supports teams across the business:
           </p>
           
           <div className="grid gap-4 mb-6">
@@ -269,85 +265,12 @@ const Companies = () => {
           </div>
           
           <p className="text-primary font-semibold">
-            Instead of siloed tools, Giraffy provides a shared source of truth.
+            Instead of separate tools and partial data, teams work from a shared view of the market.
           </p>
         </div>
       </section>
 
       {/* Complex Markets Section */}
-      <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Built for Complex, Regulated Markets
-          </h2>
-          
-          <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
-          
-          <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Rules differ by provider</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Eligibility matters</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Transparency is limited</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Data is fragmented</span>
-            </div>
-          </div>
-          
-          <p className="text-muted-foreground">
-            We operate across multiple countries and categories, building a consistent intelligence layer that becomes more valuable over time.
-          </p>
-        </div>
-      </section>
-
-      {/* Why Different Section */}
-      <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
-            Why Giraffy Is Different
-          </h2>
-          
-          <div className="grid gap-4 mb-8">
-            {differentiators.map((item, index) => (
-              <div key={index} className="flex items-start gap-3 bg-secondary rounded-lg p-4 border border-border">
-                <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
-                <span className="text-foreground">{item}</span>
-              </div>
-            ))}
-          </div>
-          
-          <p className="text-center text-primary font-semibold text-lg">
-            Giraffy sits before the transaction, where real decisions are made.
-          </p>
-        </div>
-      </section>
-
-      {/* Who It's For Section */}
-      <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Who Giraffy Is For
-          </h2>
-          
-          <p className="text-muted-foreground mb-6">Giraffy for Business is used by:</p>
-          
-          <div className="flex flex-wrap gap-3 mb-8">
-            {audiences.map((item, index) => (
-              <span key={index} className="bg-background rounded-full px-4 py-2 text-foreground border border-border text-sm">
-                {item}
-              </span>
-            ))}
-          </div>
-          
-          <p className="text-muted-foreground">
-            Any company that needs to understand, and compete in, household finance markets.
-          </p>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 lg:py-28 bg-primary">

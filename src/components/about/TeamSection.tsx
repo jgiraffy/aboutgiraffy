@@ -15,7 +15,8 @@ const founders: TeamMember[] = [
     bio: [
       "Jason is a consumer technology founder with deep experience in comparison platforms and fintech.",
       "He helped build the uSwitch mobile app and was a senior team member through uSwitch's acquisition by Zoopla, and its later acquisition by Silver Lake / Red Ventures. Jason went on to found Omniowl.com, a university comparison website that was acqui-hired by Studee.com.",
-      "He later worked at 11:FS on Banque Saudi Fransi's digital bank launch (j-b.com.sa), before moving to Saudi Arabia to work at Ajlan & Bros. Giraffy was born out of Jason's experience living in Saudi Arabia and struggling to navigate everyday banking and telecoms without clear, trustworthy information.",
+      "He later worked at 11:FS on Banque Saudi Fransi's digital bank launch (j-b.com.sa), before moving to Saudi Arabia to work at Ajlan & Bros.",
+      "Giraffy was born out of his personal struggle to navigate everyday banking and telecoms without clear, trustworthy information.",
     ],
   },
   {

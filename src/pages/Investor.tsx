@@ -123,44 +123,11 @@ const Investor = () => {
             The Giraffy Approach
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
-            <p className="text-lg font-medium text-foreground">
-              Giraffy builds full market visibility first.
+            <p>
+              We build full market visibility first. By tracking 100% of live deals and structuring products, pricing, and eligibility consistently, we create a compounding system. This is a cycle where coverage builds trust, usage generates behavioral data, and data produces intelligence.
             </p>
-            
-            <div className="space-y-3">
-              <p className="font-medium text-foreground">We:</p>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span>Track 100% of live deals across markets</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span>Structure products, pricing, and eligibility consistently</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span>Update data daily using in house technology</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span>Capture real comparison and decision behaviour</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-background rounded-lg p-6 border border-border mt-8">
-              <p className="font-medium text-foreground mb-4">This creates a compounding system:</p>
-              <p className="text-primary font-semibold">
-                Coverage → Trust → Usage → Behavioural Data → Intelligence
-              </p>
-              <p className="mt-4 text-sm">
-                Each new country strengthens the intelligence layer across all existing markets.
-              </p>
-            </div>
-            
-            <p className="text-foreground font-medium">
-              Giraffy scales by adding truth, not by adding users alone.
+            <p>
+              Each new country strengthens the intelligence layer across all existing markets, allowing Giraffy to scale by adding truth rather than just adding users.
             </p>
           </div>
         </div>

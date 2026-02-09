@@ -63,7 +63,7 @@ const Companies = () => {
       
       {/* Hero Section */}
       <section className="bg-primary py-20 lg:py-28 relative">
-        <div className="absolute top-6 right-6 flex items-center gap-2">
+        <div className="absolute top-24 right-6 flex items-center gap-2 z-10">
           <span className="text-primary-foreground/60 text-sm">Already a customer?</span>
           <a
             href="https://business.giraffy.com"

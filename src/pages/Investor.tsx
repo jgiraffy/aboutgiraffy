@@ -18,7 +18,7 @@ const Investor = () => {
             Join the Giraffy Journey:
           </p>
           <a
-            href="https://typeform.com"
+            href="https://giraffy.fillout.com/investor"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"
@@ -204,7 +204,7 @@ const Investor = () => {
               Follow our progress, be notified when we open our next round, or learn more about the opportunity.
             </p>
             <a
-              href="https://typeform.com"
+              href="https://giraffy.fillout.com/investor"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-lg"

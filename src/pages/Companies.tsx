@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import FAQSection from "@/components/FAQSection";
 import { Button } from "@/components/ui/button";
-import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight, MessageCircle } from "lucide-react";
+import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight, MessageCircle, Mail } from "lucide-react";
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
@@ -71,15 +71,24 @@ const Companies = () => {
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8">
             Stop guessing why you win or lose. Access the system of record for real time market movements, competitor pricing, and pre transaction consumer behaviour.
           </p>
-          <a
-            href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-base"
-          >
-            <MessageCircle className="w-5 h-5" />
-            Contact via WhatsApp
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-base"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Contact via WhatsApp
+            </a>
+            <a
+              href="mailto:business@giraffy.com"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-colors text-base"
+            >
+              <Mail className="w-5 h-5" />
+              Contact via Email
+            </a>
+          </div>
         </div>
         <div className="absolute bottom-6 right-6 flex items-center gap-2">
           <span className="text-primary-foreground/60 text-sm">Already a customer?</span>

@@ -36,6 +36,26 @@ const team: TeamMember[] = [
   { name: "Ismail Amara", role: "Marketing and Content Lead", initials: "IA" },
 ];
 
+const linkMap: Record<string, string> = {
+  "Omniowl.com": "https://omniowl.com",
+  "Studee.com": "https://studee.com",
+  "j-b.com.sa": "https://j-b.com.sa",
+};
+
+const renderWithLinks = (text: string) => {
+  const regex = new RegExp(`(${Object.keys(linkMap).map(k => k.replace(/\./g, "\\.")).join("|")})`, "g");
+  const parts = text.split(regex);
+  return parts.map((part, i) =>
+    linkMap[part] ? (
+      <a key={i} href={linkMap[part]} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+        {part}
+      </a>
+    ) : (
+      part
+    )
+  );
+};
+
 const MemberCard = ({ member }: { member: TeamMember }) => (
   <div className={`bg-card border border-border rounded-xl p-6 ${member.bio ? "text-left" : "text-center"}`}>
     <div className={`relative ${member.bio ? "flex items-center gap-4 mb-4" : "inline-block mb-4"}`}>

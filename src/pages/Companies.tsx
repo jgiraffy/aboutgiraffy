@@ -147,7 +147,7 @@ const Companies = () => {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide mt-3">Powered by Giraffy Radar</p>
+              
             </div>
           </div>
         </div>

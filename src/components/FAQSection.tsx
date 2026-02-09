@@ -16,24 +16,34 @@ interface FAQSectionProps {
 
 const defaultFAQs: FAQItem[] = [
   {
-    question: "What's the difference between free and paid?",
+    question: "How is Giraffy different from other comparison sites?",
     answer:
-      "Giraffy's consumer platform is free to use. Giraffy for Business is a paid platform for companies that want access to market intelligence, customer insight, and visibility tools.",
+      "Most comparison sites only show providers they have a commercial deal with in a \"pay to play\" model. Giraffy is built differently. We use our own Giraffy Radar technology to scan and show the entire market regardless of whether a provider pays us. Our goal is completeness over commission.",
   },
   {
-    question: "Do you charge to list deals?",
+    question: "Is Giraffy free to use?",
     answer:
-      "No. Giraffy lists 100% of live deals across all providers in every market we cover. Listings are never pay to play.",
+      "Yes. Giraffy is 100% free for consumers to browse, compare, and learn about the market. There are no hidden fees or subscriptions for individuals.",
   },
   {
-    question: "How is Giraffy different from digital ad platforms?",
+    question: "How do you make money if you show every deal?",
     answer:
-      "Digital ad platforms drive traffic through impressions and clicks. Giraffy provides structured market data, competitive intelligence, and visibility at the point of decision, not just awareness.",
+      "Transparency is our priority. Unlike other platforms, we do not receive referral fees or commissions when you switch providers. We primarily make money by selling our market intelligence software, Giraffy for Business, to telecoms, banks and insurers. We also occasionally feature sponsored ads at the top of the page. Crucially, these ads never change how we rank the rest of the market. We show you the best options based on data, even if that choice doesn't make us a penny.",
   },
   {
-    question: "Can you integrate via API?",
+    question: "How often is the information updated?",
     answer:
-      "Yes. Giraffy offers API access for companies and partners who want to integrate market data, pricing intelligence, or comparison tools into their own systems.",
+      "Our information is updated daily. Financial markets move fast, so we built Giraffy Radar to monitor providers 24/7. While other sites might show outdated snapshots, we reflect the most current pricing, terms, and availability as they happen.",
+  },
+  {
+    question: "Do you show deals from every bank and provider?",
+    answer:
+      "We aim for 100% market coverage. This includes major high street banks and telecom giants along with smaller, specialised providers that other sites often overlook. If a legitimate deal exists in the market, our goal is to have it on Giraffy.",
+  },
+  {
+    question: "In which countries is Giraffy available?",
+    answer:
+      "We are currently live in Saudi Arabia, the UAE, Kuwait, Bahrain, Qatar, Oman, the United Kingdom, Italy, and the Netherlands. We are constantly expanding into new regions to bring financial clarity to more people.",
   },
 ];
 

@@ -289,7 +289,7 @@ const Companies = () => {
           
           <p className="text-primary-foreground/80 mb-4">Whether you want to:</p>
           
-          <div className="grid sm:grid-cols-2 gap-3 mb-8 max-w-lg mx-auto text-left">
+          <div className="grid gap-3 mb-8 max-w-lg mx-auto text-left">
             {useCases.map((item, index) => (
               <div key={index} className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0" />

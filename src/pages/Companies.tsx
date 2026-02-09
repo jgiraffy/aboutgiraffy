@@ -115,7 +115,7 @@ const Companies = () => {
           </p>
           
           <p className="text-base text-foreground mb-6 leading-relaxed">
-            In Saudi Arabia, 40% of consumers compare financial products before committing to a purchase.
+            Across markets, 30–60% of consumers compare financial products before committing to a purchase.
           </p>
           
           <p className="text-base text-foreground mb-6 leading-relaxed">

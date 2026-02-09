@@ -1,42 +1,41 @@
 import { RefreshCw, BarChart3, Globe2 } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+
+const icons = [RefreshCw, BarChart3, Globe2];
 
 const TechnologySection = () => {
-  const capabilities = [
-    { icon: RefreshCw, title: "Always Up to Date", text: "No outdated snapshots or \"expired\" deals." },
-    { icon: BarChart3, title: "Live Tracking", text: "We catch price drops and new launches as they happen." },
-    { icon: Globe2, title: "Global Standards", text: "We maintain consistent, high quality data across every country we serve." },
-  ];
+  const { t } = useLanguage();
 
   return (
     <section className="py-20 lg:py-32 bg-secondary">
       <div className="container max-w-4xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-          Market Intelligence that never sleeps
+          {t.about.tech.title}
         </h2>
-        
         <p className="text-muted-foreground mb-10 leading-relaxed">
-          Behind Giraffy is a technology platform designed to keep your options accurate, current, and complete.
+          {t.about.tech.description}
         </p>
-        
         <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-          The Giraffy Radar
+          {t.about.tech.radarTitle}
         </h3>
         <p className="text-muted-foreground leading-relaxed mb-10">
-          While other sites wait for providers to send them updates, our in house technology, Giraffy Radar, actively tracks for changes. We monitor the market 24/7 to reflect real time pricing and availability.
+          {t.about.tech.radarDescription}
         </p>
-        
         <div className="space-y-5 mb-12">
-          {capabilities.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
-                <Icon className="w-5 h-5 text-primary" />
+          {t.about.tech.capabilities.map((cap, i) => {
+            const Icon = icons[i];
+            return (
+              <div key={i} className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
+                  <Icon className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <span className="font-semibold text-foreground">{cap.title}: </span>
+                  <span className="text-muted-foreground">{cap.text}</span>
+                </div>
               </div>
-              <div>
-                <span className="font-semibold text-foreground">{title}: </span>
-                <span className="text-muted-foreground">{text}</span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

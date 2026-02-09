@@ -7,7 +7,7 @@ import VisionSection from "@/components/about/VisionSection";
 import TeamSection from "@/components/about/TeamSection";
 import AdvisorsSection from "@/components/about/AdvisorsSection";
 import ValuesSection from "@/components/about/ValuesSection";
-import FooterSection from "@/components/about/FooterSection";
+
 
 const Index = () => {
   return (
@@ -21,7 +21,6 @@ const Index = () => {
       <TeamSection />
       <AdvisorsSection />
       <ValuesSection />
-      <FooterSection />
     </main>
   );
 };

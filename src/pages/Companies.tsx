@@ -90,7 +90,7 @@ const Companies = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             We help telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.
@@ -99,7 +99,7 @@ const Companies = () => {
       </section>
 
       {/* Why Companies Use Giraffy */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Why Companies Use Giraffy

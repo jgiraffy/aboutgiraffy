@@ -215,7 +215,7 @@ const Companies = () => {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Visibility & Lead Generation
+                Decision-Time Visibility
               </h2>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">

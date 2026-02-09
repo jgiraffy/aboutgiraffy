@@ -2,9 +2,13 @@ const IntroSection = () => {
   return (
     <section className="py-20 lg:py-32 bg-background">
       <div className="container max-w-4xl mx-auto px-6">
-        <p className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed italic text-center mb-28">
-          When we started Giraffy in 2025, we set out to do things differently. We wanted to show people the full market for everyday finance in one place, creating a clear alternative to confusing sites that only show part of the picture.
-        </p>
+        <div className="relative inline-block">
+          <div className="absolute inset-0 bg-accent/30 -skew-y-1 rounded-lg" aria-hidden="true" />
+          <p className="relative text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed italic text-center py-6 px-4">
+            When we started Giraffy in 2025, we set out to do things differently. We wanted to show people the full market for everyday finance in one place, creating a clear alternative to confusing sites that only show part of the picture.
+          </p>
+        </div>
+        <div className="mb-28" />
 
         <div className="space-y-6 text-muted-foreground leading-relaxed">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">Why Giraffy exists</h2>

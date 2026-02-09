@@ -87,7 +87,7 @@ const Companies = () => {
             See the Market Clearly.
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8">
-            Giraffy for Business is a market intelligence and visibility platform for companies operating in telecoms, banking, finance and insurance markets.
+            Stop guessing why you win or lose. Access the system of record for real time market movements, competitor pricing, and pre transaction consumer behaviour.
           </p>
           <a
             href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"

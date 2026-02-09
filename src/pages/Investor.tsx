@@ -49,7 +49,7 @@ const Investor = () => {
             {/* Live Markets */}
             <div className="mt-8 pt-8 border-t border-border">
               <p className="text-lg font-semibold text-foreground mb-6 text-center">
-                We are live in 10 markets
+                Available across these countries
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 {[
@@ -75,9 +75,6 @@ const Investor = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-center text-sm text-muted-foreground mt-6">
-                Rolling out new countries often
-              </p>
             </div>
           </div>
         </div>

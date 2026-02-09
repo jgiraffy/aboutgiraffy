@@ -114,17 +114,11 @@ const Companies = () => {
             Most providers rely on internal performance data and paid acquisition metrics, but these only show what happens after a customer chooses you. What is missing is visibility into the "Comparison Moment."
           </p>
           
-          <p className="text-base text-foreground mb-6 leading-relaxed">
-            Across markets, 30–60% of consumers compare financial products before committing to a purchase.
-          </p>
-          
-          <p className="text-base text-foreground mb-6 leading-relaxed">
-            Decisions are increasingly made before customers ever enter your funnel.
-          </p>
-          
-          <p className="text-base text-foreground leading-relaxed">
-            Giraffy provides the missing layer of external intelligence needed to see the full market reality.
-          </p>
+          <ol className="list-decimal list-inside space-y-3 text-base text-foreground leading-relaxed">
+            <li>Across markets, 30–60% of consumers compare financial products before committing to a purchase.</li>
+            <li>Decisions are increasingly made before customers ever enter your funnel.</li>
+            <li>Giraffy provides the missing layer of external intelligence needed to see the full market reality.</li>
+          </ol>
         </div>
       </section>
 

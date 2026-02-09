@@ -105,7 +105,7 @@ const Companies = () => {
 
       {/* Intro Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             <strong>Giraffy For Business</strong> helps telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.
           </p>
@@ -114,7 +114,7 @@ const Companies = () => {
 
       {/* Why Companies Use Giraffy */}
       <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             The Decision Gap
           </h2>
@@ -249,7 +249,7 @@ const Companies = () => {
 
       {/* Performance Tools Section */}
       <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             Performance & Growth Tools
           </h2>
@@ -277,7 +277,7 @@ const Companies = () => {
 
       {/* Complex Markets Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             Built for Complex, Regulated Markets
           </h2>
@@ -307,7 +307,7 @@ const Companies = () => {
 
       {/* Why Different Section */}
       <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
             Why Giraffy Is Different
           </h2>
@@ -329,7 +329,7 @@ const Companies = () => {
 
       {/* Who It's For Section */}
       <section className="py-16 lg:py-20 bg-secondary">
-        <div className="container max-w-4xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             Who Giraffy Is For
           </h2>

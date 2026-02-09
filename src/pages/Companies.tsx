@@ -115,20 +115,15 @@ const Companies = () => {
             Most providers rely on internal performance data and paid acquisition metrics, but these only show what happens after a customer chooses you. What is missing is visibility into the "Comparison Moment."
           </p>
           
-          <div className="space-y-4 text-base text-foreground leading-relaxed">
-            {[
-              "Across markets, 30–60% of consumers compare financial products before committing to a purchase.",
-              "Decisions are increasingly made before customers ever enter your funnel.",
-              "Giraffy provides the missing layer of external intelligence needed to see the full market reality.",
-            ].map((text, i) => (
-              <div key={i} className="flex items-start gap-3">
-                <span className="w-7 h-7 rounded-full border border-foreground flex items-center justify-center flex-shrink-0 text-sm font-semibold mt-0.5">
-                  {i + 1}
-                </span>
-                <span>{text}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-base text-foreground mb-4 leading-relaxed">
+            Across markets, 30–60% of consumers compare financial products before committing to a purchase.
+          </p>
+          <p className="text-base text-foreground mb-4 leading-relaxed">
+            Decisions are increasingly made before customers ever enter your funnel.
+          </p>
+          <p className="text-base text-foreground leading-relaxed">
+            Giraffy provides the missing layer of external intelligence needed to see the full market reality.
+          </p>
         </div>
       </section>
 

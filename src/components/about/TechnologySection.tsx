@@ -28,7 +28,7 @@ const TechnologySection = () => {
         <div className="space-y-5 mb-12">
           {capabilities.map(({ icon: Icon, title, text }) => (
             <div key={title} className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
                 <Icon className="w-5 h-5 text-primary" />
               </div>
               <div>

@@ -5,22 +5,22 @@ const DifferentiatorsSection = () => {
     {
       icon: CircleDot,
       title: "Completeness",
-      description: "We aim to cover the full market",
+      description: "We aim to cover the full market, not just the household names.",
     },
     {
       icon: Target,
       title: "Accuracy",
-      description: "Information is structured and kept current",
+      description: "We structure data so you can compare \"apples to apples\" without the confusion.",
     },
     {
       icon: Clock,
       title: "Freshness",
-      description: "Deals are updated daily using our own technology",
+      description: "Our deals are updated daily, if it exists in the market, it's on Giraffy.",
     },
     {
       icon: Scale,
       title: "Neutrality",
-      description: "Options are shown based on relevance, not promotion",
+      description: "We don't play favorites. We rank options based on relevance to you, not commissions to us.",
     },
   ];
 
@@ -28,10 +28,10 @@ const DifferentiatorsSection = () => {
     <section className="py-16 lg:py-24 bg-background">
       <div className="container max-w-5xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          What Makes Giraffy Different
+          What Makes Us Different
         </h2>
-        <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-          Giraffy is built around a few simple principles:
+        <p className="text-muted-foreground mb-12 max-w-2xl">
+          We operate by four simple promises to you:
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -50,10 +50,6 @@ const DifferentiatorsSection = () => {
             </div>
           ))}
         </div>
-        
-        <p className="text-center text-muted-foreground mt-10 max-w-2xl mx-auto">
-          This approach helps make Giraffy a reliable reference point for understanding household finance.
-        </p>
       </div>
     </section>
   );

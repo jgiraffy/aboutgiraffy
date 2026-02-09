@@ -9,22 +9,18 @@ const IntroSection = () => {
         <div className="space-y-6 text-muted-foreground leading-relaxed">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">Why Giraffy exists</h2>
           <p>
-            Giraffy helps people understand household finance by showing the full market in one place.
+            In a world of "compare and save," it's surprisingly hard to see the truth.
           </p>
           
           <p>
-            Across mobile, internet, banking, loans, and insurance, people are asked to make important decisions without ever seeing all their options. Prices are unclear. Rules are hidden. Key differences are buried in small print. Most comparison sites only show part of the market, often what they're paid to show.
+            Across mobile, banking, loans, and insurance, you're often asked to make big financial decisions while only seeing half the picture. Prices are unclear. Fine print is buried. Most comparison sites are "pay to play," meaning they prioritize the providers who pay them the most commission, not the ones who offer you the best deal.
           </p>
           
-          <p className="font-medium text-foreground">
-            Giraffy exists to change that.
+          <p>
+            Giraffy was built to change that. We believe that seeing the full market is the only way to build real trust. We bring 100% of live household finance deals together so you can compare fairly, avoid surprises, and switch with total confidence.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold text-foreground pt-4">Seeing the full market builds trust</h2>
-          
-          <p>
-            We bring 100% of live household finance deals together, so people can see what actually exists, compare options fairly, understand what matters before applying or switching, and avoid unpleasant surprises.
-          </p>
 
           <div className="mt-8 pt-8 border-t border-border">
             <p className="text-lg font-semibold text-foreground mb-6 text-center">

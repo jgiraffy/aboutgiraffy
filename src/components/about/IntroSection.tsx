@@ -44,7 +44,7 @@ const IntroSection = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <span className="text-xs text-muted-foreground">{market.country}</span>
+                  <span className="text-xs text-muted-foreground text-center">{market.country}</span>
                 </div>
               ))}
             </div>

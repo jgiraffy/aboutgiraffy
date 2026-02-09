@@ -137,7 +137,7 @@ const Investor = () => {
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-            The Infrastructure Layer
+            The Infrastructure Moat
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>Over time, Giraffy becomes:</p>

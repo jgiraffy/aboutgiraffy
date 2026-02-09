@@ -32,7 +32,7 @@ const Investor = () => {
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <p className="text-lg">
-              Giraffy is building the system of record for household financial markets. We create structured and continuously updated views of finance across mobile, banking, and insurance, starting with the most complex markets and scaling globally. Our focus is not traffic or commissions, it is coverage, accuracy, and intelligence.
+              Giraffy is building the system of record for household financial markets. We create structured and continuously updated views of finance across telecoms, banking, finance and insurance, starting with the most complex markets and scaling globally. Our focus is not traffic or commissions, it is coverage, accuracy, and intelligence.
             </p>
         </div>
       </section>

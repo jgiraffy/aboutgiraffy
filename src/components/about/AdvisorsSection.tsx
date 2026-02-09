@@ -21,12 +21,6 @@ const advisors: Advisor[] = [
     description: "10+ years at top tech giants, including Google, Microsoft, and Amazon.",
   },
   {
-    name: "Megan Van Zyl",
-    role: "Marketing Consultant",
-    initials: "MV",
-    description: "Global Head of Brand & Strategy. Strategic B2B Marketing Leader.",
-  },
-  {
     name: "Saja Alqurnas",
     role: "Saudi Arabia Lead",
     initials: "SA",

@@ -91,15 +91,9 @@ const Companies = () => {
       {/* Intro Section */}
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             We help telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.
           </p>
-          
-          <div className="bg-secondary rounded-xl p-8 text-center">
-            <p className="text-foreground text-lg font-medium mb-2">Not guesses.</p>
-            <p className="text-foreground text-lg font-medium mb-2">Not partial views.</p>
-            <p className="text-primary text-2xl font-bold">The full market.</p>
-          </div>
         </div>
       </section>
 
@@ -124,18 +118,15 @@ const Companies = () => {
             What's missing is a clear, external view of the market before the transaction happens.
           </p>
           
-          <div className="bg-background rounded-xl p-6 border border-border">
-            <p className="text-muted-foreground mb-4">Companies struggle to see:</p>
-            <div className="grid gap-3">
-              {struggles.map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-destructive text-xs">?</span>
-                  </div>
-                  <span className="text-foreground">{item}</span>
+          <div className="grid gap-3">
+            {struggles.map((item, index) => (
+              <div key={index} className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-destructive text-xs">?</span>
                 </div>
-              ))}
-            </div>
+                <span className="text-foreground">{item}</span>
+              </div>
+            ))}
           </div>
           
           <p className="text-primary font-semibold text-lg mt-8">
@@ -158,15 +149,7 @@ const Companies = () => {
                 </h2>
               </div>
               
-              <div className="bg-primary rounded-xl p-5 flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center flex-shrink-0">
-                  <Radar className="w-6 h-6 text-accent" />
-                </div>
-                <div>
-                  <p className="text-primary-foreground font-bold text-base">Powered by Giraffy Radar</p>
-                  <p className="text-primary-foreground/80 text-sm">Our in house technology that continuously tracks live market activity</p>
-                </div>
-              </div>
+              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-4">Powered by Giraffy Radar</p>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:
@@ -225,7 +208,7 @@ const Companies = () => {
               
               <div className="grid sm:grid-cols-2 gap-4 mb-6">
                 {customerInsights.map((item, index) => (
-                  <div key={index} className="bg-secondary rounded-lg p-4 border border-border">
+                  <div key={index} className="bg-background rounded-lg p-4 border border-border">
                     <span className="text-foreground">{item}</span>
                   </div>
                 ))}
@@ -333,16 +316,16 @@ const Companies = () => {
           <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
           
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
+            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
               <span className="text-foreground">Rules differ by provider</span>
             </div>
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
+            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
               <span className="text-foreground">Eligibility matters</span>
             </div>
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
+            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
               <span className="text-foreground">Transparency is limited</span>
             </div>
-            <div className="bg-background rounded-lg p-4 border border-border text-center">
+            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
               <span className="text-foreground">Data is fragmented</span>
             </div>
           </div>

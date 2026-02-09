@@ -52,7 +52,7 @@ const Investor = () => {
       </section>
 
       {/* The Market Reality */}
-      <section className="py-16 lg:py-20 bg-secondary/30">
+      <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             The Market Reality
@@ -136,7 +136,7 @@ const Investor = () => {
       </section>
 
       {/* The Giraffy Approach */}
-      <section className="py-16 lg:py-20 bg-secondary/30">
+      <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             The Giraffy Approach

@@ -1,4 +1,4 @@
-import { Radar, RefreshCw, BarChart3, Globe2 } from "lucide-react";
+import { RefreshCw, BarChart3, Globe2 } from "lucide-react";
 
 const TechnologySection = () => {
   const capabilities = [
@@ -18,21 +18,13 @@ const TechnologySection = () => {
           Behind Giraffy is a technology platform designed to keep markets accurate, current, and complete.
         </p>
         
-        {/* Giraffy Radar highlight */}
-        <div className="bg-background rounded-xl p-6 md:p-8 mb-8 border border-border">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-              <Radar className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h3 className="font-bold text-foreground text-lg">Giraffy Radar</h3>
-              <p className="text-sm text-muted-foreground">Our in-house technology</p>
-            </div>
-          </div>
-          <p className="text-muted-foreground leading-relaxed">
-            We use Giraffy Radar to track providers and update deals daily. This allows us to reflect real changes in pricing, availability, and terms — not outdated snapshots.
-          </p>
-        </div>
+        {/* Giraffy Radar subsection */}
+        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
+          Giraffy Radar
+        </h3>
+        <p className="text-muted-foreground leading-relaxed mb-8">
+          We use Giraffy Radar, our in-house technology, to track providers and update deals daily. This allows us to reflect real changes in pricing, availability, and terms, not outdated snapshots.
+        </p>
         
         <p className="text-muted-foreground mb-6">
           By continuously monitoring markets, we're able to:

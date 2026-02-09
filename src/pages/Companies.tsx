@@ -7,13 +7,6 @@ import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
 
 const Companies = () => {
-  const struggles = [
-    "How customers really compare options",
-    "Where they win or lose at decision time",
-    "How pricing, eligibility, and messaging affect outcomes",
-    "How competitors move, and when",
-  ];
-
   const marketIntelFeatures = [
     "See their products alongside every relevant competitor",
     "Track pricing, eligibility, and positioning changes",
@@ -114,36 +107,23 @@ const Companies = () => {
       <section className="py-16 lg:py-20 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Why Companies Use Giraffy
+            The Decision Gap
           </h2>
-          <p className="text-muted-foreground mb-8 leading-relaxed">
-            Household finance markets are complex, competitive, and constantly changing.
+          
+          <p className="text-muted-foreground mb-6 leading-relaxed">
+            Most providers rely on internal performance data and paid acquisition metrics, but these only show what happens after a customer chooses you. What is missing is visibility into the "Comparison Moment."
           </p>
           
-          <p className="text-muted-foreground mb-4">Most companies rely on:</p>
-          <ul className="text-muted-foreground mb-8 space-y-2 pl-6">
-            <li className="list-disc">Internal performance data</li>
-            <li className="list-disc">Paid acquisition metrics</li>
-            <li className="list-disc">Fragmented competitor research</li>
-          </ul>
-          
-          <p className="text-foreground font-semibold mb-6">
-            What's missing is a clear, external view of the market before the transaction happens.
+          <p className="text-foreground font-semibold mb-6 text-lg">
+            In Saudi Arabia, 40% of consumers compare financial products before committing to a purchase.
           </p>
           
-          <div className="grid gap-3">
-            {struggles.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-destructive text-xs">?</span>
-                </div>
-                <span className="text-foreground">{item}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-muted-foreground mb-6 leading-relaxed">
+            Decisions are increasingly made before customers ever enter your funnel.
+          </p>
           
-          <p className="text-primary font-semibold text-lg mt-8">
-            Giraffy exists to provide that missing layer.
+          <p className="text-primary font-semibold text-lg">
+            Giraffy provides the missing layer of external intelligence needed to see the full market reality.
           </p>
         </div>
       </section>

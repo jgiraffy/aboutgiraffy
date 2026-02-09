@@ -79,16 +79,11 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
           {t.about.team.members.map((member) => (
             <div key={member.name} className="bg-card border border-border rounded-xl p-6 text-center">
-              <div className="relative inline-block mb-4">
-                <img
-                  src={memberPhotos[member.name]}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full object-cover mx-auto"
-                />
-                <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                  <Linkedin className="w-4 h-4 text-primary-foreground" />
-                </div>
-              </div>
+              <img
+                src={memberPhotos[member.name]}
+                alt={member.name}
+                className="w-24 h-24 rounded-full object-cover mx-auto mb-4"
+              />
               <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
               <p className="text-sm text-primary font-medium">{member.role}</p>
             </div>

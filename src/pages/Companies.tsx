@@ -34,14 +34,6 @@ const Companies = () => {
     { team: "Leadership teams", benefit: "gain a clear external market view" },
   ];
 
-  const differentiators = [
-    "Full market coverage, not a curated subset",
-    "Daily updates via in house technology",
-    "Pre decision insight, not just post conversion metrics",
-    "Neutral, external perspective",
-    "Longitudinal market history",
-  ];
-
   const useCases = [
     "Understand your market position",
     "Improve customer experience",
@@ -267,54 +259,23 @@ const Companies = () => {
 
       {/* Complex Markets Section */}
 
-      {/* Complex Markets Section */}
+      {/* Built for Complex Markets Section */}
       <section className="py-16 lg:py-20 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Built for Complex, Regulated Markets
+            Built for Complex Markets
           </h2>
           
-          <p className="text-muted-foreground mb-6">Giraffy is designed for markets where:</p>
-          
-          <div className="grid sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Rules differ by provider</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Eligibility matters</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Transparency is limited</span>
-            </div>
-            <div className="bg-secondary rounded-lg p-4 border border-border text-center">
-              <span className="text-foreground">Data is fragmented</span>
-            </div>
-          </div>
-          
-          <p className="text-muted-foreground">
-            We operate across multiple countries and categories, building a consistent intelligence layer that becomes more valuable over time.
+          <p className="text-base text-foreground mb-6 leading-relaxed">
+            Giraffy is built for competitive, regulated markets where rules differ by provider, eligibility matters, and data is fragmented.
           </p>
-        </div>
-      </section>
-
-      {/* Why Different Section */}
-      <section className="py-16 lg:py-20 bg-background">
-        <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
-            Why Giraffy Is Different
-          </h2>
           
-          <div className="grid gap-4 mb-8">
-            {differentiators.map((item, index) => (
-              <div key={index} className="flex items-start gap-3 bg-secondary rounded-lg p-4 border border-border">
-                <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
-                <span className="text-foreground">{item}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-base text-foreground mb-6 leading-relaxed">
+            We track the full market, not a selected subset, with daily updates using in house technology. This gives companies a neutral, external view of how markets change over time.
+          </p>
           
-          <p className="text-center text-primary font-semibold text-lg">
-            Giraffy sits before the transaction, where real decisions are made.
+          <p className="text-base text-foreground leading-relaxed">
+            By focusing on how customers compare options before they choose, Giraffy sits before the transaction, where real decisions are made.
           </p>
         </div>
       </section>

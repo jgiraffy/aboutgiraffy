@@ -1,5 +1,21 @@
 import { Linkedin } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import teamJason from "@/assets/team-jason.png";
+import teamRalph from "@/assets/team-ralph.png";
+import teamJoel from "@/assets/team-joel.png";
+import teamMohammed from "@/assets/team-mohammed.png";
+import teamIsmail from "@/assets/team-ismail.png";
+
+const founderPhotos: Record<string, string> = {
+  "Jason Lea": teamJason,
+  "Ralph Forgeon": teamRalph,
+};
+
+const memberPhotos: Record<string, string> = {
+  "Joel Clark": teamJoel,
+  "Mohammed Elhafiz": teamMohammed,
+  "Ismail Amara": teamIsmail,
+};
 
 const linkMap: Record<string, string> = {
   "Studee.com": "https://studee.com",
@@ -38,9 +54,11 @@ const TeamSection = () => {
           {t.about.team.founders.map((member) => (
             <div key={member.name} className="bg-card border border-border rounded-xl p-6 text-left">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-bold text-accent-foreground">{member.initials}</span>
-                </div>
+                <img
+                  src={founderPhotos[member.name]}
+                  alt={member.name}
+                  className="w-24 h-24 rounded-full object-cover flex-shrink-0"
+                />
                 <div>
                   <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
                   <p className="text-sm text-primary font-medium">{member.role}</p>
@@ -62,9 +80,11 @@ const TeamSection = () => {
           {t.about.team.members.map((member) => (
             <div key={member.name} className="bg-card border border-border rounded-xl p-6 text-center">
               <div className="relative inline-block mb-4">
-                <div className="w-24 h-24 rounded-full bg-accent flex items-center justify-center mx-auto">
-                  <span className="text-2xl font-bold text-accent-foreground">{member.initials}</span>
-                </div>
+                <img
+                  src={memberPhotos[member.name]}
+                  alt={member.name}
+                  className="w-24 h-24 rounded-full object-cover mx-auto"
+                />
                 <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                   <Linkedin className="w-4 h-4 text-primary-foreground" />
                 </div>

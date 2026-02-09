@@ -1,5 +1,14 @@
 import { Linkedin } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import teamMike from "@/assets/team-mike.png";
+import teamAbhit from "@/assets/team-abhit.png";
+import teamSaja from "@/assets/team-saja.png";
+
+const advisorPhotos: Record<string, string> = {
+  "Mike Jones": teamMike,
+  "Abhit Ghelani": teamAbhit,
+  "Saja Alqurnas": teamSaja,
+};
 
 const AdvisorsSection = () => {
   const { t } = useLanguage();
@@ -17,9 +26,11 @@ const AdvisorsSection = () => {
           {t.about.advisors.list.map((advisor) => (
             <div key={advisor.name} className="bg-card border border-border rounded-xl p-6 text-center">
               <div className="relative inline-block mb-4">
-                <div className="w-20 h-20 rounded-full bg-accent/60 flex items-center justify-center mx-auto">
-                  <span className="text-xl font-bold text-accent-foreground">{advisor.initials}</span>
-                </div>
+                <img
+                  src={advisorPhotos[advisor.name]}
+                  alt={advisor.name}
+                  className="w-20 h-20 rounded-full object-cover mx-auto"
+                />
                 <div className="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-primary flex items-center justify-center">
                   <Linkedin className="w-3.5 h-3.5 text-primary-foreground" />
                 </div>

@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import FAQSection from "@/components/FAQSection";
 import { Button } from "@/components/ui/button";
 import { Radar, Eye, Users, TrendingUp, BarChart3, Shield, Globe2, CheckCircle2, ArrowRight } from "lucide-react";
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
@@ -413,6 +414,8 @@ const Companies = () => {
           </Button>
         </div>
       </section>
+
+      <FAQSection />
 
       {/* Footer */}
       <section className="py-8 bg-secondary border-t border-border">

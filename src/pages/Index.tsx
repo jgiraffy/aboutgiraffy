@@ -7,6 +7,7 @@ import VisionSection from "@/components/about/VisionSection";
 import TeamSection from "@/components/about/TeamSection";
 import AdvisorsSection from "@/components/about/AdvisorsSection";
 import ValuesSection from "@/components/about/ValuesSection";
+import FAQSection from "@/components/FAQSection";
 
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <TeamSection />
       <AdvisorsSection />
       <ValuesSection />
+      <FAQSection />
     </main>
   );
 };

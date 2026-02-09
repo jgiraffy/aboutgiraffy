@@ -1,4 +1,5 @@
 import Navigation from "@/components/Navigation";
+import FAQSection from "@/components/FAQSection";
 import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -265,6 +266,8 @@ const Investor = () => {
           </div>
         </div>
       </section>
+
+      <FAQSection />
     </main>
   );
 };

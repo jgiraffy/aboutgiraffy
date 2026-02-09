@@ -22,7 +22,7 @@ const TechnologySection = () => {
           The Giraffy Radar
         </h3>
         <p className="text-muted-foreground leading-relaxed mb-8">
-          While other sites wait for providers to send them updates, our in house technology, Giraffy Radar, actively hunts for changes. We monitor the market 24/7 to reflect real time pricing and availability.
+          While other sites wait for providers to send them updates, our in house technology, Giraffy Radar, actively tracks for changes. We monitor the market 24/7 to reflect real time pricing and availability.
         </p>
         
         <div className="space-y-4 mb-10">

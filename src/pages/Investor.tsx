@@ -46,36 +46,6 @@ const Investor = () => {
               </p>
             </div>
 
-            {/* Live Markets */}
-            <div className="mt-8 pt-8 border-t border-border">
-              <p className="text-lg font-semibold text-foreground mb-6 text-center">
-                Available across these countries
-              </p>
-              <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-6 justify-items-center">
-                {[
-                  { country: "Saudi Arabia", code: "sa" },
-                  { country: "Kuwait", code: "kw" },
-                  { country: "Bahrain", code: "bh" },
-                  { country: "UAE", code: "ae" },
-                  { country: "Qatar", code: "qa" },
-                  { country: "Oman", code: "om" },
-                  { country: "United Kingdom", code: "gb" },
-                  { country: "Italy", code: "it" },
-                  { country: "Netherlands", code: "nl" },
-                ].map((market) => (
-                  <div key={market.code} className="flex flex-col items-center gap-2">
-                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-border shadow-sm">
-                      <img
-                        src={`https://flagcdn.com/w80/${market.code}.png`}
-                        alt={`${market.country} flag`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <span className="text-xs text-muted-foreground">{market.country}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

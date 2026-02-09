@@ -13,7 +13,7 @@ const IntroSection = () => {
           </p>
           
           <p>
-            Across mobile, banking, loans, and insurance, you're often asked to make big financial decisions while only seeing half the picture. Prices are unclear. Fine print is buried. Most comparison sites are "pay to play," meaning they prioritize the providers who pay them the most commission, not the ones who offer you the best deal.
+            Across mobile, banking, loans, and insurance, you're often asked to make big financial decisions while only seeing half the picture. Prices are unclear. Fine print is buried. Most comparison sites are "pay to play," prioritising providers who pay them commission rather than those offering the best option for you.
           </p>
           
           <p>

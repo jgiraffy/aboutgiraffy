@@ -43,8 +43,8 @@ const DifferentiatorsSection = () => {
               key={title}
               className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-md transition-shadow"
             >
-              <div className="w-14 h-14 flex items-center justify-center mx-auto mb-4">
-                <img src={icon} alt={title} className="w-14 h-14 object-contain" />
+              <div className="w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <img src={icon} alt={title} className="w-20 h-20 object-contain" />
               </div>
               <h3 className="font-bold text-foreground text-lg mb-2">{title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">

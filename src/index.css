@@ -119,3 +119,15 @@ All colors MUST be HSL.
     font-family: 'DM Sans', sans-serif;
   }
 }
+
+/* Subtle dot pattern for primary (dark green) sections */
+.bg-primary {
+  background-image: radial-gradient(circle, hsl(0 0% 100% / 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle dot pattern for secondary (grey) sections */
+.bg-secondary {
+  background-image: radial-gradient(circle, hsl(0 0% 0% / 0.025) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

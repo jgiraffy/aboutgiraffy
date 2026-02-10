@@ -17,6 +17,11 @@ const memberPhotos: Record<string, string> = {
   "Ismail Amara": teamIsmail,
 };
 
+const founderLinkedIn: Record<string, string> = {
+  "Jason Lea": "https://www.linkedin.com/in/jalea/",
+  "Ralph Forgeon": "https://www.linkedin.com/in/forgeon/",
+};
+
 const linkMap: Record<string, string> = {
   "Studee.com": "https://studee.com",
   "j-b.com.sa": "https://j-b.com.sa",
@@ -59,9 +64,16 @@ const TeamSection = () => {
                   alt={member.name}
                   className="w-24 h-24 rounded-full object-cover flex-shrink-0"
                 />
-                <div>
-                  <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
-                  <p className="text-sm text-primary font-medium">{member.role}</p>
+                <div className="flex items-center gap-2">
+                  <div>
+                    <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
+                    <p className="text-sm text-primary font-medium">{member.role}</p>
+                  </div>
+                  {founderLinkedIn[member.name] && (
+                    <a href={founderLinkedIn[member.name]} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 ms-auto">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="space-y-3 mt-2">

@@ -10,6 +10,10 @@ const advisorPhotos: Record<string, string> = {
   "Saja Alqurnas": teamSaja,
 };
 
+const advisorLinkedIn: Record<string, string> = {
+  "Mike Jones": "https://www.linkedin.com/in/mikedjones/",
+};
+
 const AdvisorsSection = () => {
   const { t } = useLanguage();
 
@@ -30,7 +34,14 @@ const AdvisorsSection = () => {
                 alt={advisor.name}
                 className="w-20 h-20 rounded-full object-cover mx-auto mb-4"
               />
-              <h3 className="font-bold text-foreground">{advisor.name}</h3>
+              <div className="flex items-center justify-center gap-2">
+                <h3 className="font-bold text-foreground">{advisor.name}</h3>
+                {advisorLinkedIn[advisor.name] && (
+                  <a href={advisorLinkedIn[advisor.name]} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
+                )}
+              </div>
               <p className="text-sm text-primary font-medium mb-3">{advisor.role}</p>
               <p className="text-sm text-muted-foreground leading-relaxed">{advisor.description}</p>
             </div>

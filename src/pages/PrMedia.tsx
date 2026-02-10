@@ -50,7 +50,7 @@ const PrMedia = () => {
                 <AccordionTrigger className="text-left text-lg font-semibold text-foreground hover:no-underline py-6">
                   <div>
                     {release.title}
-                    <p className="text-muted-foreground text-sm font-normal mt-1">{release.date}</p>
+                    <p className="text-muted-foreground text-sm font-normal mt-1">{release.date} · {release.location}</p>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">

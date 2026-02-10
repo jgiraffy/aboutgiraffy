@@ -26,7 +26,7 @@ const PrMedia = () => {
           <p className="text-primary-foreground/80 text-lg mb-8">
             {t.prMedia.hero.subtitle}
           </p>
-          <a href="/giraffy-media-kit.zip" download>
+          <a href="https://drive.google.com/drive/u/2/folders/0AFnxi5Izh__4Uk9PVA" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold px-8 gap-2">
               <Download className="w-5 h-5" />
               {t.prMedia.hero.download}
@@ -71,8 +71,8 @@ const PrMedia = () => {
           </h2>
           <p className="text-muted-foreground text-lg">
             {t.prMedia.contact.text}{" "}
-            <a href="mailto:press@giraffy.com" className="text-primary font-medium hover:underline">
-              press@giraffy.com
+            <a href="mailto:hello@giraffy.com" className="text-primary font-medium hover:underline">
+              hello@giraffy.com
             </a>
           </p>
         </div>

@@ -66,8 +66,8 @@ const TeamSection = () => {
                     className="w-24 h-24 rounded-full object-cover"
                   />
                   {founderLinkedIn[member.name] && (
-                    <a href={founderLinkedIn[member.name]} target="_blank" rel="noopener noreferrer" className="absolute -right-2 top-0">
-                      <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5 rounded-sm" />
+                    <a href={founderLinkedIn[member.name]} target="_blank" rel="noopener noreferrer" className="absolute -right-1 bottom-0">
+                      <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5" />
                     </a>
                   )}
                 </div>

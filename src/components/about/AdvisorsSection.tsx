@@ -36,8 +36,8 @@ const AdvisorsSection = () => {
                   className="w-20 h-20 rounded-full object-cover"
                 />
                 {advisorLinkedIn[advisor.name] && (
-                  <a href={advisorLinkedIn[advisor.name]} target="_blank" rel="noopener noreferrer" className="absolute -right-2 top-0">
-                    <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5 rounded-sm" />
+                  <a href={advisorLinkedIn[advisor.name]} target="_blank" rel="noopener noreferrer" className="absolute -right-1 bottom-0">
+                    <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5" />
                   </a>
                 )}
               </div>

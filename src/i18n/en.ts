@@ -338,9 +338,9 @@ export const en = {
           content: "Riyadh, Saudi Arabia — September 10, 2025\n\nGiraffy has released a new whitepaper examining the evolving financial landscape in Saudi Arabia and the growing need for smarter consumer tools.\n\nTitled \"Market Insights: Financial Literacy, Fintech & Digital Tools in Saudi Arabia,\" the report explores how Open Banking, fintech licensing, and consumer behaviour are reshaping the market.\n\nThe whitepaper reflects Giraffy's broader ambition to evolve beyond comparison into a long-term market intelligence platform supporting both consumers and providers."
         },
         {
-          title: "Giraffy Appoints Saja Alqurnas as Founding Partner & Saudi Lead",
+          title: "Giraffy Appoints Saja Alqurnas as Saudi Lead",
           date: "25 August 2025",
-          content: "Riyadh, Saudi Arabia — August 25, 2025\n\nGiraffy has appointed Saja Alqurnas as Founding Partner and Saudi Lead, strengthening the company's in-Kingdom leadership as it enters its next phase of growth.\n\nIn her role, Saja will oversee partnerships, local operations, and market expansion across Saudi Arabia, supporting Giraffy's mission to improve financial transparency and literacy.\n\n\"Saja shares our belief that financial understanding is foundational to long-term success,\" said Jason Lea, Founder & CEO of Giraffy. \"Her leadership on the ground in Saudi Arabia is critical as we scale.\""
+          content: "Riyadh, Saudi Arabia — August 25, 2025\n\nGiraffy has appointed Saja Alqurnas as Saudi Lead, strengthening the company's in-Kingdom leadership as it enters its next phase of growth.\n\nIn her role, Saja will oversee partnerships, local operations, and market expansion across Saudi Arabia, supporting Giraffy's mission to improve financial transparency and literacy.\n\n\"Saja shares our belief that financial understanding is foundational to long-term success,\" said Jason Lea, Founder & CEO of Giraffy. \"Her leadership on the ground in Saudi Arabia is critical as we scale.\""
         },
         {
           title: "Giraffy Hits 1,000 Users in a Single Day with Zero Paid Marketing",

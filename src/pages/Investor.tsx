@@ -30,14 +30,14 @@ const Investor = () => {
       </section>
 
       {/* Introduction */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
-          <p className="text-lg">{t.investor.intro}</p>
+          <p className="text-base text-muted-foreground leading-relaxed">{t.investor.intro}</p>
         </div>
       </section>
 
       {/* The Market Reality */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             {t.investor.marketReality.title}
@@ -76,7 +76,7 @@ const Investor = () => {
       </section>
 
       {/* Why Now */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             {t.investor.whyNow.title}
@@ -90,7 +90,7 @@ const Investor = () => {
       </section>
 
       {/* The Giraffy Approach */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             {t.investor.approach.title}
@@ -103,7 +103,7 @@ const Investor = () => {
       </section>
 
       {/* The Infrastructure Moat */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
             {t.investor.moat.title}
@@ -128,7 +128,7 @@ const Investor = () => {
       </section>
 
       {/* What We're Building & Join the Journey */}
-      <section className="py-16 lg:py-24 bg-primary">
+      <section className="py-20 lg:py-32 bg-primary">
         <div className="container max-w-4xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-8">
             {t.investor.building.title}

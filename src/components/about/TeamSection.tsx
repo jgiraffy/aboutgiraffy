@@ -1,5 +1,5 @@
-import { Linkedin } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import linkedinIcon from "@/assets/linkedin-icon.png";
 import teamJason from "@/assets/team-jason.png";
 import teamRalph from "@/assets/team-ralph.png";
 import teamJoel from "@/assets/team-joel.png";
@@ -59,21 +59,21 @@ const TeamSection = () => {
           {t.about.team.founders.map((member) => (
             <div key={member.name} className="bg-card border border-border rounded-xl p-6 text-left">
               <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={founderPhotos[member.name]}
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full object-cover flex-shrink-0"
-                />
-                <div className="flex items-center gap-2">
-                  <div>
-                    <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
-                    <p className="text-sm text-primary font-medium">{member.role}</p>
-                  </div>
+                <div className="relative flex-shrink-0">
+                  <img
+                    src={founderPhotos[member.name]}
+                    alt={member.name}
+                    className="w-24 h-24 rounded-full object-cover"
+                  />
                   {founderLinkedIn[member.name] && (
-                    <a href={founderLinkedIn[member.name]} target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 ms-auto">
-                      <Linkedin className="w-5 h-5" />
+                    <a href={founderLinkedIn[member.name]} target="_blank" rel="noopener noreferrer" className="absolute -right-2 top-0">
+                      <img src={linkedinIcon} alt="LinkedIn" className="w-5 h-5 rounded-sm" />
                     </a>
                   )}
+                </div>
+                <div>
+                  <h3 className="font-bold text-foreground text-lg">{member.name}</h3>
+                  <p className="text-sm text-primary font-medium">{member.role}</p>
                 </div>
               </div>
               <div className="space-y-3 mt-2">

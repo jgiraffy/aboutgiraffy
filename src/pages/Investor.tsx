@@ -68,7 +68,7 @@ const Investor = () => {
                 </ul>
               </div>
             </div>
-            <p className="text-foreground font-semibold text-lg mt-8">
+            <p className="text-muted-foreground font-semibold mt-8">
               {t.investor.marketReality.conclusion}
             </p>
           </div>
@@ -83,7 +83,7 @@ const Investor = () => {
           </h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>{t.investor.whyNow.p1}</p>
-            <p className="text-foreground font-medium">{t.investor.whyNow.p2}</p>
+            <p className="text-muted-foreground font-medium">{t.investor.whyNow.p2}</p>
             <p>{t.investor.whyNow.p3}</p>
           </div>
         </div>
@@ -113,7 +113,7 @@ const Investor = () => {
             <ul className="space-y-3">
               {t.investor.moat.items.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-primary font-bold">•</span>
+                  <span className="text-muted-foreground font-bold">•</span>
                   {item === t.investor.moat.providersLinkText ? (
                     <Link to="/companies" className="text-primary hover:underline">{item}</Link>
                   ) : (
@@ -122,7 +122,7 @@ const Investor = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-foreground font-medium mt-6">{t.investor.moat.conclusion}</p>
+            <p className="text-muted-foreground font-medium mt-6">{t.investor.moat.conclusion}</p>
           </div>
         </div>
       </section>

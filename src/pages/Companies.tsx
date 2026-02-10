@@ -14,7 +14,7 @@ const Companies = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-primary py-20 lg:py-28 relative">
+      <section className="bg-primary py-16 lg:py-24 relative">
         <div className="container max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             {t.companies.hero.title}
@@ -55,39 +55,39 @@ const Companies = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
-          <p className="text-base text-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed">
             <strong>{t.companies.intro.bold}</strong>{t.companies.intro.text}
           </p>
         </div>
       </section>
 
       {/* The Decision Gap */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {t.companies.decisionGap.title}
           </h2>
-          <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.decisionGap.p1}</p>
-          <p className="text-base text-foreground mb-4 leading-relaxed">{t.companies.decisionGap.p2}</p>
-          <p className="text-base text-foreground mb-4 leading-relaxed">{t.companies.decisionGap.p3}</p>
-          <p className="text-base text-foreground leading-relaxed">{t.companies.decisionGap.p4}</p>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.decisionGap.p1}</p>
+          <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.decisionGap.p2}</p>
+          <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.decisionGap.p3}</p>
+          <p className="text-base text-muted-foreground leading-relaxed">{t.companies.decisionGap.p4}</p>
         </div>
       </section>
 
       {/* Market Intelligence Section */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 {t.companies.marketIntel.title}
               </h2>
-              <p className="text-base text-foreground mb-6 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                 {t.companies.marketIntel.description}
               </p>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-base text-foreground">
+              <ul className="list-disc list-inside space-y-2 mb-6 text-base text-muted-foreground">
                 {t.companies.marketIntel.features.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -107,22 +107,22 @@ const Companies = () => {
       </section>
 
       {/* Customer Experience Section */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-start">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground whitespace-nowrap mb-6">
                 {t.companies.customerExp.title}
               </h2>
-              <p className="text-base text-foreground mb-6 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
                 {t.companies.customerExp.description}
               </p>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-base text-foreground">
+              <ul className="list-disc list-inside space-y-2 mb-6 text-base text-muted-foreground">
                 {t.companies.customerExp.insights.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-              <p className="text-base text-foreground font-medium">
+              <p className="text-base text-muted-foreground font-medium">
                 {t.companies.customerExp.conclusion}
               </p>
             </div>
@@ -138,17 +138,17 @@ const Companies = () => {
       </section>
 
       {/* Visibility Section */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 {t.companies.visibility.title}
               </h2>
-              <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.visibility.p1}</p>
-              <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.visibility.p2}</p>
-              <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.visibility.p3}</p>
-              <p className="text-base text-foreground leading-relaxed">{t.companies.visibility.p4}</p>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.visibility.p1}</p>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.visibility.p2}</p>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.visibility.p3}</p>
+              <p className="text-base text-muted-foreground leading-relaxed">{t.companies.visibility.p4}</p>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img 
@@ -162,13 +162,13 @@ const Companies = () => {
       </section>
 
       {/* Who Giraffy Is For */}
-      <section className="py-16 lg:py-20 bg-background">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {t.companies.who.title}
           </h2>
-          <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.who.p1}</p>
-          <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.who.p2}</p>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.who.p1}</p>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.who.p2}</p>
           <div className="grid gap-4 mb-6">
             {t.companies.who.teams.map(({ team, benefit }, index) => (
               <div key={index} className="flex items-start gap-3">
@@ -184,19 +184,19 @@ const Companies = () => {
       </section>
 
       {/* Built for Complex Markets */}
-      <section className="py-16 lg:py-20 bg-secondary">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {t.companies.complex.title}
           </h2>
-          <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.complex.p1}</p>
-          <p className="text-base text-foreground mb-6 leading-relaxed">{t.companies.complex.p2}</p>
-          <p className="text-base text-foreground leading-relaxed">{t.companies.complex.p3}</p>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.complex.p1}</p>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.complex.p2}</p>
+          <p className="text-base text-muted-foreground leading-relaxed">{t.companies.complex.p3}</p>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-28 bg-primary">
+      <section className="py-20 lg:py-32 bg-primary">
         <div className="container max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
             {t.companies.cta.title}

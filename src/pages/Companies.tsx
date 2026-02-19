@@ -57,7 +57,7 @@ const Companies = () => {
       </section>
 
       {/* Intro Section */}
-      <section className="py-20 lg:py-32 bg-secondary">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <p className="text-base text-muted-foreground leading-relaxed">
             <strong>{t.companies.intro.bold}</strong>{t.companies.intro.text}
@@ -66,7 +66,7 @@ const Companies = () => {
       </section>
 
       {/* The Decision Gap */}
-      <section className="py-20 lg:py-32 bg-background">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
             {t.companies.decisionGap.title}

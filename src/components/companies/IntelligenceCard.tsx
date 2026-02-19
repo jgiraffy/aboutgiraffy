@@ -9,8 +9,12 @@ interface IntelligenceCardProps {
 const IntelligenceCard = ({ title, subtitle, bullets, closingLine, number }: IntelligenceCardProps) => {
   return (
     <div className="rounded-xl border border-border bg-secondary p-6">
-      <span className="text-xs font-bold text-muted-foreground/50 mb-2 block">{number}</span>
-      <h3 className="text-base font-bold text-foreground mb-1">{title}</h3>
+      <div className="flex items-center gap-2 mb-3">
+        <span className="w-5 h-5 rounded-full bg-accent text-accent-foreground text-[11px] font-bold flex items-center justify-center flex-shrink-0">
+          {number}
+        </span>
+        <h3 className="text-base font-bold text-foreground">{title}</h3>
+      </div>
       <p className="text-xs text-muted-foreground mb-4">{subtitle}</p>
       <ul className="space-y-2 mb-4">
         {bullets.map((b, i) => (

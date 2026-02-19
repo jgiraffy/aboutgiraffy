@@ -163,6 +163,7 @@ export const en = {
       title: "Giraffy Intelligence",
       subtitle: "Giraffy monitors what providers offer, what consumers want, and how AI recommends — all at the same time.",
       supportingLine: "See the full decision ecosystem before customers choose.",
+      anchoringLine: "Three independent intelligence signals. One unified decision view.",
       venn: {
         market: { title: "Market Reality", subtitle: "What providers offer" },
         consumer: { title: "Consumer Intent", subtitle: "What people want" },
@@ -171,15 +172,10 @@ export const en = {
           label: "The Decision\nMoment",
           microcopy: "Where pricing, demand, and AI recommendation intersect.",
         },
-        overlaps: {
-          marketConsumer: "Supply vs Demand",
-          marketAi: "AI vs Market Position",
-          consumerAi: "AI Influence",
-        },
       },
       cards: [
         {
-          title: "Market Reality",
+          title: "Market Reality Monitoring",
           subtitle: "What providers offer",
           bullets: [
             "Live pricing & deal changes",
@@ -187,10 +183,10 @@ export const en = {
             "Competitive positioning",
             "Market depth & availability",
           ],
-          closingLine: "Structured, real-time monitoring of visible financial offers across providers.",
+          closingLine: "Structured, real-time monitoring of visible financial offers.",
         },
         {
-          title: "Consumer Intent",
+          title: "Consumer Intent Signals",
           subtitle: "What people want",
           bullets: [
             "Comparison behaviour",
@@ -198,10 +194,10 @@ export const en = {
             "Switching patterns",
             "Category interest shifts",
           ],
-          closingLine: "Pre-transaction behavioural signals captured at the moment of choice.",
+          closingLine: "Pre-transaction behavioural insight captured at the moment of choice.",
         },
         {
-          title: "AI Perception",
+          title: "AI Visibility Tracking",
           subtitle: "How AI recommends",
           bullets: [
             "AI ranking visibility",
@@ -209,7 +205,7 @@ export const en = {
             "Competitive AI share",
             "Perception movement over time",
           ],
-          closingLine: "Track how generative AI influences financial decision-making.",
+          closingLine: "Understand how generative AI influences financial decision-making.",
         },
       ],
     },

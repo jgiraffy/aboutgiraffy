@@ -53,8 +53,8 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         {/* Market Reality - top center */}
         <circle
           cx="270"
-          cy="190"
-          r="170"
+          cy="195"
+          r="160"
           fill="url(#grad-market)"
           opacity={getOpacity("market")}
           className="cursor-pointer transition-opacity duration-300"
@@ -64,8 +64,8 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
 
         {/* Consumer Intent - bottom left */}
         <circle
-          cx="175"
-          cy="360"
+          cx="180"
+          cy="350"
           r="160"
           fill="url(#grad-consumer)"
           opacity={getOpacity("consumer")}
@@ -76,8 +76,8 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
 
         {/* AI Perception - bottom right */}
         <circle
-          cx="365"
-          cy="360"
+          cx="360"
+          cy="350"
           r="160"
           fill="url(#grad-ai)"
           opacity={getOpacity("ai")}
@@ -89,53 +89,53 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         {/* Center glow */}
         <circle
           cx="270"
-          cy="310"
-          r="52"
+          cy="300"
+          r="48"
           fill="hsl(50, 50%, 55%)"
           opacity={getCenterOpacity()}
           className="transition-opacity duration-300"
         />
 
         {/* Market Reality label */}
-        <text x="270" y="140" textAnchor="middle" className="fill-white font-bold text-[15px] uppercase tracking-wider">
+        <text x="270" y="140" textAnchor="middle" className="fill-white font-bold text-[14px] uppercase tracking-wider">
           {labels.market.title}
         </text>
-        <text x="270" y="162" textAnchor="middle" className="fill-white/60 text-[12px]">
+        <text x="270" y="158" textAnchor="middle" className="fill-white/60 text-[11px]">
           {labels.market.subtitle}
         </text>
 
         {/* Consumer Intent label */}
-        <text x="140" y="430" textAnchor="middle" className="fill-white font-bold text-[14px] uppercase tracking-wider">
+        <text x="130" y="425" textAnchor="middle" className="fill-white font-bold text-[14px] uppercase tracking-wider">
           {labels.consumer.title}
         </text>
-        <text x="140" y="450" textAnchor="middle" className="fill-white/60 text-[12px]">
+        <text x="130" y="443" textAnchor="middle" className="fill-white/60 text-[11px]">
           {labels.consumer.subtitle}
         </text>
 
         {/* AI Perception label */}
-        <text x="400" y="430" textAnchor="middle" className="fill-white font-bold text-[14px] uppercase tracking-wider">
+        <text x="410" y="425" textAnchor="middle" className="fill-white font-bold text-[14px] uppercase tracking-wider">
           {labels.ai.title}
         </text>
-        <text x="400" y="450" textAnchor="middle" className="fill-white/60 text-[12px]">
+        <text x="410" y="443" textAnchor="middle" className="fill-white/60 text-[11px]">
           {labels.ai.subtitle}
         </text>
 
         {/* Intersection labels */}
-        <text x="205" y="285" textAnchor="middle" className="fill-white/80 text-[11px]">
+        <text x="210" y="268" textAnchor="middle" className="fill-white/80 text-[11px]">
           {labels.intersections.supplyDemand}
         </text>
-        <text x="335" y="275" textAnchor="middle" className="fill-white/80 text-[11px]">
+        <text x="330" y="268" textAnchor="middle" className="fill-white/80 text-[11px]">
           {labels.intersections.aiBiasMarket}
         </text>
-        <text x="270" y="385" textAnchor="middle" className="fill-white/80 text-[11px]">
+        <text x="270" y="382" textAnchor="middle" className="fill-white/80 text-[11px]">
           {labels.intersections.aiInfluence}
         </text>
 
         {/* Center label */}
-        <text x="270" y="305" textAnchor="middle" className="fill-foreground font-bold text-[12px] uppercase tracking-wider">
+        <text x="270" y="295" textAnchor="middle" className="fill-foreground font-bold text-[12px] uppercase tracking-wider">
           {labels.intersections.center.split("\n")[0] || labels.intersections.center}
         </text>
-        <text x="270" y="322" textAnchor="middle" className="fill-foreground font-bold text-[12px] uppercase tracking-wider">
+        <text x="270" y="312" textAnchor="middle" className="fill-foreground font-bold text-[12px] uppercase tracking-wider">
           {labels.intersections.center.split("\n")[1] || ""}
         </text>
       </svg>

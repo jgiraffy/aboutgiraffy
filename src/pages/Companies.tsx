@@ -130,7 +130,7 @@ const Companies = () => {
           {/* Three cards below */}
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {t.companies.intelligenceLayer.cards.map((card, i) => (
-              <IntelligenceCard key={i} {...card} />
+              <IntelligenceCard key={i} number={i + 1} {...card} />
             ))}
           </div>
         </div>

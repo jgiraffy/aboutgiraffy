@@ -44,7 +44,7 @@ const cardPositions: Record<string, { top?: string; bottom?: string; left?: stri
   center:   { top: "100%", left: "50%", transform: "translateX(-50%) translateY(12px)" },
 };
 
-const HoverCard = ({ data, type }: { data: CircleData | CenterData; type: Region }) => {
+const VennInfoCard = ({ data, type }: { data: CircleData | CenterData; type: Region }) => {
   if (!type) return null;
 
   const pos = cardPositions[type] || {};
@@ -100,7 +100,7 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
   return (
     <div className="relative w-full max-w-[560px] mx-auto select-none" style={{ aspectRatio: "1" }}>
       {/* Hover card */}
-      {active && activeData && <HoverCard data={activeData} type={active} />}
+      {active && activeData && <VennInfoCard data={activeData} type={active} />}
 
       <svg viewBox="0 0 540 540" className="w-full h-full" role="img">
         <defs>

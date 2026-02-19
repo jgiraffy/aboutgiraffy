@@ -161,7 +161,7 @@ export const en = {
     },
     intelligenceLayer: {
       title: "Giraffy Intelligence",
-      subtitle: "Giraffy monitors what providers offer, what consumers want, and how AI recommends — all at the same time.",
+      subtitle: "Giraffy monitors what providers offer, what consumers want, and how AI recommends, all at the same time.",
       supportingLine: "See the full decision ecosystem before customers choose.",
       anchoringLine: "Three independent intelligence signals. One unified decision view.",
       venn: {

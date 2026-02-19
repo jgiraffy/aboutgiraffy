@@ -69,14 +69,14 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           </g>
         </g>
 
-        {/* Market Reality — numbered circle + title */}
-        <circle cx={positions.market.cx} cy={positions.market.cy - 74} r={9} fill="white" />
-        <text x={positions.market.cx} y={positions.market.cy - 74} textAnchor="middle"
+        {/* Market Reality — number left of title */}
+        <circle cx={positions.market.cx - 62} cy={positions.market.cy - 52} r={9} fill="white" />
+        <text x={positions.market.cx - 62} y={positions.market.cy - 52} textAnchor="middle"
           dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
           {"1"}
         </text>
-        <text x={positions.market.cx} y={positions.market.cy - 52} textAnchor="middle"
-          className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
+        <text x={positions.market.cx - 48} y={positions.market.cy - 52} textAnchor="start"
+          dominantBaseline="central" className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {labels.market.title}
         </text>
         <text x={positions.market.cx} y={positions.market.cy - 35} textAnchor="middle"
@@ -84,40 +84,40 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           {labels.market.subtitle}
         </text>
 
-        {/* Consumer Intent — numbered circle + stacked title */}
-        <circle cx={positions.consumer.cx - 55} cy={positions.consumer.cy + 22} r={9} fill="white" />
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 22} textAnchor="middle"
+        {/* Consumer Intent — number left of stacked title */}
+        <circle cx={positions.consumer.cx - 95} cy={positions.consumer.cy + 44} r={9} fill="white" />
+        <text x={positions.consumer.cx - 95} y={positions.consumer.cy + 44} textAnchor="middle"
           dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
           {"2"}
         </text>
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 44} textAnchor="middle"
+        <text x={positions.consumer.cx - 81} y={positions.consumer.cy + 36} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"CONSUMER"}
         </text>
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 62} textAnchor="middle"
+        <text x={positions.consumer.cx - 81} y={positions.consumer.cy + 54} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"INTENT"}
         </text>
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 78} textAnchor="middle"
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 72} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.consumer.subtitle}
         </text>
 
-        {/* AI Perception — numbered circle + stacked title */}
-        <circle cx={positions.ai.cx + 55} cy={positions.ai.cy + 22} r={9} fill="white" />
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 22} textAnchor="middle"
+        {/* AI Perception — number left of stacked title */}
+        <circle cx={positions.ai.cx + 25} cy={positions.ai.cy + 44} r={9} fill="white" />
+        <text x={positions.ai.cx + 25} y={positions.ai.cy + 44} textAnchor="middle"
           dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
           {"3"}
         </text>
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 44} textAnchor="middle"
+        <text x={positions.ai.cx + 39} y={positions.ai.cy + 36} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"AI"}
         </text>
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 62} textAnchor="middle"
+        <text x={positions.ai.cx + 39} y={positions.ai.cy + 54} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"PERCEPTION"}
         </text>
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 78} textAnchor="middle"
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 72} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.ai.subtitle}
         </text>

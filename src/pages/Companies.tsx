@@ -117,20 +117,18 @@ const Companies = () => {
           <p className="text-base text-muted-foreground max-w-3xl mb-2 leading-relaxed">
             {t.companies.intelligenceLayer.subtitle}
           </p>
-          <p className="text-sm text-muted-foreground/70 max-w-3xl mb-14">
+          <p className="text-sm text-muted-foreground/70 max-w-3xl mb-4">
             {t.companies.intelligenceLayer.supportingLine}
+          </p>
+          <p className="text-center text-sm text-muted-foreground mb-10 tracking-wide">
+            {t.companies.intelligenceLayer.anchoringLine}
           </p>
 
           {/* Venn Diagram */}
           <VennDiagram labels={t.companies.intelligenceLayer.venn} />
 
-          {/* Anchoring sentence */}
-          <p className="text-center text-sm text-muted-foreground mt-8 mb-14 tracking-wide">
-            {t.companies.intelligenceLayer.anchoringLine}
-          </p>
-
           {/* Three cards below */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 mt-8">
             {t.companies.intelligenceLayer.cards.map((card, i) => (
               <IntelligenceCard key={i} {...card} />
             ))}

@@ -43,29 +43,29 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         <circle cx={positions.ai.cx} cy={positions.ai.cy} r={R}
           fill="#80C7AE" />
 
-        {/* Saturated overlaps — market ∩ consumer */}
+        {/* market ∩ consumer — distinct warm green */}
         <g clipPath="url(#clip-consumer)">
           <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-            fill="#267F4C" opacity={0.6} />
+            fill="#1B6B3A" />
         </g>
 
-        {/* market ∩ ai */}
+        {/* market ∩ ai — distinct teal */}
         <g clipPath="url(#clip-ai)">
           <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-            fill="#00482F" opacity={0.5} />
+            fill="#3A8F7A" />
         </g>
 
-        {/* consumer ∩ ai */}
+        {/* consumer ∩ ai — distinct light mint */}
         <g clipPath="url(#clip-ai)">
           <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R}
-            fill="#80C7AE" opacity={0.5} />
+            fill="#5DB894" />
         </g>
 
-        {/* Center intersection highlight — all three */}
+        {/* Center — all three overlap */}
         <g clipPath="url(#clip-consumer)">
           <g clipPath="url(#clip-ai)">
             <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-              fill="#DDFA88" opacity={0.4} />
+              fill="#DDFA88" />
           </g>
         </g>
 

@@ -10,7 +10,7 @@ const IntelligenceCard = ({ title, subtitle, bullets, closingLine, number }: Int
   return (
     <div className="rounded-xl border border-border bg-secondary p-6">
       <div className="flex items-center gap-2 mb-3">
-        <span className="w-5 h-5 rounded-full bg-accent text-accent-foreground text-[11px] font-bold flex items-center justify-center flex-shrink-0">
+        <span className="w-5 h-5 rounded-full bg-white border border-primary text-primary text-[11px] font-bold flex items-center justify-center flex-shrink-0">
           {number}
         </span>
         <h3 className="text-base font-bold text-foreground">{title}</h3>

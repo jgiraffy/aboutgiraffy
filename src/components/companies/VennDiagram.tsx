@@ -70,9 +70,9 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         </g>
 
         {/* Market Reality — numbered circle + title */}
-        <circle cx={positions.market.cx} cy={positions.market.cy - 74} r={9} fill="#DDFA88" />
-        <text x={positions.market.cx} y={positions.market.cy - 70} textAnchor="middle"
-          className="fill-black font-bold text-[10px]" dominantBaseline="central">
+        <circle cx={positions.market.cx} cy={positions.market.cy - 74} r={9} fill="white" />
+        <text x={positions.market.cx} y={positions.market.cy - 74} textAnchor="middle"
+          dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
           {"1"}
         </text>
         <text x={positions.market.cx} y={positions.market.cy - 52} textAnchor="middle"
@@ -85,9 +85,9 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         </text>
 
         {/* Consumer Intent — numbered circle + stacked title */}
-        <circle cx={positions.consumer.cx - 55} cy={positions.consumer.cy + 22} r={9} fill="#DDFA88" />
+        <circle cx={positions.consumer.cx - 55} cy={positions.consumer.cy + 22} r={9} fill="white" />
         <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 22} textAnchor="middle"
-          className="fill-black font-bold text-[10px]" dominantBaseline="central">
+          dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
           {"2"}
         </text>
         <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 44} textAnchor="middle"
@@ -104,9 +104,9 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         </text>
 
         {/* AI Perception — numbered circle + stacked title */}
-        <circle cx={positions.ai.cx + 55} cy={positions.ai.cy + 22} r={9} fill="#DDFA88" />
+        <circle cx={positions.ai.cx + 55} cy={positions.ai.cy + 22} r={9} fill="white" />
         <text x={positions.ai.cx + 55} y={positions.ai.cy + 22} textAnchor="middle"
-          className="fill-black font-bold text-[10px]" dominantBaseline="central">
+          dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
           {"3"}
         </text>
         <text x={positions.ai.cx + 55} y={positions.ai.cy + 44} textAnchor="middle"

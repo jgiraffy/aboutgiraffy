@@ -34,11 +34,11 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
 
         {/* Circles */}
         <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-          fill="#00482F" opacity={0.75} />
+          fill="#00482F" opacity={0.85} />
         <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R}
-          fill="#267F4C" opacity={0.55} />
+          fill="#267F4C" opacity={0.75} />
         <circle cx={positions.ai.cx} cy={positions.ai.cy} r={R}
-          fill="#80C7AE" opacity={0.45} />
+          fill="#80C7AE" opacity={0.65} />
 
         {/* Center intersection highlight */}
         <g clipPath="url(#clip-consumer)">

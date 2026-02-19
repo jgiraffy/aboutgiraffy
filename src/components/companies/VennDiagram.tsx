@@ -24,6 +24,9 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
     <div className="w-full max-w-[580px] mx-auto select-none">
       <svg viewBox="0 0 620 620" className="w-full h-auto" role="img" aria-label="Giraffy Intelligence Venn Diagram">
         <defs>
+          <clipPath id="clip-market">
+            <circle cx={positions.market.cx} cy={positions.market.cy} r={R} />
+          </clipPath>
           <clipPath id="clip-consumer">
             <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R} />
           </clipPath>
@@ -32,19 +35,37 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           </clipPath>
         </defs>
 
-        {/* Circles */}
+        {/* Base circles — desaturated */}
         <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-          fill="#00482F" opacity={0.85} />
+          fill="#1a3a2e" opacity={0.7} />
         <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R}
-          fill="#267F4C" opacity={0.75} />
+          fill="#3a5c4a" opacity={0.6} />
         <circle cx={positions.ai.cx} cy={positions.ai.cy} r={R}
-          fill="#80C7AE" opacity={0.65} />
+          fill="#9cbfb0" opacity={0.5} />
 
-        {/* Center intersection highlight */}
+        {/* Saturated overlaps — market ∩ consumer */}
+        <g clipPath="url(#clip-consumer)">
+          <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
+            fill="#267F4C" opacity={0.6} />
+        </g>
+
+        {/* market ∩ ai */}
+        <g clipPath="url(#clip-ai)">
+          <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
+            fill="#00482F" opacity={0.5} />
+        </g>
+
+        {/* consumer ∩ ai */}
+        <g clipPath="url(#clip-ai)">
+          <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R}
+            fill="#80C7AE" opacity={0.5} />
+        </g>
+
+        {/* Center intersection highlight — all three */}
         <g clipPath="url(#clip-consumer)">
           <g clipPath="url(#clip-ai)">
             <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-              fill="#DDFA88" opacity={0.35} />
+              fill="#DDFA88" opacity={0.4} />
           </g>
         </g>
 

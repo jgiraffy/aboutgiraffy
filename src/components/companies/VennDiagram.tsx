@@ -101,11 +101,11 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
 
         {/* Center label */}
         <text x={cx} y={cy - 6} textAnchor="middle"
-          className="fill-white font-bold text-[11px] uppercase tracking-[0.16em]">
+          className="fill-black font-bold text-[11px] uppercase tracking-[0.16em]">
           {labels.center.label.split("\n")[0]}
         </text>
         <text x={cx} y={cy + 10} textAnchor="middle"
-          className="fill-white font-bold text-[11px] uppercase tracking-[0.16em]">
+          className="fill-black font-bold text-[11px] uppercase tracking-[0.16em]">
           {labels.center.label.split("\n")[1] || ""}
         </text>
       </svg>

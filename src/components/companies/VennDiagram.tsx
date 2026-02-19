@@ -23,6 +23,16 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
   return (
     <div className="w-full max-w-[440px] mx-auto select-none">
       <svg viewBox="0 0 540 530" className="w-full h-auto" role="img" aria-label="Giraffy Intelligence Venn Diagram">
+        <defs>
+          {/* Clip to intersection of consumer & ai circles */}
+          <clipPath id="clip-consumer">
+            <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R} />
+          </clipPath>
+          <clipPath id="clip-ai">
+            <circle cx={positions.ai.cx} cy={positions.ai.cy} r={R} />
+          </clipPath>
+        </defs>
+
         {/* Circles — distinct tonal contrast with transparency for overlaps */}
         <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
           fill="#00482F" opacity={0.75} />
@@ -31,8 +41,13 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
         <circle cx={positions.ai.cx} cy={positions.ai.cy} r={R}
           fill="#80C7AE" opacity={0.45} />
 
-        {/* Center neon accent — subtle */}
-        <circle cx={cx} cy={cy} r={26} fill="#DDFA88" opacity={0.3} />
+        {/* Center intersection highlight — clip market circle through consumer, then through ai */}
+        <g clipPath="url(#clip-consumer)">
+          <g clipPath="url(#clip-ai)">
+            <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
+              fill="#DDFA88" opacity={0.35} />
+          </g>
+        </g>
 
         {/* Market Reality */}
         <text x={positions.market.cx} y={positions.market.cy - 36} textAnchor="middle"

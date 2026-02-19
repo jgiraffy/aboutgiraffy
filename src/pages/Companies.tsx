@@ -69,10 +69,20 @@ const Companies = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {t.companies.decisionGap.title}
           </h2>
-          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.decisionGap.p1}</p>
-          <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.decisionGap.p2}</p>
-          <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.decisionGap.p3}</p>
-          <p className="text-base text-muted-foreground leading-relaxed">{t.companies.decisionGap.p4}</p>
+          <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.decisionGap.intro}</p>
+          <ul className="list-disc list-inside space-y-2 mb-6 text-base text-muted-foreground">
+            {t.companies.decisionGap.internalList.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed font-medium">{t.companies.decisionGap.bridge}</p>
+          <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.decisionGap.marketIntro}</p>
+          <ul className="list-disc list-inside space-y-2 mb-6 text-base text-muted-foreground">
+            {t.companies.decisionGap.marketList.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+          <p className="text-base text-muted-foreground leading-relaxed font-semibold">{t.companies.decisionGap.conclusion}</p>
         </div>
       </section>
 

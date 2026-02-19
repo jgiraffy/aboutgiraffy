@@ -139,15 +139,25 @@ export const en = {
       login: "Log in",
     },
     intro: {
-      bold: "Giraffy For Business",
+      bold: "Giraffy Intelligence",
       text: " helps telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.",
     },
     decisionGap: {
       title: "The Decision Gap",
-      p1: "Most providers rely on internal performance data and paid acquisition metrics, but these only show what happens after a customer chooses you. What is missing is visibility into the \"Comparison Moment.\"",
-      p2: "Across markets, 30\u201360% of consumers compare financial products before committing to a purchase.",
-      p3: "Decisions are increasingly made before customers ever enter your funnel.",
-      p4: "Giraffy provides the missing layer of external intelligence needed to see the full market reality.",
+      intro: "Most providers see only:",
+      internalList: [
+        "Internal performance metrics",
+        "Paid acquisition data",
+        "Conversion outcomes",
+      ],
+      bridge: "But decisions are made before customers ever enter your funnel.",
+      marketIntro: "In competitive financial markets:",
+      marketList: [
+        "30\u201360% of customers compare options before committing",
+        "AI systems increasingly shape recommendations",
+        "Pricing shifts change competitive dynamics instantly",
+      ],
+      conclusion: "What's missing is external decision intelligence.",
     },
     marketIntel: {
       title: "Market Intelligence",

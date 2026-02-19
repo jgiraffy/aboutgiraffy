@@ -69,40 +69,52 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           </g>
         </g>
 
-        {/* Market Reality — top of its circle, away from overlaps */}
-        <text x={positions.market.cx} y={positions.market.cy - 55} textAnchor="middle"
+        {/* Market Reality — number + title */}
+        <text x={positions.market.cx} y={positions.market.cy - 70} textAnchor="middle"
+          className="fill-white/60 font-bold text-[12px]">
+          {"1"}
+        </text>
+        <text x={positions.market.cx} y={positions.market.cy - 52} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {labels.market.title}
         </text>
-        <text x={positions.market.cx} y={positions.market.cy - 37} textAnchor="middle"
+        <text x={positions.market.cx} y={positions.market.cy - 35} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.market.subtitle}
         </text>
 
-        {/* Consumer Intent — far bottom-left, stacked */}
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 40} textAnchor="middle"
+        {/* Consumer Intent — number + stacked title */}
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 26} textAnchor="middle"
+          className="fill-white/60 font-bold text-[12px]">
+          {"2"}
+        </text>
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 44} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"CONSUMER"}
         </text>
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 58} textAnchor="middle"
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 62} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"INTENT"}
         </text>
-        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 74} textAnchor="middle"
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 78} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.consumer.subtitle}
         </text>
 
-        {/* AI Perception — far bottom-right, stacked */}
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 40} textAnchor="middle"
+        {/* AI Perception — number + stacked title */}
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 26} textAnchor="middle"
+          className="fill-white/60 font-bold text-[12px]">
+          {"3"}
+        </text>
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 44} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"AI"}
         </text>
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 58} textAnchor="middle"
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 62} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"PERCEPTION"}
         </text>
-        <text x={positions.ai.cx + 55} y={positions.ai.cy + 74} textAnchor="middle"
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 78} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.ai.subtitle}
         </text>

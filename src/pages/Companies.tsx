@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import FAQSection from "@/components/FAQSection";
-import { CheckCircle2, MessageCircle, Mail } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
@@ -19,35 +19,35 @@ const Companies = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             {t.companies.hero.title}
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-4 whitespace-pre-line">
             {t.companies.hero.subtitle}
+          </p>
+          <p className="text-base text-primary-foreground/60 max-w-2xl mx-auto leading-relaxed mb-8 whitespace-pre-line">
+            {t.companies.hero.supportingLine}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+learning+more+about+Giraffy+Business&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=966536134229&text=Hi%2C+I%27m+interested+in+requesting+access+to+Giraffy+Intelligence&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-base"
             >
-              <MessageCircle className="w-5 h-5" />
-              {t.companies.hero.whatsapp}
+              {t.companies.hero.requestAccess}
             </a>
             <a
               href="mailto:hello@giraffy.com"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-colors text-base"
             >
-              <Mail className="w-5 h-5" />
-              {t.companies.hero.email}
+              {t.companies.hero.bookDemo}
             </a>
           </div>
         </div>
-        <div className="absolute bottom-6 right-6 flex items-center gap-2">
-          <span className="text-primary-foreground/60 text-sm">{t.companies.hero.alreadyCustomer}</span>
+        <div className="absolute bottom-6 right-6">
           <a
             href="https://business.giraffy.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-primary-foreground font-medium underline hover:text-primary-foreground/80 transition-colors"
+            className="text-sm text-primary-foreground/60 font-medium underline hover:text-primary-foreground/80 transition-colors"
           >
             {t.companies.hero.login}
           </a>
@@ -216,14 +216,12 @@ const Companies = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-colors text-base"
             >
-              <MessageCircle className="w-5 h-5" />
               {t.companies.cta.whatsapp}
             </a>
             <a
               href="mailto:hello@giraffy.com"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary-foreground/30 text-primary-foreground font-semibold rounded-lg hover:bg-primary-foreground/10 transition-colors text-base"
             >
-              <Mail className="w-5 h-5" />
               {t.companies.cta.email}
             </a>
           </div>

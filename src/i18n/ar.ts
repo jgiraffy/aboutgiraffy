@@ -140,10 +140,6 @@ export const ar: Translations = {
       bookDemo: "حجز عرض توضيحي",
       login: "تسجيل الدخول",
     },
-    intro: {
-      bold: "Giraffy Intelligence",
-      text: " تساعد شركات الاتصالات والبنوك وشركات التأمين ومقدمي التمويل على فهم السوق كما هو فعلاً.",
-    },
     decisionGap: {
       title: "فجوة القرار",
       intro: "معظم مقدمي الخدمات يرون فقط:",

@@ -140,7 +140,7 @@ export const en = {
     },
     intro: {
       bold: "Giraffy Intelligence",
-      text: " helps telecoms, banks, insurers, and finance providers understand the market as it actually exists: how customers compare options, how competitors are positioned, and how decisions are made, all in one place.",
+      text: " provides a unified view of supply, demand, and AI recommendation across financial markets. It enables telecoms, banks, insurers, and finance providers to understand how products are positioned, how customers compare, and how decisions are shaped, before the transaction happens.",
     },
     decisionGap: {
       title: "The Decision Gap",

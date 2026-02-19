@@ -160,71 +160,58 @@ export const en = {
       conclusion: "What's missing is external decision intelligence.",
     },
     intelligenceLayer: {
-      title: "The Intelligence Layer",
-      subtitle: "Three Independent Signals. One Unified View.",
-      description: "Giraffy monitors:",
-      signals: [
-        {
-          name: "Market Reality",
-          tagline: "What providers offer",
-          detail: "Live pricing, deal changes, eligibility, positioning",
-        },
-        {
-          name: "Consumer Intent",
-          tagline: "What customers want",
-          detail: "Comparison behaviour, demand shifts, switching patterns",
-        },
-        {
-          name: "AI Perception",
-          tagline: "How AI recommends",
-          detail: "Brand visibility, ranking movement, competitive AI share",
-        },
-      ],
+      title: "Giraffy Intelligence",
+      subtitle: "Giraffy monitors what providers offer, what consumers want, and how AI recommends — all at the same time.",
+      supportingLine: "See the full decision ecosystem before customers choose.",
       venn: {
-        market: {
+        market: { title: "Market Reality", subtitle: "What providers offer" },
+        consumer: { title: "Consumer Intent", subtitle: "What people want" },
+        ai: { title: "AI Perception", subtitle: "How AI recommends" },
+        center: {
+          label: "The Decision\nMoment",
+          microcopy: "Where pricing, demand, and AI recommendation intersect.",
+        },
+        overlaps: {
+          marketConsumer: "Supply vs Demand",
+          marketAi: "AI vs Market Position",
+          consumerAi: "AI Influence",
+        },
+      },
+      cards: [
+        {
           title: "Market Reality",
           subtitle: "What providers offer",
-          hoverSubheading: "What exists in the market right now?",
           bullets: [
             "Live pricing & deal changes",
             "Historical trends",
             "Competitive positioning",
             "Market depth & availability",
           ],
-          closingLine: "Structured, real time monitoring of visible financial offers across providers.",
+          closingLine: "Structured, real-time monitoring of visible financial offers across providers.",
         },
-        consumer: {
+        {
           title: "Consumer Intent",
           subtitle: "What people want",
-          hoverSubheading: "What are customers actively comparing?",
           bullets: [
-            "Real comparison behaviour",
+            "Comparison behaviour",
             "Search demand signals",
             "Switching patterns",
             "Category interest shifts",
           ],
-          closingLine: "Pre transaction behavioural signals captured at the moment of choice.",
+          closingLine: "Pre-transaction behavioural signals captured at the moment of choice.",
         },
-        ai: {
+        {
           title: "AI Perception",
           subtitle: "How AI recommends",
-          hoverSubheading: "How AI systems rank and recommend.",
           bullets: [
             "AI ranking visibility",
             "Brand recommendation rate",
             "Competitive AI share",
             "Perception movement over time",
           ],
-          closingLine: "Track how generative AI influences financial decision making.",
+          closingLine: "Track how generative AI influences financial decision-making.",
         },
-        center: {
-          label: "The Decision\nMoment",
-          microcopy: "Where pricing, demand, and AI recommendation intersect.",
-          hoverTitle: "The Decision Moment",
-          hoverBody: "This is where real financial decisions are shaped \u2014 when supply, demand, and AI recommendation converge.",
-        },
-      },
-      conclusion: "Where these signals intersect is the Decision Moment \u2014 where money moves.",
+      ],
     },
     marketIntel: {
       title: "Market Intelligence",

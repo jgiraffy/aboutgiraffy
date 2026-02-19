@@ -109,15 +109,15 @@ const Companies = () => {
       </section>
 
       {/* Intelligence Layer Section */}
-      <section className="py-20 lg:py-32 bg-primary">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             {t.companies.intelligenceLayer.title}
           </h2>
-          <p className="text-base text-primary-foreground/70 max-w-3xl mb-2 leading-relaxed">
+          <p className="text-base text-muted-foreground max-w-3xl mb-2 leading-relaxed">
             {t.companies.intelligenceLayer.subtitle}
           </p>
-          <p className="text-sm text-primary-foreground/50 max-w-3xl mb-14">
+          <p className="text-sm text-muted-foreground/70 max-w-3xl mb-14">
             {t.companies.intelligenceLayer.supportingLine}
           </p>
 

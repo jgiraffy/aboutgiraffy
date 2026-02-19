@@ -57,15 +57,6 @@ const Companies = () => {
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="py-20 lg:py-32 bg-background">
-        <div className="container max-w-5xl mx-auto px-6">
-          <p className="text-base text-muted-foreground leading-relaxed">
-            <strong>{t.companies.intro.bold}</strong>{t.companies.intro.text}
-          </p>
-        </div>
-      </section>
-
       {/* The Decision Gap */}
       <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">

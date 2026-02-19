@@ -138,10 +138,6 @@ export const en = {
       bookDemo: "Book a Demo",
       login: "Log in",
     },
-    intro: {
-      bold: "Giraffy Intelligence",
-      text: " provides a unified view of supply, demand, and AI recommendation across financial markets. It enables telecoms, banks, insurers, and finance providers to understand how products are positioned, how customers compare, and how decisions are shaped, before the transaction happens.",
-    },
     decisionGap: {
       title: "The Decision Gap",
       intro: "Most providers see only:",
@@ -161,9 +157,9 @@ export const en = {
     },
     intelligenceLayer: {
       title: "Giraffy Intelligence",
-      subtitle: "Giraffy monitors what providers offer, what consumers want, and how AI recommends, all at the same time.",
-      supportingLine: "See the full decision ecosystem before customers choose.",
-      anchoringLine: "Three independent intelligence signals. One unified decision view.",
+      subtitle: "Giraffy Intelligence provides a unified view of supply, demand, and AI recommendation across financial markets. It enables telecoms, banks, insurers, and finance providers to understand how products are positioned, how customers compare, and how decisions are shaped, before the transaction happens.",
+      supportingLine: "",
+      anchoringLine: "See the full decision ecosystem before customers choose.",
       venn: {
         market: { title: "Market Reality", subtitle: "What providers offer" },
         consumer: { title: "Consumer Intent", subtitle: "What people want" },

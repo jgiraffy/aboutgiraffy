@@ -124,8 +124,13 @@ const Companies = () => {
           {/* Venn Diagram */}
           <VennDiagram labels={t.companies.intelligenceLayer.venn} />
 
+          {/* Anchoring sentence */}
+          <p className="text-center text-sm text-muted-foreground mt-8 mb-14 tracking-wide">
+            {t.companies.intelligenceLayer.anchoringLine}
+          </p>
+
           {/* Three cards below */}
-          <div className="grid md:grid-cols-3 gap-6 mt-14">
+          <div className="grid md:grid-cols-3 gap-6">
             {t.companies.intelligenceLayer.cards.map((card, i) => (
               <IntelligenceCard key={i} {...card} />
             ))}

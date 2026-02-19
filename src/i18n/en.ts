@@ -208,6 +208,29 @@ export const en = {
           closingLine: "Understand how generative AI influences financial decision-making.",
         },
       ],
+      decisionMoment: {
+        title: "The Decision Moment",
+        description: "The advantage is not seeing these signals independently — it is understanding how they interact.",
+        subtitle: "Where supply, demand, and AI recommendation intersect, decisions are shaped.",
+        closing: "Giraffy operates at that intersection.",
+        interactions: [
+          {
+            code: "01–02",
+            title: "Supply–Demand Fit",
+            description: "See where pricing and positioning align — or fail to align — with real customer demand.",
+          },
+          {
+            code: "01–03",
+            title: "AI vs Market Position",
+            description: "Identify discrepancies between true market competitiveness and AI-generated visibility.",
+          },
+          {
+            code: "02–03",
+            title: "AI Influence",
+            description: "Understand how algorithmic recommendations shape comparison behaviour before application.",
+          },
+        ],
+      },
     },
     marketIntel: {
       title: "Market Intelligence",

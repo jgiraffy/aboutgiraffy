@@ -7,6 +7,7 @@ import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
 import VennDiagram from "@/components/companies/VennDiagram";
 import IntelligenceCard from "@/components/companies/IntelligenceCard";
+import DecisionMomentSection from "@/components/companies/DecisionMomentSection";
 
 const Companies = () => {
   const { t } = useLanguage();
@@ -133,6 +134,8 @@ const Companies = () => {
               <IntelligenceCard key={i} number={i + 1} {...card} />
             ))}
           </div>
+
+          <DecisionMomentSection {...t.companies.intelligenceLayer.decisionMoment} />
         </div>
       </section>
 

@@ -35,13 +35,13 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           </clipPath>
         </defs>
 
-        {/* Base circles — desaturated */}
+        {/* Base circles — solid brand colors, no opacity */}
         <circle cx={positions.market.cx} cy={positions.market.cy} r={R}
-          fill="#1a3a2e" opacity={0.7} />
+          fill="#00482F" />
         <circle cx={positions.consumer.cx} cy={positions.consumer.cy} r={R}
-          fill="#3a5c4a" opacity={0.6} />
+          fill="#267F4C" />
         <circle cx={positions.ai.cx} cy={positions.ai.cy} r={R}
-          fill="#9cbfb0" opacity={0.5} />
+          fill="#80C7AE" />
 
         {/* Saturated overlaps — market ∩ consumer */}
         <g clipPath="url(#clip-consumer)">

@@ -229,7 +229,7 @@ export const en = {
       },
     },
     marketIntel: {
-      title: "Market Intelligence",
+      title: "Market Monitoring",
       description: "Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:",
       features: [
         "See their products alongside every relevant competitor",

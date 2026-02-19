@@ -169,7 +169,7 @@ export const en = {
         consumer: { title: "Consumer Intent", subtitle: "What people want" },
         ai: { title: "AI Perception", subtitle: "How AI recommends" },
         center: {
-          label: "The Decision\nMoment",
+          label: "DECISION\nMOMENT",
           microcopy: "Where pricing, demand, and AI recommendation intersect.",
         },
       },

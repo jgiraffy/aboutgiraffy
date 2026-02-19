@@ -79,22 +79,30 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           {labels.market.subtitle}
         </text>
 
-        {/* Consumer Intent — bottom-left of its circle */}
-        <text x={positions.consumer.cx - 28} y={positions.consumer.cy + 55} textAnchor="middle"
+        {/* Consumer Intent — far bottom-left, stacked */}
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 40} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
-          {labels.consumer.title}
+          {"CONSUMER"}
         </text>
-        <text x={positions.consumer.cx - 28} y={positions.consumer.cy + 73} textAnchor="middle"
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 58} textAnchor="middle"
+          className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
+          {"INTENT"}
+        </text>
+        <text x={positions.consumer.cx - 55} y={positions.consumer.cy + 74} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.consumer.subtitle}
         </text>
 
-        {/* AI Perception — bottom-right of its circle */}
-        <text x={positions.ai.cx + 28} y={positions.ai.cy + 55} textAnchor="middle"
+        {/* AI Perception — far bottom-right, stacked */}
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 40} textAnchor="middle"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
-          {labels.ai.title}
+          {"AI"}
         </text>
-        <text x={positions.ai.cx + 28} y={positions.ai.cy + 73} textAnchor="middle"
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 58} textAnchor="middle"
+          className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
+          {"PERCEPTION"}
+        </text>
+        <text x={positions.ai.cx + 55} y={positions.ai.cy + 74} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.ai.subtitle}
         </text>

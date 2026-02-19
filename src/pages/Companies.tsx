@@ -5,6 +5,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
+import VennDiagram from "@/components/companies/VennDiagram";
 
 const Companies = () => {
   const { t } = useLanguage();
@@ -103,6 +104,42 @@ const Companies = () => {
           </div>
           <p className="text-base text-muted-foreground leading-relaxed mb-2">{t.companies.decisionGap.bridge}</p>
           <p className="text-lg text-foreground font-semibold">{t.companies.decisionGap.conclusion}</p>
+        </div>
+      </section>
+
+      {/* Intelligence Layer Section */}
+      <section className="py-20 lg:py-32 bg-primary">
+        <div className="container max-w-5xl mx-auto px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
+            {t.companies.intelligenceLayer.title}
+          </h2>
+          <p className="text-lg text-primary-foreground/70 mb-4">
+            {t.companies.intelligenceLayer.subtitle}
+          </p>
+          <p className="text-base text-primary-foreground/60 mb-12">
+            {t.companies.intelligenceLayer.description}
+          </p>
+
+          {/* Signal cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {t.companies.intelligenceLayer.signals.map((signal, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 backdrop-blur-sm"
+              >
+                <h3 className="text-lg font-bold text-primary-foreground mb-1">{signal.name}</h3>
+                <p className="text-sm text-accent mb-3">{signal.tagline}</p>
+                <p className="text-sm text-primary-foreground/60 leading-relaxed">{signal.detail}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Venn Diagram */}
+          <VennDiagram labels={t.companies.intelligenceLayer.venn} />
+
+          <p className="text-center text-lg text-primary-foreground/80 font-medium mt-12 max-w-2xl mx-auto">
+            {t.companies.intelligenceLayer.conclusion}
+          </p>
         </div>
       </section>
 

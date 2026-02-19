@@ -159,6 +159,40 @@ export const en = {
       ],
       conclusion: "What's missing is external decision intelligence.",
     },
+    intelligenceLayer: {
+      title: "The Intelligence Layer",
+      subtitle: "Three Independent Signals. One Unified View.",
+      description: "Giraffy monitors:",
+      signals: [
+        {
+          name: "Market Reality",
+          tagline: "What providers offer",
+          detail: "Live pricing, deal changes, eligibility, positioning",
+        },
+        {
+          name: "Consumer Intent",
+          tagline: "What customers want",
+          detail: "Comparison behaviour, demand shifts, switching patterns",
+        },
+        {
+          name: "AI Perception",
+          tagline: "How AI recommends",
+          detail: "Brand visibility, ranking movement, competitive AI share",
+        },
+      ],
+      venn: {
+        market: { title: "Market Reality", subtitle: "What providers offer" },
+        consumer: { title: "Consumer Intent", subtitle: "What people want" },
+        ai: { title: "AI Perception", subtitle: "How AI recommends" },
+        intersections: {
+          supplyDemand: "Supply vs Demand",
+          aiBiasMarket: "AI Bias vs Market",
+          aiInfluence: "AI Influence on Demand",
+          center: "The Decision\nMoment",
+        },
+      },
+      conclusion: "Where these signals intersect is the Decision Moment \u2014 where money moves.",
+    },
     marketIntel: {
       title: "Market Intelligence",
       description: "Giraffy Radar monitors live deals across telecoms, banking, insurance, and finance, updating daily. This powers a structured view of the market, allowing companies to:",

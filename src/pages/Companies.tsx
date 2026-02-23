@@ -5,6 +5,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
+import aiAgentExperienceVisual from "@/assets/ai-agent-experience-visual.png";
 import VennDiagram from "@/components/companies/VennDiagram";
 import IntelligenceCard from "@/components/companies/IntelligenceCard";
 import DecisionMomentSection from "@/components/companies/DecisionMomentSection";
@@ -191,8 +192,48 @@ const Companies = () => {
         </div>
       </section>
 
-      {/* Visibility Section */}
+      {/* AI Agent Experience Section */}
       <section className="py-20 lg:py-32 bg-secondary">
+        <div className="container max-w-5xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                {t.companies.aiAgent.title}
+              </h2>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+                {t.companies.aiAgent.p1}
+              </p>
+              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
+                {t.companies.aiAgent.p2}
+              </p>
+              <ul className="list-disc list-inside space-y-2 mb-6 text-base text-muted-foreground">
+                {t.companies.aiAgent.features.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+                {t.companies.aiAgent.p3}
+              </p>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+                {t.companies.aiAgent.p4}
+              </p>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                {t.companies.aiAgent.p5}
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg lg:mt-16">
+              <img 
+                src={aiAgentExperienceVisual} 
+                alt={t.companies.aiAgent.title}
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visibility Section */}
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>

@@ -238,6 +238,21 @@ export const en = {
         "See how markets change over time",
       ],
     },
+    aiAgent: {
+      title: "AI Agent Experience",
+      p1: "AI agents are becoming a new comparison layer. Before visiting a website or entering a provider's funnel, customers increasingly ask AI tools for recommendations.",
+      p2: "Giraffy measures how AI agents evaluate, rank, and recommend providers at the moment of high intent financial queries, through:",
+      features: [
+        "Recommendation rate across standardised purchase queries",
+        "Average ranking position in AI-generated comparisons",
+        "Competitive visibility share vs. market peers",
+        "Query-specific performance (budget, premium, business, roaming, etc.)",
+        "Data completeness and coverage impact on AI recommendations",
+      ],
+      p3: "This reveals how your products are positioned inside AI-generated answers, and how that changes over time.",
+      p4: "Unlike anecdotal testing, Giraffy tracks AI agent evaluations using structured, repeatable query sets and historical monitoring, turning AI visibility into measurable intelligence.",
+      p5: "As AI becomes a distribution channel, understanding how agents see your products is as important as understanding how customers see your website.",
+    },
     customerExp: {
       title: "Customer Experience & Brand Insight",
       description: "Understanding performance isn't just about price or clicks. Giraffy helps companies understand how their brand and products are experienced at the moment of comparison, through:",

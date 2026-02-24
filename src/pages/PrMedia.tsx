@@ -54,8 +54,14 @@ const PrMedia = () => {
                     <p className="text-muted-foreground text-sm font-normal mt-1">{release.date} · {release.location}</p>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
-                  {release.content}
+                <AccordionContent className="pb-6">
+                  <div className="space-y-4">
+                    {release.content.split('\n\n').map((paragraph, pIndex) => (
+                      <p key={pIndex} className={`text-muted-foreground leading-relaxed ${paragraph.startsWith('"') || paragraph.startsWith('\u201C') ? 'italic text-foreground/80' : ''}`}>
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}

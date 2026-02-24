@@ -284,10 +284,11 @@ export const en = {
       conclusion: "Instead of separate tools and partial data, teams work from a shared view of the market.",
     },
     complex: {
-      title: "Built for Complex Markets",
+      title: "Built for Complex and Intermediated Markets",
       p1: "Giraffy is built for competitive, regulated markets where rules differ by provider, eligibility matters, and data is fragmented.",
-      p2: "We track the full market, not a selected subset, with daily updates using in house technology. This gives companies a neutral, external view of how markets change over time.",
-      p3: "By focusing on how customers compare options before they choose, Giraffy sits before the transaction, where real decisions are made.",
+      p2: "We track the full market, not a selected subset, with daily structured updates using in house technology. This gives companies a neutral, external view of how markets change over time.",
+      p3: "Today, financial decisions are increasingly shaped before a customer visits a provider. They are influenced by comparison environments and AI systems that interpret, rank, and recommend products.",
+      p4: "By tracking market reality, customer comparison behaviour, and AI agent evaluation together, Giraffy sits before the transaction, where real decisions are shaped.",
     },
     cta: {
       title: "Get Started with Giraffy Intelligence",

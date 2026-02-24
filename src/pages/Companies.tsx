@@ -315,7 +315,8 @@ const Companies = () => {
           </h2>
           <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.complex.p1}</p>
           <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.complex.p2}</p>
-          <p className="text-base text-muted-foreground leading-relaxed">{t.companies.complex.p3}</p>
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.complex.p3}</p>
+          <p className="text-base text-muted-foreground leading-relaxed">{t.companies.complex.p4}</p>
         </div>
       </section>
 

@@ -1,4 +1,4 @@
-import Navigation from "@/components/Navigation";
+import Navigation from "@/components/Navigation"; // refresh
 import FAQSection from "@/components/FAQSection";
 import { CheckCircle2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";

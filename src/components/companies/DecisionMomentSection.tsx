@@ -28,7 +28,7 @@ const DecisionMomentSection = ({ title, description, subtitle, closing, interact
             <div key={i} className="rounded-xl border border-border bg-secondary p-6">
               <div className="flex items-center gap-2 mb-3">
                 <span
-                  className="w-5 h-5 rounded-full text-white text-[11px] font-bold flex items-center justify-center flex-shrink-0"
+                  className="w-5 h-5 rounded-full text-white text-[8px] font-bold flex items-center justify-center flex-shrink-0"
                   style={{ backgroundColor: color }}
                 >
                   {item.code.replace(/0/g, "")}

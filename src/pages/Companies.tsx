@@ -6,10 +6,11 @@ import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
 import aiAgentExperienceVisual from "@/assets/ai-agent-experience-visual.png";
-import logoWataniya from "@/assets/logo-wataniya.svg";
+import logoAlj from "@/assets/logo-alj.svg";
 import logoBsf from "@/assets/logo-bsf.png";
 import logoEmiratesNbd from "@/assets/logo-emirates-nbd.png";
 import logoTawuniya from "@/assets/logo-tawuniya.png";
+import logoWalaa from "@/assets/logo-walaa.png";
 import VennDiagram from "@/components/companies/VennDiagram";
 import IntelligenceCard from "@/components/companies/IntelligenceCard";
 import DecisionMomentSection from "@/components/companies/DecisionMomentSection";
@@ -68,10 +69,11 @@ const Companies = () => {
           <p className="text-[10px] text-muted-foreground/60 mt-10 mb-4 tracking-wide">Companies using Giraffy Intelligence:</p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {[
-              { src: logoWataniya, alt: "Wataniya Insurance Company", className: "h-14" },
+              { src: logoAlj, alt: "Abdul Latif Jameel", className: "h-14" },
               { src: logoBsf, alt: "BSF", className: "h-14" },
               { src: logoTawuniya, alt: "Tawuniya Cooperative Insurance", className: "h-8" },
               { src: logoEmiratesNbd, alt: "Emirates NBD", className: "h-14" },
+              { src: logoWalaa, alt: "Walaa Cooperative Insurance", className: "h-14" },
             ].map(({ src, alt, className }) => (
               <img key={alt} src={src} alt={alt} className={`${className} w-auto object-contain opacity-60`} />
             ))}

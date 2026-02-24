@@ -81,42 +81,40 @@ const Companies = () => {
       {/* The Decision Gap */}
       <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             {t.companies.decisionGap.title}
           </h2>
+          <p className="text-base text-muted-foreground leading-relaxed mb-10 max-w-3xl">
+            {t.companies.decisionGap.bridge}
+          </p>
+
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             {/* What You See */}
-            <div className="rounded-2xl border border-border bg-secondary p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="w-3 h-3 rounded-full bg-muted-foreground/40" />
-                <h3 className="text-lg font-semibold text-foreground">{t.companies.decisionGap.intro}</h3>
-              </div>
+            <div className="rounded-2xl border border-border bg-background p-8">
+              <h3 className="text-sm font-semibold text-muted-foreground/60 uppercase tracking-wider mb-6">{t.companies.decisionGap.intro}</h3>
               <ul className="space-y-4">
                 {t.companies.decisionGap.internalList.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 flex-shrink-0 mt-2" />
+                    <span className="text-muted-foreground/40 flex-shrink-0">→</span>
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
             {/* What You're Missing */}
-            <div className="rounded-2xl border border-accent/40 bg-primary/[0.03] p-8">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="w-3 h-3 rounded-full bg-accent" />
-                <h3 className="text-lg font-semibold text-foreground">{t.companies.decisionGap.marketIntro}</h3>
-              </div>
+            <div className="rounded-2xl border border-primary/20 bg-primary/[0.03] p-8">
+              <h3 className="text-sm font-semibold text-primary uppercase tracking-wider mb-6">{t.companies.decisionGap.marketIntro}</h3>
               <ul className="space-y-4">
                 {t.companies.decisionGap.marketList.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-base text-muted-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
+                  <li key={i} className="flex items-start gap-3 text-base text-foreground">
+                    <span className="text-primary flex-shrink-0">→</span>
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <p className="text-base text-muted-foreground leading-relaxed mb-2">{t.companies.decisionGap.bridge}</p>
+
           <p className="text-lg text-foreground font-semibold">{t.companies.decisionGap.conclusion}</p>
         </div>
       </section>

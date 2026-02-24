@@ -133,7 +133,7 @@ export const en = {
     hero: {
       title: "Giraffy Intelligence",
       subtitle: "Giraffy monitors what providers offer, what consumers want, and how AI recommends all at the same time.",
-      supportingLine: "Stop guessing why you win or lose. See the full decision landscape before customers choose.",
+      supportingLine: "See why customers choose your competitors before your revenue moves.",
       requestAccess: "Request Access",
       bookDemo: "Book a Demo",
       login: "Log in",

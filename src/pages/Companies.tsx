@@ -58,7 +58,7 @@ const Companies = () => {
       {/* Statement Banner */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="container max-w-5xl mx-auto px-6 text-center">
-          <p className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+          <p className="text-lg md:text-2xl lg:text-3xl text-foreground leading-tight">
             {t.companies.hero.supportingLine}
           </p>
         </div>

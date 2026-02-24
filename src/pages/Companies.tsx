@@ -61,6 +61,12 @@ const Companies = () => {
           <p className="text-lg md:text-2xl lg:text-3xl text-foreground leading-tight">
             {t.companies.hero.supportingLine}
           </p>
+          <p className="text-xs text-muted-foreground/60 mt-10 mb-4 tracking-widest uppercase">Companies using Giraffy Intelligence</p>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            {["Wataniya Insurance Company", "BSF", "Tawuniya Cooperative Insurance", "Emirates NBD"].map((name) => (
+              <span key={name} className="text-sm md:text-base font-semibold text-muted-foreground/50">{name}</span>
+            ))}
+          </div>
         </div>
       </section>
 

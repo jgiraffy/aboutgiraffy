@@ -35,9 +35,9 @@ const OVERLAP_COLORS: Record<string, string> = {
 
 // Positions for 2-set overlap labels (away from triple center)
 const overlapPositions: Record<string, { x: number; y: number }> = {
-  "01–02": { x: 240, y: 275 },
-  "01–03": { x: 365, y: 275 },
-  "02–03": { x: 310, y: 400 },
+  "01–02": { x: 230, y: 260 },
+  "01–03": { x: 390, y: 260 },
+  "02–03": { x: 310, y: 410 },
 };
 
 const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
@@ -150,15 +150,21 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
           if (!pos || !color) return null;
           return (
             <g key={item.code}>
-              <circle cx={pos.x} cy={pos.y} r={10} fill={color} stroke="white" strokeWidth="1" />
-              <text x={pos.x} y={pos.y} textAnchor="middle"
-                dominantBaseline="central" className="font-bold text-[7px]" fill="white">
-                {item.code}
+              <circle cx={pos.x} cy={pos.y - 14} r={9} fill="white" />
+              <text x={pos.x} y={pos.y - 14} textAnchor="middle"
+                dominantBaseline="central" className="font-bold text-[10px]" fill={color}>
+                {item.code.replace("0", "")}
               </text>
-              <text x={pos.x} y={pos.y + 16} textAnchor="middle"
-                dominantBaseline="central" className="fill-white font-semibold text-[7px] uppercase tracking-[0.06em]">
-                {item.title}
+              <text x={pos.x} y={pos.y + 2} textAnchor="middle"
+                dominantBaseline="central" className="fill-white font-bold text-[8px] uppercase tracking-[0.08em]">
+                {item.title.split(" ").slice(0, 2).join(" ")}
               </text>
+              {item.title.split(" ").length > 2 && (
+                <text x={pos.x} y={pos.y + 13} textAnchor="middle"
+                  dominantBaseline="central" className="fill-white font-bold text-[8px] uppercase tracking-[0.08em]">
+                  {item.title.split(" ").slice(2).join(" ")}
+                </text>
+              )}
             </g>
           );
         })}

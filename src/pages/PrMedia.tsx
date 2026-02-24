@@ -1,5 +1,5 @@
 import Navigation from "@/components/Navigation";
-import { Download } from "lucide-react";
+import { Download, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -61,6 +61,16 @@ const PrMedia = () => {
                         {paragraph}
                       </p>
                     ))}
+                    {'link' in release && release.link && (
+                      <a
+                        href={release.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary font-medium hover:underline mt-2"
+                      >
+                        View the Giraffy Awards <ExternalLink className="w-4 h-4" />
+                      </a>
+                    )}
                   </div>
                 </AccordionContent>
               </AccordionItem>

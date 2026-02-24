@@ -6,6 +6,7 @@ import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
 import aiAgentExperienceVisual from "@/assets/ai-agent-experience-visual.png";
+import aiAgentExperienceVisual2 from "@/assets/ai-agent-experience-visual-2.png";
 
 import logoBsf from "@/assets/logo-bsf.png";
 import logoEmiratesNbd from "@/assets/logo-emirates-nbd.png";
@@ -244,6 +245,13 @@ const Companies = () => {
               <img 
                 src={aiAgentExperienceVisual} 
                 alt={t.companies.aiAgent.title}
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg mt-6">
+              <img 
+                src={aiAgentExperienceVisual2} 
+                alt={`${t.companies.aiAgent.title} - AI Insights`}
                 className="w-full h-auto"
               />
             </div>

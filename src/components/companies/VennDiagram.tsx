@@ -35,9 +35,9 @@ const OVERLAP_COLORS: Record<string, string> = {
 
 // Positions for 2-set overlap labels (away from triple center)
 const overlapPositions: Record<string, { x: number; y: number }> = {
-  "01–02": { x: 248, y: 268 },
-  "01–03": { x: 372, y: 268 },
-  "02–03": { x: 310, y: 392 },
+  "01–02": { x: 240, y: 275 },
+  "01–03": { x: 365, y: 275 },
+  "02–03": { x: 310, y: 400 },
 };
 
 const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
@@ -150,13 +150,13 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
           if (!pos || !color) return null;
           return (
             <g key={item.code}>
-              <circle cx={pos.x - 28} cy={pos.y} r={7} fill={color} />
-              <text x={pos.x - 28} y={pos.y} textAnchor="middle"
+              <circle cx={pos.x} cy={pos.y} r={10} fill={color} stroke="white" strokeWidth="1" />
+              <text x={pos.x} y={pos.y} textAnchor="middle"
                 dominantBaseline="central" className="font-bold text-[7px]" fill="white">
                 {item.code}
               </text>
-              <text x={pos.x - 18} y={pos.y} textAnchor="start"
-                dominantBaseline="central" className="fill-white font-semibold text-[9px] uppercase tracking-[0.08em]">
+              <text x={pos.x} y={pos.y + 16} textAnchor="middle"
+                dominantBaseline="central" className="fill-white font-semibold text-[7px] uppercase tracking-[0.06em]">
                 {item.title}
               </text>
             </g>

@@ -6,7 +6,7 @@ import marketIntelligenceVisual from "@/assets/market-intelligence-visual.png";
 import customerExperienceVisual from "@/assets/customer-experience-visual.png";
 import visibilityVisual from "@/assets/visibility-visual.png";
 import aiAgentExperienceVisual from "@/assets/ai-agent-experience-visual.png";
-import logoWataniya from "@/assets/logo-wataniya.png";
+import logoWataniya from "@/assets/logo-wataniya.svg";
 import logoBsf from "@/assets/logo-bsf.png";
 import logoEmiratesNbd from "@/assets/logo-emirates-nbd.png";
 import logoTawuniya from "@/assets/logo-tawuniya.png";

@@ -52,9 +52,9 @@ const DecisionMomentSection = ({ title, description, subtitle, closing, interact
           </span>
           <h3 className="text-base font-bold text-foreground">{title}</h3>
         </div>
-        <p className="text-xs text-muted-foreground mb-4">{description}</p>
+        <p className="text-sm text-muted-foreground leading-relaxed mb-2">{description}</p>
         <p className="text-sm text-muted-foreground leading-relaxed mb-2">{subtitle}</p>
-        <p className="text-xs text-muted-foreground/60 leading-relaxed">{closing}</p>
+        <p className="text-sm text-muted-foreground leading-relaxed">{closing}</p>
       </div>
     </div>
   );

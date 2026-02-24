@@ -14,7 +14,7 @@ interface DecisionMomentProps {
 
 const DecisionMomentSection = ({ title, description, subtitle, closing, interactions }: DecisionMomentProps) => {
   return (
-    <div className="mt-16">
+    <div className="mt-6">
       <h4 className="text-lg font-bold text-foreground mb-6">Interaction Intelligence</h4>
       <div className="grid md:grid-cols-3 gap-6 mb-8">
         {interactions.map((item, i) => {

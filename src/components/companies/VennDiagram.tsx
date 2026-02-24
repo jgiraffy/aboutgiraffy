@@ -152,7 +152,7 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
             <g key={item.code}>
               <circle cx={pos.x} cy={pos.y - 14} r={9} fill="white" />
               <text x={pos.x} y={pos.y - 14} textAnchor="middle"
-                dominantBaseline="central" className="font-bold text-[8px]" fill={color}>
+                dominantBaseline="central" className="font-bold text-[7px]" fill={color}>
                 {item.code.replace(/0/g, "")}
               </text>
               <text x={pos.x} y={pos.y + 2} textAnchor="middle"

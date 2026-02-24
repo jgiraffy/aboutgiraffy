@@ -154,6 +154,7 @@ export const en = {
         "Pricing shifts change competitive dynamics instantly",
       ],
       conclusion: "What's missing is external decision intelligence.",
+      closingLine: "Internal data shows outcomes. Giraffy shows the decision environment before outcomes happen.",
     },
     intelligenceLayer: {
       title: "Giraffy Intelligence",

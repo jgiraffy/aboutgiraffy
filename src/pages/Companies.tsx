@@ -116,6 +116,7 @@ const Companies = () => {
           </div>
 
           <p className="text-lg text-foreground font-semibold">{t.companies.decisionGap.conclusion}</p>
+          <p className="text-base text-muted-foreground leading-relaxed mt-2">{t.companies.decisionGap.closingLine}</p>
         </div>
       </section>
 

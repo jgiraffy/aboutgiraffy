@@ -28,16 +28,16 @@ const positions = {
 
 // 2-set overlap colors matching the Venn fills
 const OVERLAP_COLORS: Record<string, string> = {
-  "01–02": "#1B6B3A",
-  "01–03": "#3A8F7A",
-  "02–03": "#5DB894",
+  "1–2": "#1B6B3A",
+  "1–3": "#3A8F7A",
+  "2–3": "#5DB894",
 };
 
 // Positions for 2-set overlap labels (away from triple center)
 const overlapPositions: Record<string, { x: number; y: number }> = {
-  "01–02": { x: 240, y: 275 },
-  "01–03": { x: 365, y: 275 },
-  "02–03": { x: 310, y: 400 },
+  "1–2": { x: 240, y: 275 },
+  "1–3": { x: 365, y: 275 },
+  "2–3": { x: 310, y: 400 },
 };
 
 const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {

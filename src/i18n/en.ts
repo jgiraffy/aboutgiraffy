@@ -283,6 +283,14 @@ export const en = {
         { team: "Leadership teams", benefit: "gain a clear external market view" },
       ],
       conclusion: "Instead of separate tools and partial data, teams work from a shared view of the market.",
+      whyTitle: "Why Providers Use Giraffy",
+      whyItems: [
+        "Identify underpriced competitors within 24 hours",
+        "Detect demand shifts before internal data reflects them",
+        "Understand where AI systems over or under represent your brand",
+        "Benchmark true market competitiveness, not just internal KPIs",
+        "Improve pricing, launch timing, and acquisition efficiency",
+      ],
     },
     complex: {
       title: "Built for Complex and Intermediated Markets",

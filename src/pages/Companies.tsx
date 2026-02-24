@@ -287,22 +287,42 @@ const Companies = () => {
       {/* Who Giraffy Is For */}
       <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            {t.companies.who.title}
-          </h2>
-          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.who.p1}</p>
-          <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.who.p2}</p>
-          <div className="grid gap-4 mb-6">
-            {t.companies.who.teams.map(({ team, benefit }, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-foreground flex-shrink-0 mt-2" />
-                <span className="text-foreground">
-                  <strong>{team}</strong> {benefit}
-                </span>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Who Giraffy Is For */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                {t.companies.who.title}
+              </h2>
+              <p className="text-base text-muted-foreground mb-4 leading-relaxed">{t.companies.who.p1}</p>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">{t.companies.who.p2}</p>
+              <div className="grid gap-3 mb-6">
+                {t.companies.who.teams.map(({ team, benefit }, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <span className="text-muted-foreground/40 flex-shrink-0">→</span>
+                    <span className="text-foreground">
+                      <strong>{team}</strong> {benefit}
+                    </span>
+                  </div>
+                ))}
               </div>
-            ))}
+              <p className="text-primary font-semibold">{t.companies.who.conclusion}</p>
+            </div>
+
+            {/* Why Providers Use Giraffy */}
+            <div className="rounded-2xl border border-primary/20 bg-background p-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                {t.companies.who.whyTitle}
+              </h2>
+              <ul className="space-y-4">
+                {t.companies.who.whyItems.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-base text-foreground">
+                    <span className="text-primary flex-shrink-0">→</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <p className="text-primary font-semibold">{t.companies.who.conclusion}</p>
         </div>
       </section>
 

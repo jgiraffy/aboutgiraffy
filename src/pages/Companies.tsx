@@ -117,15 +117,15 @@ const Companies = () => {
             {t.companies.intelligenceLayer.anchoringLine}
           </p>
 
-          {/* Venn Diagram */}
-          <VennDiagram labels={t.companies.intelligenceLayer.venn} />
-
-          {/* Three cards below */}
-          <div className="grid md:grid-cols-3 gap-6 mt-8">
+          {/* Three cards above Venn */}
+          <div className="grid md:grid-cols-3 gap-6 mb-10">
             {t.companies.intelligenceLayer.cards.map((card, i) => (
               <IntelligenceCard key={i} number={i + 1} {...card} />
             ))}
           </div>
+
+          {/* Venn Diagram */}
+          <VennDiagram labels={t.companies.intelligenceLayer.venn} />
 
           <DecisionMomentSection {...t.companies.intelligenceLayer.decisionMoment} />
         </div>

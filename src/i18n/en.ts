@@ -444,6 +444,7 @@ export const en = {
           title: "Giraffy Launches the Inaugural Giraffy Awards",
           date: "15 January 2026",
           location: "Riyadh, Saudi Arabia",
+          link: "https://giraffy.com/ksa/en/awards",
           content: "Giraffy has launched the Giraffy Awards, recognising excellence, transparency, and value across Saudi Arabia's financial services market.\n\nThe awards highlight top-performing products and providers across categories including mobile, internet, banking, insurance, and finance, based on market data and consumer relevance.\n\n\"The Giraffy Awards are about clarity, not promotion,\" said Jason Lea. \"They exist to highlight providers delivering genuine value to consumers.\""
         },
         {

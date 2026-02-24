@@ -302,10 +302,10 @@ export const en = {
     cta: {
       title: "Get Started with Giraffy Intelligence",
       useCases: [
-        "Understand your market position",
-        "Improve customer experience",
-        "Increase qualified demand",
-        "Make better pricing and product decisions",
+        "See where you are winning and losing decisions.",
+        "Detect competitive shifts before revenue moves.",
+        "Understand how customers and AI systems evaluate your products.",
+        "Act on market truth, not assumptions.",
       ],
       whatsapp: "Contact via WhatsApp",
       email: "Contact via Email",

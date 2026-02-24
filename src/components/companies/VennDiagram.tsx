@@ -155,16 +155,20 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
                 dominantBaseline="central" className="font-bold text-[7px]" fill={color}>
                 {item.code.replace(/0/g, "")}
               </text>
-              <text x={pos.x} y={pos.y + 2} textAnchor="middle"
-                dominantBaseline="central" className="fill-white font-bold text-[8px] uppercase tracking-[0.08em]">
-                {item.title.split(" ").slice(0, 2).join(" ")}
-              </text>
-              {item.title.split(" ").length > 2 && (
-                <text x={pos.x} y={pos.y + 13} textAnchor="middle"
+              {item.title.split(" ").reduce<string[][]>((lines, word) => {
+                const last = lines[lines.length - 1];
+                if (last.join(" ").length + word.length < 14) {
+                  last.push(word);
+                } else {
+                  lines.push([word]);
+                }
+                return lines;
+              }, [[]]).map((line, li) => (
+                <text key={li} x={pos.x} y={pos.y + 2 + li * 11} textAnchor="middle"
                   dominantBaseline="central" className="fill-white font-bold text-[8px] uppercase tracking-[0.08em]">
-                  {item.title.split(" ").slice(2).join(" ")}
+                  {line.join(" ")}
                 </text>
-              )}
+              ))}
             </g>
           );
         })}

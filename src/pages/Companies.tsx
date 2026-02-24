@@ -95,7 +95,7 @@ const Companies = () => {
               <ul className="space-y-4">
                 {t.companies.decisionGap.internalList.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-muted-foreground">
-                    <span className="text-muted-foreground/40 flex-shrink-0">→</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-muted-foreground/50 flex-shrink-0 mt-2" />
                     {item}
                   </li>
                 ))}
@@ -107,7 +107,7 @@ const Companies = () => {
               <ul className="space-y-4">
                 {t.companies.decisionGap.marketList.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-base text-foreground">
-                    <span className="text-primary flex-shrink-0">→</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
                     {item}
                   </li>
                 ))}
@@ -298,7 +298,7 @@ const Companies = () => {
               <div className="grid gap-3 mb-6">
                 {t.companies.who.teams.map(({ team, benefit }, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <span className="text-muted-foreground/40 flex-shrink-0">→</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-foreground flex-shrink-0 mt-2" />
                     <span className="text-foreground">
                       <strong>{team}</strong> {benefit}
                     </span>
@@ -316,7 +316,7 @@ const Companies = () => {
               <ul className="space-y-4">
                 {t.companies.who.whyItems.map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-base text-foreground">
-                    <span className="text-primary flex-shrink-0">→</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
                     {item}
                   </li>
                 ))}

@@ -113,7 +113,7 @@ export const en = {
       },
       {
         question: "How do you make money if you show every deal?",
-        answer: "Transparency is our priority. Unlike other platforms, we do not receive referral fees or commissions when you switch providers. We primarily make money by selling our market intelligence software, Giraffy for Business, to telecoms, banks and insurers. We also occasionally feature sponsored ads at the top of the page. Crucially, these ads never change how we rank the rest of the market. We show you the best options based on data, even if that choice doesn't make us a penny.",
+        answer: "Transparency is our priority. Unlike other platforms, we do not receive referral fees or commissions when you switch providers. We primarily make money by selling our market intelligence software, Giraffy Intelligence, to telecoms, banks and insurers. We also occasionally feature sponsored ads at the top of the page. Crucially, these ads never change how we rank the rest of the market. We show you the best options based on data, even if that choice doesn't make us a penny.",
       },
       {
         question: "How often is the information updated?",
@@ -273,7 +273,7 @@ export const en = {
     },
     who: {
       title: "Who Giraffy Is For",
-      p1: "Giraffy for Business is used by telecom operators, banks, insurers, fintechs, and consumer finance providers that operate in complex, competitive markets.",
+      p1: "Giraffy Intelligence is used by telecom operators, banks, insurers, fintechs, and consumer finance providers that operate in complex, competitive markets.",
       p2: "Inside these organisations, Giraffy supports teams across the business:",
       teams: [
         { team: "Product teams", benefit: "understand market fit and competitiveness" },
@@ -302,8 +302,8 @@ export const en = {
     },
     faqs: [
       {
-        question: "What is Giraffy for Business?",
-        answer: "Giraffy for Business is a market intelligence and visibility platform designed for companies in the household finance sector. We provide banks, insurers, and telecom providers with a real time, external view of the market, helping teams understand how they are positioned against competitors at the exact moment a customer makes a decision.",
+        question: "What is Giraffy Intelligence?",
+        answer: "Giraffy Intelligence is a market intelligence and visibility platform designed for companies in the household finance sector. We provide banks, insurers, and telecom providers with a real time, external view of the market, helping teams understand how they are positioned against competitors at the exact moment a customer makes a decision.",
       },
       {
         question: "How is your market data collected?",
@@ -330,7 +330,7 @@ export const en = {
         answer: "Getting started is simple. You can request access or book a demo through our business portal. Our team will walk you through the platform capabilities and show you how Giraffy Radar can be tailored to your specific category and country requirements.",
       },
     ],
-    footer: "Giraffy for Business is the external intelligence layer for household finance markets.",
+    footer: "Giraffy Intelligence is the external intelligence layer for household finance markets.",
   },
   investor: {
     hero: {

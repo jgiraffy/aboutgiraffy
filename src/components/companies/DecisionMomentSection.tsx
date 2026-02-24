@@ -29,11 +29,19 @@ const DecisionMomentSection = ({ title, description, subtitle, closing, interact
       </div>
 
       {/* Decision Moment Card */}
-      <div className="rounded-2xl border border-accent/40 bg-primary/[0.03] p-8">
-        <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">{title}</h3>
-        <p className="text-base text-muted-foreground leading-relaxed mb-2">{description}</p>
-        <p className="text-base text-muted-foreground leading-relaxed mb-2">{subtitle}</p>
-        <p className="text-base text-foreground font-semibold">{closing}</p>
+      <div className="rounded-xl border border-border bg-secondary p-6">
+        <div className="flex items-center gap-2 mb-3">
+          <span
+            className="w-5 h-5 rounded-full text-[11px] font-bold flex items-center justify-center flex-shrink-0"
+            style={{ backgroundColor: "#DDFA88", color: "#000" }}
+          >
+            ✦
+          </span>
+          <h3 className="text-base font-bold text-foreground">{title}</h3>
+        </div>
+        <p className="text-xs text-muted-foreground mb-4">{description}</p>
+        <p className="text-sm text-muted-foreground leading-relaxed mb-2">{subtitle}</p>
+        <p className="text-xs text-muted-foreground/60 leading-relaxed">{closing}</p>
       </div>
     </div>
   );

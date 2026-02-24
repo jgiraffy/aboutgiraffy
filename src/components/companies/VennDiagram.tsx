@@ -5,8 +5,15 @@ interface VennLabels {
   center: { label: string; microcopy: string };
 }
 
+interface Interaction {
+  code: string;
+  title: string;
+  description: string;
+}
+
 interface VennDiagramProps {
   labels: VennLabels;
+  interactions?: Interaction[];
 }
 
 const R = 160;
@@ -19,7 +26,21 @@ const positions = {
   ai:       { cx: cx + offset, cy: cy + offset * 0.5 },
 };
 
-const VennDiagram = ({ labels }: VennDiagramProps) => {
+// 2-set overlap colors matching the Venn fills
+const OVERLAP_COLORS: Record<string, string> = {
+  "01–02": "#1B6B3A",
+  "01–03": "#3A8F7A",
+  "02–03": "#5DB894",
+};
+
+// Positions for 2-set overlap labels (away from triple center)
+const overlapPositions: Record<string, { x: number; y: number }> = {
+  "01–02": { x: 248, y: 268 },
+  "01–03": { x: 372, y: 268 },
+  "02–03": { x: 310, y: 392 },
+};
+
+const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
   return (
     <div className="w-full max-w-[580px] mx-auto select-none">
       <svg viewBox="0 0 620 620" className="w-full h-auto" role="img" aria-label="Giraffy Intelligence Venn Diagram">
@@ -121,6 +142,26 @@ const VennDiagram = ({ labels }: VennDiagramProps) => {
           className="fill-white/50 text-[10px]">
           {labels.ai.subtitle}
         </text>
+
+        {/* 2-set overlap labels */}
+        {interactions?.map((item) => {
+          const pos = overlapPositions[item.code];
+          const color = OVERLAP_COLORS[item.code];
+          if (!pos || !color) return null;
+          return (
+            <g key={item.code}>
+              <circle cx={pos.x - 28} cy={pos.y} r={7} fill={color} />
+              <text x={pos.x - 28} y={pos.y} textAnchor="middle"
+                dominantBaseline="central" className="font-bold text-[7px]" fill="white">
+                {item.code}
+              </text>
+              <text x={pos.x - 18} y={pos.y} textAnchor="start"
+                dominantBaseline="central" className="fill-white font-semibold text-[9px] uppercase tracking-[0.08em]">
+                {item.title}
+              </text>
+            </g>
+          );
+        })}
 
         {/* Center label */}
         <text x={cx} y={cy - 6} textAnchor="middle"

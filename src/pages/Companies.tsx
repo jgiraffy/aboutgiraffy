@@ -131,7 +131,7 @@ const Companies = () => {
           </div>
 
           {/* Venn Diagram */}
-          <VennDiagram labels={t.companies.intelligenceLayer.venn} />
+          <VennDiagram labels={t.companies.intelligenceLayer.venn} interactions={t.companies.intelligenceLayer.decisionMoment.interactions} />
 
           <DecisionMomentSection {...t.companies.intelligenceLayer.decisionMoment} />
         </div>

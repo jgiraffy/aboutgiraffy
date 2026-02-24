@@ -211,17 +211,17 @@ export const en = {
         closing: "Giraffy operates at that intersection.",
         interactions: [
           {
-            code: "1–2",
+            code: "01–02",
             title: "Supply–Demand Fit",
             description: "See where pricing and positioning align — or fail to align — with real customer demand.",
           },
           {
-            code: "1–3",
+            code: "01–03",
             title: "AI vs Market Position",
             description: "Identify discrepancies between true market competitiveness and AI-generated visibility.",
           },
           {
-            code: "2–3",
+            code: "02–03",
             title: "AI Influence",
             description: "Understand how algorithmic recommendations shape comparison behaviour before application.",
           },

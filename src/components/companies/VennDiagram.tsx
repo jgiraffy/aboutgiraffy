@@ -28,16 +28,16 @@ const positions = {
 
 // 2-set overlap colors matching the Venn fills
 const OVERLAP_COLORS: Record<string, string> = {
-  "1–2": "#1B6B3A",
-  "1–3": "#3A8F7A",
-  "2–3": "#5DB894",
+  "01–02": "#1B6B3A",
+  "01–03": "#3A8F7A",
+  "02–03": "#5DB894",
 };
 
 // Positions for 2-set overlap labels (away from triple center)
 const overlapPositions: Record<string, { x: number; y: number }> = {
-  "1–2": { x: 228, y: 258 },
-  "1–3": { x: 382, y: 258 },
-  "2–3": { x: 310, y: 400 },
+  "01–02": { x: 240, y: 275 },
+  "01–03": { x: 365, y: 275 },
+  "02–03": { x: 310, y: 400 },
 };
 
 const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
@@ -90,22 +90,27 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
           </g>
         </g>
 
-        {/* Market Reality — inverted: dark circle with white number */}
-        <text x={positions.market.cx} y={positions.market.cy - 52} textAnchor="middle"
+        {/* Market Reality — number left of title */}
+        <circle cx={positions.market.cx - 62} cy={positions.market.cy - 52} r={9} fill="white" />
+        <text x={positions.market.cx - 62} y={positions.market.cy - 52} textAnchor="middle"
+          dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
+          {"1"}
+        </text>
+        <text x={positions.market.cx - 48} y={positions.market.cy - 52} textAnchor="start"
           dominantBaseline="central" className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {labels.market.title}
-        </text>
-        <circle cx={positions.market.cx + 62} cy={positions.market.cy - 52} r={9} fill="#00482F" />
-        <text x={positions.market.cx + 62} y={positions.market.cy - 52} textAnchor="middle"
-          dominantBaseline="central" className="font-bold text-[10px]" fill="white">
-          {"1"}
         </text>
         <text x={positions.market.cx} y={positions.market.cy - 35} textAnchor="middle"
           className="fill-white/50 text-[10px]">
           {labels.market.subtitle}
         </text>
 
-        {/* Consumer Intent — inverted: dark circle with white number */}
+        {/* Consumer Intent — number left of stacked title, subtitle aligned */}
+        <circle cx={positions.consumer.cx - 95} cy={positions.consumer.cy + 44} r={9} fill="white" />
+        <text x={positions.consumer.cx - 95} y={positions.consumer.cy + 44} textAnchor="middle"
+          dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
+          {"2"}
+        </text>
         <text x={positions.consumer.cx - 81} y={positions.consumer.cy + 36} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"CONSUMER"}
@@ -114,17 +119,17 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"INTENT"}
         </text>
-        <circle cx={positions.consumer.cx - 81 + 108} cy={positions.consumer.cy + 45} r={9} fill="#267F4C" />
-        <text x={positions.consumer.cx - 81 + 108} y={positions.consumer.cy + 45} textAnchor="middle"
-          dominantBaseline="central" className="font-bold text-[10px]" fill="white">
-          {"2"}
-        </text>
         <text x={positions.consumer.cx - 81} y={positions.consumer.cy + 70} textAnchor="start"
           className="fill-white/50 text-[10px]">
           {labels.consumer.subtitle}
         </text>
 
-        {/* AI Perception — inverted: dark circle with white number */}
+        {/* AI Perception — shifted left, subtitle aligned to title */}
+        <circle cx={positions.ai.cx + 10} cy={positions.ai.cy + 44} r={9} fill="white" />
+        <text x={positions.ai.cx + 10} y={positions.ai.cy + 44} textAnchor="middle"
+          dominantBaseline="central" className="font-bold text-[10px]" fill="#00482F">
+          {"3"}
+        </text>
         <text x={positions.ai.cx + 24} y={positions.ai.cy + 36} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"AI"}
@@ -132,11 +137,6 @@ const VennDiagram = ({ labels, interactions }: VennDiagramProps) => {
         <text x={positions.ai.cx + 24} y={positions.ai.cy + 54} textAnchor="start"
           className="fill-white font-bold text-[14px] uppercase tracking-[0.14em]">
           {"PERCEPTION"}
-        </text>
-        <circle cx={positions.ai.cx + 24 + 100} cy={positions.ai.cy + 45} r={9} fill="#80C7AE" />
-        <text x={positions.ai.cx + 24 + 100} y={positions.ai.cy + 45} textAnchor="middle"
-          dominantBaseline="central" className="font-bold text-[10px]" fill="white">
-          {"3"}
         </text>
         <text x={positions.ai.cx + 24} y={positions.ai.cy + 70} textAnchor="start"
           className="fill-white/50 text-[10px]">

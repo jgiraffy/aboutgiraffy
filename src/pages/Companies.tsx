@@ -286,7 +286,7 @@ const Companies = () => {
       </section>
 
       {/* Who Giraffy Is For */}
-      <section className="py-20 lg:py-32 bg-background">
+      <section className="py-20 lg:py-32 bg-secondary">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {t.companies.who.title}
@@ -308,7 +308,7 @@ const Companies = () => {
       </section>
 
       {/* Built for Complex Markets */}
-      <section className="py-20 lg:py-32 bg-secondary">
+      <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
             {t.companies.complex.title}

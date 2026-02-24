@@ -26,7 +26,7 @@ const IntelligenceCard = ({ title, subtitle, bullets, closingLine, number }: Int
       <ul className="space-y-2 mb-4">
         {bullets.map((b, i) => (
           <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-            <span className="text-primary mt-px text-xs">→</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
             {b}
           </li>
         ))}

@@ -68,12 +68,12 @@ const Companies = () => {
           <p className="text-[10px] text-muted-foreground/60 mt-10 mb-4 tracking-wide">Companies using Giraffy Intelligence:</p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {[
-              { src: logoWataniya, alt: "Wataniya Insurance Company" },
-              { src: logoBsf, alt: "BSF" },
-              { src: logoTawuniya, alt: "Tawuniya Cooperative Insurance" },
-              { src: logoEmiratesNbd, alt: "Emirates NBD" },
-            ].map(({ src, alt }) => (
-              <img key={alt} src={src} alt={alt} className="h-14 w-auto object-contain opacity-60" />
+              { src: logoWataniya, alt: "Wataniya Insurance Company", className: "h-14" },
+              { src: logoBsf, alt: "BSF", className: "h-14" },
+              { src: logoTawuniya, alt: "Tawuniya Cooperative Insurance", className: "h-8" },
+              { src: logoEmiratesNbd, alt: "Emirates NBD", className: "h-14" },
+            ].map(({ src, alt, className }) => (
+              <img key={alt} src={src} alt={alt} className={`${className} w-auto object-contain opacity-60`} />
             ))}
           </div>
         </div>

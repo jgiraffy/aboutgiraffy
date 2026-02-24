@@ -63,7 +63,7 @@ const Companies = () => {
       {/* Statement Banner */}
       <section className="py-16 lg:py-24 bg-background">
         <div className="container max-w-5xl mx-auto px-6 text-center">
-          <p className="text-[10px] text-muted-foreground/60 mt-10 mb-4 tracking-wide">Companies using Giraffy Intelligence:</p>
+          <p className="text-[10px] text-muted-foreground/60 mb-4 tracking-wide">Companies using Giraffy Intelligence:</p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {[
               { src: logoBsf, alt: "BSF", className: "h-14" },

@@ -241,19 +241,21 @@ const Companies = () => {
                 {t.companies.aiAgent.p5}
               </p>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg lg:mt-16">
-              <img 
-                src={aiAgentExperienceVisual} 
-                alt={t.companies.aiAgent.title}
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-lg mt-6">
-              <img 
-                src={aiAgentExperienceVisual2} 
-                alt={`${t.companies.aiAgent.title} - AI Insights`}
-                className="w-full h-auto"
-              />
+            <div className="space-y-6 lg:mt-16">
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src={aiAgentExperienceVisual} 
+                  alt={t.companies.aiAgent.title}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src={aiAgentExperienceVisual2} 
+                  alt={`${t.companies.aiAgent.title} - AI Insights`}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>

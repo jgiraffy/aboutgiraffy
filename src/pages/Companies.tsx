@@ -123,17 +123,11 @@ const Companies = () => {
       {/* Intelligence Layer Section */}
       <section className="py-20 lg:py-32 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            {t.companies.intelligenceLayer.title}
-          </h2>
-          <p className="text-base text-muted-foreground max-w-3xl mb-2 leading-relaxed">
-            {t.companies.intelligenceLayer.subtitle}
-          </p>
-          <p className="text-sm text-muted-foreground/70 max-w-3xl mb-4">
-            {t.companies.intelligenceLayer.supportingLine}
-          </p>
-          <p className="text-center text-sm text-muted-foreground mb-10 tracking-wide">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 mt-4">
             {t.companies.intelligenceLayer.anchoringLine}
+          </h2>
+          <p className="text-base text-muted-foreground mb-10 leading-relaxed">
+            {t.companies.intelligenceLayer.subtitle}
           </p>
 
           {/* Three cards above Venn */}

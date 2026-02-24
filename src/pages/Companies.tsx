@@ -73,7 +73,7 @@ const Companies = () => {
               { src: logoTawuniya, alt: "Tawuniya Cooperative Insurance" },
               { src: logoEmiratesNbd, alt: "Emirates NBD" },
             ].map(({ src, alt }) => (
-              <img key={alt} src={src} alt={alt} className="h-10 w-auto object-contain opacity-60" />
+              <img key={alt} src={src} alt={alt} className="h-14 w-auto object-contain opacity-60" />
             ))}
           </div>
         </div>

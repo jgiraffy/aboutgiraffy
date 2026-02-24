@@ -23,11 +23,8 @@ const Companies = () => {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             {t.companies.hero.title}
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-4 whitespace-pre-line">
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed mb-8 whitespace-pre-line">
             {t.companies.hero.subtitle}
-          </p>
-          <p className="text-base text-primary-foreground/60 max-w-2xl mx-auto leading-relaxed mb-8 whitespace-pre-line">
-            {t.companies.hero.supportingLine}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -55,6 +52,15 @@ const Companies = () => {
           >
             {t.companies.hero.login}
           </a>
+        </div>
+      </section>
+
+      {/* Statement Banner */}
+      <section className="py-16 lg:py-24 bg-background">
+        <div className="container max-w-5xl mx-auto px-6 text-center">
+          <p className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+            {t.companies.hero.supportingLine}
+          </p>
         </div>
       </section>
 

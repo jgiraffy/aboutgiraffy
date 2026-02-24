@@ -65,7 +65,7 @@ const Companies = () => {
           <p className="text-lg md:text-2xl lg:text-3xl text-foreground leading-tight">
             {t.companies.hero.supportingLine}
           </p>
-          <p className="text-xs text-muted-foreground/60 mt-10 mb-4 tracking-widest uppercase">Companies using Giraffy Intelligence</p>
+          <p className="text-[10px] text-muted-foreground/60 mt-10 mb-4 tracking-wide">Companies using Giraffy Intelligence:</p>
           <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
             {[
               { src: logoWataniya, alt: "Wataniya Insurance Company" },

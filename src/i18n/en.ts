@@ -290,7 +290,7 @@ export const en = {
       p3: "By focusing on how customers compare options before they choose, Giraffy sits before the transaction, where real decisions are made.",
     },
     cta: {
-      title: "Get Started with Giraffy for Business",
+      title: "Get Started with Giraffy Intelligence",
       useCases: [
         "Understand your market position",
         "Improve customer experience",
